@@ -45,20 +45,20 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-        include("main.php");
+        //include("main.php");
 
         // Usa a classe Login do namespace MeuProjeto\Login     
         include (__DIR__ . '/../vendor/autoload.php'); 
         use MeuProjeto\model\Login; 
-        use MeuProjeto\model\UsuarioSistema;
+        //use MeuProjeto\model\UsuarioSistema;
 
         // Instancia a classe Login
         $login = new Login(); 
-        $sysu = new MeuProjeto\model\UsuarioSistema();
+        //$sysu = new MeuProjeto\model\UsuarioSistema();
 
         // Verifica o login (se o formulário foi enviado)
         $login->verificarLogin(); 
-        $sysu->nome = "GustavoR";
+        //$sysu->nome = "GustavoR";
         ?>
     </div>
 </head>

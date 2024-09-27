@@ -6,8 +6,10 @@ namespace MeuProjeto\model;
 // Definindo a classe Login
 class Login {
 
+    private $login;
+
     public function __construct($login = null) {
-        $this->$login = $login;
+        $this->login = $login;
     }
 
     private $usuarios = [
