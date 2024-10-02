@@ -32,20 +32,20 @@
     </header>
 
     <section class="anuncios">
-        <h2>Produtos Anunciados</h2>
+        <h2>Melhores opções pro seu lar...</h2>
         <div class="produto">
-            <img src="/caminho/para/imagem1.jpg" alt="Produto 1">
-            <h3>Produto 1</h3>
-            <p>Descrição do Produto 1</p>
-            <p>Preço: R$ 100,00</p>
-            <a href="detalhes.php?id=1">Ver detalhes</a>
+            <img src="views/images/liriodapaz.png" alt="Produto 1">
+            <h3>Lírio-da-paz</h3>
+            <p>Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.</p>
+            <p>Quer saber mais sobre a importância dessa planta pra história da vida? Clica abaixo!</p>
+            <button href="detalhes.php?id=1">Conhecer planta</button>
         </div>
         <div class="produto">
-            <img src="/caminho/para/imagem2.jpg" alt="Produto 2">
-            <h3>Produto 2</h3>
-            <p>Descrição do Produto 2</p>
-            <p>Preço: R$ 150,00</p>
-            <a href="detalhes.php?id=2">Ver detalhes</a>
+            <img src="views/images/jiboia.png" alt="Produto 2">
+            <h3>Jibóia</h3>
+            <p>Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.</p>
+            <p>Quer saber mais sobre a importância dessa planta pra história da vida? Clica abaixo!</p>
+            <button href="detalhes.php?id=2">Conhecer planta</button>
         </div>
         <!-- Adicione mais produtos conforme necessário -->
     </section>
