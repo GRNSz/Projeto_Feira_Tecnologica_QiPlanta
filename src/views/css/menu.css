@@ -1,0 +1,73 @@
+body {
+    font-family: fantasy;
+    margin: 0%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #306b60;
+}
+
+.logo img {
+    height: 100px; /* Ajuste o tamanho do logo conforme necessário */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #00b38c;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #306b60;
+    color: white;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #00b38c;
+}
+
+.anuncios {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.produto {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+}
