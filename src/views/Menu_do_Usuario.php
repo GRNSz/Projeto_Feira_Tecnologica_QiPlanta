@@ -15,12 +15,7 @@
     <main>
        <div class="caixa-conteudo">
         <h1>Em desenvolvimento</h1>
-        <div class="caixa-info"> <style>.caixa-info{ border: 4px red solid; width: 600px; height: 700px; border-radius: 24px; display: flex;}</style>
-            <div class="caixa-produto"> <style>.caixa-produto{border: 4px red solid; width: 400px; height: 350px; border-radius: 24px;}</style>
 
-            </div>
-
-        </div>
        </div>
     </main>
     <footer>
