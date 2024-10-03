@@ -26,7 +26,7 @@ class Login {
 
             foreach ($this->usuarios as $user) {
                 if ($user['usuario'] === $usuario && $user['senha'] === $senha) {
-                    header("Location: ./views/Menu_do_Usuario.php");
+                    header("Location: ./src/menu.php");
                     return; // Interrompe o loop após encontrar o usuário
                 }
             }
