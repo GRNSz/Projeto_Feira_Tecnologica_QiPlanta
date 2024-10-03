@@ -25,7 +25,7 @@
         </nav>
         <div class="search-bar">
             <form action="pesquisa.php" method="GET">
-                <input type="text" name="query" placeholder="Pesquisar produtos..." required>
+                <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
                 <button type="submit">Buscar</button>
             </form>
         </div>
