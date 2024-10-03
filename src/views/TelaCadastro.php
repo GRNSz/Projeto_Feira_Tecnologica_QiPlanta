@@ -12,7 +12,7 @@
             <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <h1>Cadastro de Cliente </h1><br>   
                     <label for="username">Nome de Usuário:</label>
-                    <input class="form-input" type="text" id="username" name="usuario" placeholder="Insira um nome de usuário" required><br><br>
+                    <input class="form-input" type="text" id="username" name="nome" placeholder="Insira um nome de usuário" required><br><br>
         
                     <label for="password">Senha:</label>
                     <input class="form-input" type="password" id="password" name="senha" placeholder="Insira uma senha" required><br><br>
@@ -49,7 +49,10 @@
 
     // Inclui o autoload do Composer
     require __DIR__ . "/../../vendor/autoload.php";
+    require __DIR__ . "/../persistence/connectionFactory.php";
+
     use MeuProjeto\model\Cadastrar;
+    //use MeuProjeto\persistence\ConnectionFactory;
 
     // Cria uma instância da classe Cadastrar
     $cadastrar = new Cadastrar();

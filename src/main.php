@@ -13,16 +13,24 @@ use MeuProjeto\persistence\ConnectionFactory;
 // Cria uma instância da classe Login
 $login = new Login();
 
-$usr = new UsuarioSistema();
-$usr->nome = "";
+//$usr = new UsuarioSistema();
+//$usr->nome = "";
 
-$sqlInsert = "INSERT INTO usuarios (nome) VALUES ('".$usr->nome."')";
+//$sqlInsert = "INSERT INTO usuarios (nome) VALUES ('".$usr->nome."')";
 
 //echo $sqlInsert;
 
 // Cria uma instância da classe ConnectionFactory para conexão com o banco de dados.
-$conn = ConnectionFactory::getConnection();
-$conn->exec($sqlInsert);
+//$conn = ConnectionFactory::getConnection();
+//$conn->exec($sqlInsert);
+
+include 'ConnectionFactory.php';
+include 'Login.php';
+include 'Cadastrar.php';
+
+
+// Debugging
+
 
 //Faz um teste para verificar se a conexão com o banco de dados foi realizada com sucesso.
 //echo print_r(value:$conn, return: true);

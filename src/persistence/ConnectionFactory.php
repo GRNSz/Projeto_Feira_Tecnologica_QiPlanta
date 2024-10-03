@@ -10,6 +10,11 @@ class ConnectionFactory {
 
     // Conexão com Banco de Dados MySQL
     public static function getConnection() {
+
+        // Debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
         if (self::$connection == null) {
             $host = getenv('DB_HOST') ?: 'localhost';
             $dbname = getenv('DB_NAME') ?: 'bdqiplanta';

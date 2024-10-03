@@ -5,6 +5,11 @@ include 'Cadastrar.php';
 
 use MeuProjeto\persistence\ConnectionFactory;
 
+
+// Debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuarioCad = $_POST['nome'];
     $senhaCad = $_POST['senha'];
@@ -25,6 +30,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro: " . $sqlInsert->errorInfo()[2];
     }
 
-    $conn = null; // Fechar a conexão
+    $conn == null; // Fechar a conexão
 }
 ?>
