@@ -62,3 +62,32 @@
 </body>
 </html>
 
+
+
+
+
+_________________________________________________
+
+
+<?php
+include 'ConnectionFactory.php';
+include 'Login.php';
+include 'Cadastrar.php';
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usuarioCad = $_POST['nome'];
+    //$email = $_POST['email'];
+    $senhaCad = $_POST['senha'];
+    $senha2Cad = $_POST['senha2'];
+
+    $sqlInsert = "INSERT INTO usuarios (nome, senha, senha2) VALUES ('$nome', '$senha', '$senha2')";
+
+    if ($conn->query($sqlInsert) === TRUE) {
+        echo "Novo registro criado com sucesso";
+    } else {
+        echo "Erro: " . $sqlInsert . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+}
+?>

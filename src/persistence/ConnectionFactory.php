@@ -12,14 +12,14 @@ class ConnectionFactory {
     public static function getConnection() {
         if (self::$connection == null) {
             $host = getenv('DB_HOST') ?: 'localhost';
-            $dbname = getenv('DB_NAME') ?: 'usuarios';
+            $dbname = getenv('DB_NAME') ?: 'bdqiplanta';
             $username = getenv('DB_USER') ?: 'root';
             $password = getenv('DB_PASS') ?: '';
             $dsn = "mysql:host=$host;dbname=$dbname";
 
             try {
                 //var_dump("fora do catch");
-                self::$connection = new \PDO("mysql:host=localhost;dbname=usuarios", $username, $password);
+                self::$connection = new \PDO("mysql:host=localhost;dbname=bdqiplanta", $username, $password);
                 //var_dump("Verifica conexão");
                 self::$connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             } 
