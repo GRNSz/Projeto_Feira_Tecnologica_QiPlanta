@@ -1,5 +1,5 @@
 body {
-    font-family: fantasy;
+    font-family: Arial, sans-serif;
     margin: 0%;
 }
 
@@ -68,6 +68,6 @@ nav ul li a:hover {
 }
 
 .produto img {
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
 }
