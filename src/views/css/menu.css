@@ -8,7 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #306b60;
+    background-color: #07914c;
 }
 
 .logo img {
@@ -32,7 +32,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #00b38c;
+    background-color: #3e9473;
 }
 
 .search-bar {
@@ -47,13 +47,13 @@ nav ul li a:hover {
 .search-bar button {
     padding: 5px;
     border: 1px solid #ccc;
-    background-color: #306b60;
+    background-color: #07914c;
     color: white;
     cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #00b38c;
+    background-color: #3e9473;
 }
 
 .anuncios {
@@ -70,4 +70,18 @@ nav ul li a:hover {
 .produto img {
     max-width: 20%;
     height: auto;
+}
+
+.produto button {
+    background-color: #07914c;
+    font-weight:bold;
+    border: #4CAF50 3px solid;
+    background-color: white;
+}
+
+.produto button:hover {
+    background-color: #3e9473;
+    font-weight:bold;
+    border: #4CAF50 3px solid;
+    color: white;
 }

@@ -38,14 +38,21 @@
             <h3>Lírio-da-paz</h3>
             <p>Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.</p>
             <p>Quer saber mais sobre a importância dessa planta pra história da vida? Clica abaixo!</p>
-            <button href="detalhes.php?id=1">Conhecer planta</button>
+            <button href="detalhes.php?id=1">Conhecer vida</button>
         </div>
         <div class="produto">
             <img src="views/images/jiboia.png" alt="Produto 2">
             <h3>Jibóia</h3>
             <p>Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.</p>
             <p>Quer saber mais sobre a importância dessa planta pra história da vida? Clica abaixo!</p>
-            <button href="detalhes.php?id=2">Conhecer planta</button>
+            <button shref="detalhes.php?id=2">Conhecer vida</button>
+        </div>
+        <div class="produto">
+            <img src="views/images/espadadesaojorge.png" alt="Produto 2">
+            <h3>Espada-de-São-Jorge</h3>
+            <p>Perfeita para ambientes internos, resistente e não precisa de muita água. Também ajuda na purificação do ar.</p>
+            <p>Quer saber mais sobre a importância dessa planta pra história da vida? Clica abaixo!</p>
+            <button href="detalhes.php?id=3">Conhecer vida</button>
         </div>
         <!-- Adicione mais produtos conforme necessário -->
     </section>
