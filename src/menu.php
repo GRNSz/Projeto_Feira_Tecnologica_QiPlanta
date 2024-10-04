@@ -15,7 +15,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.php">Início</a></li>
+                <li><a href="index.php">Login/Cadastre-se</a></li>
                 <li><a href="produtos.php">Produtos</a></li>
                 <li><a href="categorias.php">Categorias</a></li>
                 <li><a href="sobre.php">Sobre Nós</a></li>
