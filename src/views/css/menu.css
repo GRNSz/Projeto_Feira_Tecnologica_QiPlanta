@@ -8,11 +8,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #07914c;
+    background: rgb(57,115,72);
+    background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
 }
 
 .logo img {
-    height: 100px; /* Ajuste o tamanho do logo conforme necessário */
+    height: 80px; /* Ajuste o tamanho do logo conforme necessário */
 }
 
 nav ul {

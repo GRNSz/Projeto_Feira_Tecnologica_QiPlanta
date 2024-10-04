@@ -3,26 +3,56 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
     background: linear-gradient(16deg, rgba(242,242,242,1) 0%, rgba(146,156,147,1) 100%);
-    display: flex;
+   /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 100vh;
     margin: 0;
 }
 .divisoria-login { /*DIVISÃO 2 colunas*/
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: 1fr;
-   grid-column-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
    grid-row-gap: 0px;
 }
 .div-login-centro{ /*COLUNA 1 LOGIN COLOR/CADASTRO*/
     color: azure;
     justify-items: auto center;
     border-radius: 10px;
-    background: rgb(14,168,170);
-    background: linear-gradient(203deg, rgb(14, 167, 170) 0%, rgba(7,88,122,1) 100%);
+    background: rgb(57,115,72);
+    background: radial-gradient(circle, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
 }
+.container .div-btn-login{
+    position:absolute;
+    margin-bottom: 0px;
+}
+form .login-btn {
+    color: #204028;
+    font-weight: bold;
+    font-weight:bold;
+    border: #4CAF50 3px solid;
+    background-color: white;
+}
+form .login-btn:hover{
+    background: rgb(57,115,72);
+    background: linear-gradient(299deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%);
+    font-weight:bold;
+    border: #204028 3px solid;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .div-cadastro-centro{ /* [PEDRO]: CLASSE MUITO PERIGOSA DE ALTERAR*/
     color: azure;
     margin-right: -70px;
@@ -31,8 +61,8 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     margin-left: 30px;
     justify-items: auto center;
     border-radius: 10px;
-    background: rgb(14,168,170);
-    background: linear-gradient(203deg, rgba(14,168,170,1) 0%, rgb(7, 86, 120) 100%);    
+    background: rgb(241,166,75);
+    background: linear-gradient(139deg, rgba(241,166,75,1) 0%, rgba(166,41,0,1) 100%);
 }
 .div-cadastro-centro a{
     color: white; /* Cor do texto */
@@ -52,7 +82,10 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     margin:40px;
     padding-right: 10px;
     padding: auto;
+    margin-top: 100px;
+    margin-left: 500px;
 }
+
 .container form{
     margin-top: 10px;
     padding: 10px;
@@ -63,7 +96,7 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     font-weight: bold;
     justify-items: center;
     display: flex;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .div-sou-robo{
     display: grid;
@@ -71,16 +104,12 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-        
-}
-.container .div-btn-login{
-    position:absolute;
-    margin-bottom: 0px;
+    
 }
 
 /*[Pedro]:      BTn/INPUT area          */
 .div-btn-cadastro-login{
-    margin-top: 85px;
+    margin-top: 105px;
 }
 
 .container button{
@@ -91,40 +120,37 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
     border-radius: 5px;
     cursor: pointer;
 }
-form .login-btn {
-    color: #07914c;
-    font-weight:bold;
-    border: #4CAF50 3px solid;
-    background-color: white;
-}
-form .login-btn:hover{
-    background-color: #4CAF50;
-    font-weight:bold;
-    border: #4CAF50 3px solid;
-    color: white;
-}
 .container h1 { /* estava errado porque não tinha h2 em nenhum lugar*/
     margin-bottom: 20px;
 }
 .btn-cadastro-login{
     padding:  5px auto;
-    color: #008CBA;
+    color: #F28F16;
     border: 10px;
-    border: #008CBA 3px solid;
+    border: #F28F16 3px solid;
     background-color: white;
 }
 .btn-cadastro-login:hover{
-    background-color: #008CBA;
+    background-color: #F28F16;
     color: white;
     border: 10px;
-    border-color: #02a8df;
+    border-color: #F28F16;
 }
 .container input { /*   CLASSE GLOBAL PARA TODOS OS INPUTS DENTRO DO CONTAINER*/
     width: 100%;
     padding: 10px 0;
-    border: 3px solid #ccc;
+    border: 3px solid #204028;
     border-radius: 5px;
     margin: 10px;
+    padding-left: 5px;
+}
+.container input:hover{
+    width: 100%;
+    padding: 10px 0;
+    border: 3px solid #4CAF50;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 5px;
 }
 .container-cadastro { /*até agora aqui ta ok, não mexa em nada*/
     background-color: #fff;
@@ -138,6 +164,8 @@ form .login-btn:hover{
     margin:40px;
     padding-right: 10px;
     padding: auto;
+    margin-top: 100px;
+    margin-left: 500px;
 }
 .container form{
     margin-top: 10px;

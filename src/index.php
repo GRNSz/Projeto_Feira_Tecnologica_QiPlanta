@@ -7,12 +7,17 @@
     <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png"> <!--Icon -->
     <link rel="stylesheet" href="views/css/cadastro&login.css">
 <head>
-    <div class="container">
-        <div class="divisoria-login">
-            <div class="div-login-centro"><!--[Pedro]: parte 01 caixa btn cadastro / img/color -->
+    <header>
+        <?php include("./views/header.php")  ?>
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="divisoria-login">
+                <div class="div-login-centro"><!--[Pedro]: parte 01 caixa btn cadastro / img/color -->
                 <div class="caixa-cadastro-login">
-                <div style="margin-top:60px;"></div>
-                        <h2>Cadastrar-se</h2> <br>
+                    <div style="margin-top:60px;"></div>
+                    <h2>Cadastrar-se</h2> <br>
                     <p>Ainda não possui Login em nosso site? <br> <strong>Venha se cadastrar</strong></p>     <!--[Pedro]: texto teste, podem escolher oque colocar-->    
                 </div>
                 <div class="div-btn-cadastro-login">
@@ -23,20 +28,21 @@
                 <div class="titulo-login">
                     <h1>Login</h1>
                 </div>
-            
-            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                
+                <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 
 <input class="form-input" type="text" name="usuario" placeholder="Digite o nome do Usuario" required>
 <input class="form-input" type="password" name="senha" placeholder="Digite a Senha" required>
 
 
-    <button type="submit" class="login-btn">Login</button>
+<button type="submit" class="login-btn">Login</button>
 </form>
 
-            </div>
+</div>
         </div>
-              
         
+        
+        </main>
         <?php
 
 
