@@ -9,6 +9,13 @@
 </head>
 
 <body>
+
+    <?php
+        include "header.php";
+        include "footer.php";
+        include "Cadastrar.php";
+        include "TelaCadastro.php";
+    ?>
     <header>
         <div class="logo">
             <a href="index.php"><img src="views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->

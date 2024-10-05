@@ -22,10 +22,19 @@
                         
                         <label for="username">Nome de Usuário:</label>
                         <input class="form-input" type="text" id="username" name="nome" placeholder="Insira um nome de usuário" required><br><br>
+
+                        <label for="username">Endereço:</label>
+                        <input class="form-input" type="text" id="endereco" name="endereco" placeholder="Insira um nome de usuário" required><br><br>
+
+                        <label for="username">Email:</label>
+                        <input class="form-input" type="text" id="email" name="email" placeholder="Insira um nome de usuário" required><br><br>
+
+                        <label for="username">Numero do Celular:</label>
+                        <input class="form-input" type="text" id="numcell" name="numcell" placeholder="Insira um nome de usuário" required><br><br>
                         
                         <label for="password">Senha:</label>
                         <input class="form-input" type="password" id="password" name="senha" placeholder="Insira uma senha" required><br><br>
-                        
+
                         <label for="password">Repita sua senha:</label>
                         <input class="form-input" type="password" id="password" name="senha2" placeholder="Confirme sua senha" required><br><br>
                         
@@ -43,7 +52,7 @@
                     <div class="div-cadastro-centro"> <!--  div color/login -->
                         <div style="margin-top:60px;"></div>
                         <h2>Login</h2> <br>
-                        <p>Ja possui Login em nosso site? <br>fazer login<br><br> <a href="./../index.php"><strong>Click aqui</strong></a></p>  <br> <!--[Pedro]: texto teste, podem escolher oque colocar-->
+                        <p>Ja possui Login em nosso site? <br>fazer login<br><br> <a href="./../index.php"><strong>Clique aqui</strong></a></p>  <br> <!--[Pedro]: texto teste, podem escolher oque colocar-->
                         
                     </div>
 
@@ -73,3 +82,7 @@
 
 </body>
 </html>
+
+<?php
+ob_end_flush(); // Envia a saída
+?>
