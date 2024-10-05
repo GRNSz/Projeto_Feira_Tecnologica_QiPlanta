@@ -7,8 +7,6 @@ ob_start();
 
 use MeuProjeto\persistence\ConnectionFactory;
 
-include "Menu.php";
-
 class Cadastrar {
 
     public function getCadastrar() {
@@ -34,7 +32,7 @@ class Cadastrar {
                 $sqlInsert->bindParam(6, $senha2Cad);
 
                 if ($sqlInsert->execute()) {
-                   // header("Location: ./src/menu.php");
+                   header("Location: ./src/menu.php");
                     exit; // Interrompe o script após redirecionar
                 } else {
                     echo "Erro: " . $sqlInsert->errorInfo()[2];

@@ -12,7 +12,7 @@
         <form action="processa_cadastro.php" method="post">
             <div class="form-group">
                 <label for="nome">Nome do Produto</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome_produto" name="nome_produto" required>
             </div>
             <div class="form-group">
                 <label for="descricao">Descrição</label>
