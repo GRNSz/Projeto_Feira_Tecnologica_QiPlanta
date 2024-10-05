@@ -27,6 +27,7 @@ $login = new Login();
 include 'ConnectionFactory.php';
 include 'Login.php';
 include 'Cadastrar.php';
+include 'CadadtrarProduto.php';
 
 
 // Debugging
@@ -36,9 +37,11 @@ include 'Cadastrar.php';
 //echo print_r(value:$conn, return: true);
 
 $cadastro = new Cadastrar();
+$cadastroProduto = new CadastrarProduto();
 
 // Teste para verificar se a conexão com o banco de dados foi realizada com sucesso.
 
 // Verifica o login (se o formulário foi enviado)
 $login->verificarLogin();
 $cadastro->getCadastrar();
+$cadastro->getCadastrarProduto();
