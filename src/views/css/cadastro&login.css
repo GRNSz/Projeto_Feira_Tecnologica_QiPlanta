@@ -6,7 +6,8 @@ body { /*  ESTILO DA PAGINA DE LOGIN   */
    /* display: flex;
     justify-content: center;
     align-items: center; */
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     margin: 0;
 }
 .divisoria-login { /*DIVISÃO 2 colunas*/
@@ -41,36 +42,7 @@ form .login-btn:hover{
     border: #204028 3px solid;
     color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.div-cadastro-centro{ /* [PEDRO]: CLASSE MUITO PERIGOSA DE ALTERAR*/
-    color: azure;
-    margin-right: -70px;
-    width: 360px;   /*360*/
-    height: 500px; /*500*/
-    margin-left: 30px;
-    justify-items: auto center;
-    border-radius: 10px;
-    background: rgb(241,166,75);
-    background: linear-gradient(139deg, rgba(241,166,75,1) 0%, rgba(166,41,0,1) 100%);
-}
-.div-cadastro-centro a{
-    color: white; /* Cor do texto */
-    font-style: italic;
-    text-decoration: none; /* Decoração do texto */
-    font-weight: bold; /* Peso da fonte */
-}
-.container { /*até agora aqui ta ok, não mexa em nada*/
+.container{ /*até agora aqui ta ok, não mexa em nada*/
     background-color: #fff;
     margin-top: 40px;
     border-radius: 10px;
@@ -85,33 +57,21 @@ form .login-btn:hover{
     margin-top: 100px;
     margin-left: 500px;
 }
-
 .container form{
     margin-top: 10px;
     padding: 10px;
     position: center;
     margin-left: -15px;
 }
-.container form .titulo-login{
+.container form .titulo-login, .container-cadastro h1{
     font-weight: bold;
     justify-items: center;
     display: flex;
     padding-top: 10px;
 }
-.div-sou-robo{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    
-}
-
-/*[Pedro]:      BTn/INPUT area          */
 .div-btn-cadastro-login{
     margin-top: 105px;
 }
-
 .container button{
     width: 48%;
     padding: 10px;
@@ -120,7 +80,7 @@ form .login-btn:hover{
     border-radius: 5px;
     cursor: pointer;
 }
-.container h1 { /* estava errado porque não tinha h2 em nenhum lugar*/
+.container h1, .container-cadastro h1 {
     margin-bottom: 20px;
 }
 .btn-cadastro-login{
@@ -136,7 +96,7 @@ form .login-btn:hover{
     border: 10px;
     border-color: #F28F16;
 }
-.container input { /*   CLASSE GLOBAL PARA TODOS OS INPUTS DENTRO DO CONTAINER*/
+.container input {
     width: 100%;
     padding: 10px 0;
     border: 3px solid #204028;
@@ -152,7 +112,62 @@ form .login-btn:hover{
     margin: 10px;
     padding-left: 5px;
 }
+.container form{
+    margin-top: 10px;
+    padding: 10px;
+    position: center;
+    margin-left: -15px;
+}
+/*  Cadastro zone   */
 .container-cadastro { /*até agora aqui ta ok, não mexa em nada*/
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 850px;
+    padding-right: 40px;
+    margin:40px;
+    margin-top: 100px;
+    margin-left: 550px;
+}
+.container-cadastro form{
+    margin-top: 10px;
+    padding: 10px;
+    position: center;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.container-cadastro .form-input{
+    width: 100%;
+    padding: 10px 0;
+    border: 3px solid #204028;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 5px;
+}
+.container-cadastro .form-input:hover{
+
+}
+.container-cadastro button {
+    width: 100%;
+    padding: 10px 0;
+    color: #204028;
+    border: 3px solid #204028;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 5px;
+}
+.container-cadastro button:hover{
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+    background-color: #204028;
+    border: 3px solid #4CAF50;
+    border-radius: 5px;
+    margin: 10px;
+    padding-left: 5px;
+}
+/*.container-cadastro { /*até agora aqui ta ok, não mexa em nada*//*
     background-color: #fff;
     margin-top: 40px;
     border-radius: 10px;
@@ -167,26 +182,22 @@ form .login-btn:hover{
     margin-top: 100px;
     margin-left: 500px;
 }
-.container form{
-    margin-top: 10px;
-    padding: 10px;
-    position: center;
-    margin-left: -15px;
+.container-cadastro form{
+    margin-left: 20px;
 }
-.container-cadastro form .titulo-login{
-    font-weight: bold;
-    justify-items: center;
-    display: flex;
-    padding-top: 20px;
-}
-.container-cadastro .div-btn-login{
-    position:absolute;
-    margin-bottom: 0px;
-}
-.container-cadastro input { /*   CLASSE GLOBAL PARA TODOS OS INPUTS DENTRO DO CONTAINER*/
-    width: 100%;
-    padding: 10px 0;
-    border: 3px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-}
+.divisoria-cadastro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+    .container-cadastro form input{
+        margin-top: 5px;
+        padding: 5px;
+        border-radius: 34px;
+        border: #204028 3px solid;
+    }
+    .container-cadastro form button{
+    }*/
