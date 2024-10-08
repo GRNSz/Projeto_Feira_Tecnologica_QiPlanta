@@ -141,14 +141,14 @@ form .login-btn:hover{
     width: 100%;
     padding: 10px 0;
     border: 3px solid #204028;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px;
     padding-left: 5px;
 }
 .container-cadastro .form-input:hover{
 
 }
-.container-cadastro button {
+.container-cadastro form button {
     width: 100%;
     padding: 10px 0;
     color: #204028;
@@ -167,37 +167,7 @@ form .login-btn:hover{
     margin: 10px;
     padding-left: 5px;
 }
-/*.container-cadastro { /*até agora aqui ta ok, não mexa em nada*//*
-    background-color: #fff;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 700px;
-    height: 500px;
-    display: flex;
-    text-align: center;
-    margin:40px;
-    padding-right: 10px;
-    padding: auto;
-    margin-top: 100px;
-    margin-left: 500px;
+.container-cadastro form label{
+    font-weight: bold;
+    
 }
-.container-cadastro form{
-    margin-left: 20px;
-}
-.divisoria-cadastro{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-
-    .container-cadastro form input{
-        margin-top: 5px;
-        padding: 5px;
-        border-radius: 34px;
-        border: #204028 3px solid;
-    }
-    .container-cadastro form button{
-    }*/

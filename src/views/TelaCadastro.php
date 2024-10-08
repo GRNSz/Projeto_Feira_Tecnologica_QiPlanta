@@ -8,7 +8,17 @@
 </head>
 <body>
     <header>
-        <?php include("header.php") ?>
+    <div class="logo">
+            <a href="index.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./../index.php">Login</a></li>
+                <li><a href="produtos.php">Produtos</a></li>
+
+            </ul>
+        </nav>
+
     </header>
     <main>
         <div class="container-cadastro">
@@ -33,11 +43,14 @@
                     <label for="password">Repita sua senha:</label><br>
                     <input class="form-input" type="password" id="password" name="senha2" placeholder="Confirme sua senha" required><br><br>
                         
-                    <input type="checkbox" name="robot" id="robot" required>
+                    <input type="checkbox"name="robot" id="robot" required>
+                    
                     <label>Não sou um robo</label>
                     
                         <div style="left:10px;">
-                        <button class="cadastro-btn" type="submit" value="Cadastrar">Cadastrar</button>
+                        <button class="cadastro-btn" id="btn-cadastro" type="submit" value="Cadastrar">Cadastrar</button>
+
+
                         </div>
 
             </form>
