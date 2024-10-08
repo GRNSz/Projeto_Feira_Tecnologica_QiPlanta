@@ -122,12 +122,51 @@ form .login-btn:hover{
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
+    width: 800px;
     height: 850px;
     padding-right: 40px;
     margin:40px;
     margin-top: 100px;
     margin-left: 550px;
+}
+.divisoria-cadastro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+.divisoria-cadastro-login{ /*COLUNA 1 LOGIN COLOR/CADASTRO*/
+    color: azure;
+    justify-items: auto center;
+    border-radius: 10px;
+    background: rgb(57,115,72);
+    background: radial-gradient(circle, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+    margin-right: -40px;
+    margin-bottom: -70px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.divisoria-cadastro-login button{
+    margin-top: 140px;
+    border: #F28F16 4px solid;
+    background-color: #f3a240;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: azure;
+}
+.divisoria-cadastro-login button:hover{
+    border: #F28F16 4px solid;
+    background-color: azure;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f3a240;
 }
 .container-cadastro form{
     margin-top: 10px;
@@ -156,7 +195,7 @@ form .login-btn:hover{
     margin: 10px;
     padding-left: 5px;
 }
-.container-cadastro button:hover{
+.container-cadastro form button:hover{
     width: 100%;
     padding: 10px 0;
     color: white;
@@ -168,5 +207,4 @@ form .login-btn:hover{
 }
 .container-cadastro form label{
     font-weight: bold;
-    
 }
