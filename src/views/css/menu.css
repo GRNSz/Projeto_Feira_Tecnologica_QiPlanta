@@ -4,6 +4,7 @@ body {
 }
 
 header {
+    margin: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,25 +73,33 @@ nav ul li a:hover {
 .produto {
     border: 1px solid #ddd;
     border-radius: 24px;
-    margin-top: 25px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-top: 45px;
+    margin-left: 500px;
+    margin-right: 500px;
     justify-items: center;
     margin-bottom: 15px;
     padding: 10px;
+    padding-top: 20px;
     padding-left: 30px;
 }
 
 .produto img {
+    margin-top: 15px;
+    border-radius: 50%;
     max-width: 20%;
     height: auto;
 }
 
 .produto button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
     background-color: #07914c;
     color: #07914c;
     font-weight:bold;
     border: #4CAF50 3px solid;
+    border-radius: 15px;
     background-color: white;
 }
 
@@ -98,5 +107,6 @@ nav ul li a:hover {
     background-color: #3e9473;
     font-weight:bold;
     border: #4CAF50 3px solid;
+    border-radius: 15px;
     color: white;
 }

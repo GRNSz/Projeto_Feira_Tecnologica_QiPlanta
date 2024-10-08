@@ -3,12 +3,13 @@
 *
 footer {
   background: rgb(57,115,72);
-    background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+  background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
   height: 230px;
   width: 100%;
   padding-top: 30px;
   align-items: center;
   justify-content: center;
+  margin-top: 120px;
 }
  
 /* Estilo do texto do footer */
