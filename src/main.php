@@ -9,6 +9,7 @@ use MeuProjeto\model\Login;
 use MeuProjeto\model\UsuarioSistema;
 use MeuProjeto\model\Cadastrar;
 use MeuProjeto\persistence\ConnectionFactory;
+use MeuProjeto\model\CadastrarProduto;
 
 // Cria uma instância da classe Login
 $login = new Login();
@@ -44,4 +45,4 @@ $cadastroProduto = new CadastrarProduto();
 // Verifica o login (se o formulário foi enviado)
 $login->verificarLogin();
 $cadastro->getCadastrar();
-$cadastro->getCadastrarProduto();
+$cadastroProduto->getCadastrarProduto();
