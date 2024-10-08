@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
 </head>
 <div class="logo">
-            <a href="index.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+            <a href="/src/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
         </div>
         <nav>
             <ul>

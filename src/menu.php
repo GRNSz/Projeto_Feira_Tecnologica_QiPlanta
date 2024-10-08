@@ -17,8 +17,9 @@
         include "TelaCadastro.php";
     ?>
     <header>
+    
         <div class="logo">
-            <a href="index.php"><img src="views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+            <a href="/src/menu.php"><img src="views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
         </div>
         <nav>
             <ul>
@@ -38,8 +39,7 @@
         </div>
     </header>
 
-    <section class="anuncios">
-        <h2>Melhores opções pro seu lar...</h2>
+    <section class="anuncios"><center><h2 style="font-size: 40px;">Bem vindo à central da vida!</h2></center>
         <div class="produto">
             <img src="views/images/liriodapaz.png" alt="Produto 1">
             <h3>Lírio-da-paz</h3>
