@@ -140,8 +140,8 @@ form .login-btn:hover{
     color: azure;
     justify-items: auto center;
     border-radius: 10px;
-    background: rgb(57,115,72);
-    background: radial-gradient(circle, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+    background: rgb(241,166,75);
+    background: linear-gradient(139deg, rgba(241,166,75,1) 0%, rgba(166,41,0,1) 100%);
     margin-right: -40px;
     margin-bottom: -70px;
     padding-left: 30px;
@@ -184,7 +184,12 @@ form .login-btn:hover{
     padding-left: 5px;
 }
 .container-cadastro .form-input:hover{
-
+    width: 100%;
+    padding: 10px 0;
+    border: 3px solid #f3a240;
+    border-radius: 10px;
+    margin: 10px;
+    padding-left: 5px;
 }
 .container-cadastro form button {
     width: 100%;

@@ -56,7 +56,9 @@
                 <center>
                     <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
-                        <button type="button" href="./../index.php">Login</button>
+                        <a href="./../index.php">
+                            <button type="button" href="./../index.php">Login</button>
+                        </a>
                 </center>
            </div>
         </div>
@@ -65,10 +67,8 @@
 <footer>
     <?php include("footer.php") ?>
 </footer>
-    
-    
-    <?php
 
+<?php
     // Inclui o autoload do Composer
     require __DIR__ . "/../../vendor/autoload.php";
     require __DIR__ . "/../persistence/connectionFactory.php";
@@ -81,12 +81,10 @@
 
     // Chama o método getCadastrar
     $cadastrar->getCadastrar();
-
-        ?>
+?>
 
 </body>
 </html>
-
 <?php
 ob_end_flush(); // Envia a saída
 ?>
