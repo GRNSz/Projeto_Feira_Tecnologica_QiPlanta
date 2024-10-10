@@ -12,9 +12,6 @@
 
     <?php
         include "/src/views/header.php";
-        include "/src/views/footer.php";
-        include "/src/model/Cadastrar.php";
-        include "/src/views/TelaCadastro.php";
     ?>
 
     <header>

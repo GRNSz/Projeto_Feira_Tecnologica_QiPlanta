@@ -48,7 +48,7 @@
     </section>
 </main>
 <footer>
-    <p>© 2024 Marketplace - Todos os direitos reservados.</p>
+    <?php include("./views/footer.php") ?>
 </footer>
 </body>
 </html>

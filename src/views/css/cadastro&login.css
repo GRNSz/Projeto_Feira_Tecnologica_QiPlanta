@@ -1,215 +1,128 @@
-*body { /*  ESTILO DA PAGINA DE LOGIN   */
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    background: linear-gradient(16deg, rgba(242,242,242,1) 0%, rgba(146,156,147,1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 100%;
-    width: 100%;
+/* Reset básico para remover margens/paddings padrão */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.divisoria-login { /*DIVISÃO 2 colunas*/
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-   grid-row-gap: 0px;
-}
-.div-login-centro{ /*COLUNA 1 LOGIN COLOR/CADASTRO*/
-    color: azure;
-    justify-items: auto center;
-    border-radius: 10px;
-    background: rgb(57,115,72);
-    background: radial-gradient(circle, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
-}
-.container .div-btn-login{
-    position:absolute;
-    margin-bottom: 0px;
-}
-form .login-btn {
-    color: #204028;
-    font-weight: bold;
-    font-weight:bold;
-    border: #4CAF50 3px solid;
-    background-color: white;
-}
-form .login-btn:hover{
-    background: rgb(57,115,72);
-    background: linear-gradient(299deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%);
-    font-weight:bold;
-    border: #204028 3px solid;
-    color: white;
-}
-.container{ /*até agora aqui ta ok, não mexa em nada*/
-    background-color: #fff;
-    margin-top: 40px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 700px;
-    height: 500px;
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
     text-align: center;
-    margin:40px;
-    padding-right: 10px;
-    padding: auto;
-    margin-top: 100px;
-    margin-left: 500px;
 }
-.container form{
-    margin-top: 10px;
-    padding: 10px;
-    position: center;
-    margin-left: -15px;
+
+header h1 {
+    color: #fff;
 }
-.container form .titulo-login, .container-cadastro h1{
-    font-weight: bold;
-    justify-items: center;
-    display: flex;
-    padding-top: 10px;
-}
-.div-btn-cadastro-login{
-    margin-top: 105px;
-}
-.container button{
-    width: 48%;
-    padding: 10px;
-    margin: 10px 1%;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.container h1, .container-cadastro h1 {
-    margin-bottom: 20px;
-}
-.btn-cadastro-login{
-    padding:  5px auto;
-    color: #F28F16;
-    border: 10px;
-    border: #F28F16 3px solid;
-    background-color: white;
-}
-.btn-cadastro-login:hover{
-    background-color: #F28F16;
-    color: white;
-    border: 10px;
-    border-color: #F28F16;
-}
-.container input {
+
+/* Container principal */
+.container {
     width: 100%;
-    padding: 10px 0;
-    border: 3px solid #204028;
-    border-radius: 5px;
-    margin: 10px;
-    padding-left: 5px;
-}
-.container input:hover{
-    width: 100%;
-    padding: 10px 0;
-    border: 3px solid #4CAF50;
-    border-radius: 5px;
-    margin: 10px;
-    padding-left: 5px;
-}
-.container form{
-    margin-top: 10px;
-    padding: 10px;
-    position: center;
-    margin-left: -15px;
-}
-/*  Cadastro zone   */
-.container-cadastro { /*até agora aqui ta ok, não mexa em nada*/
+    max-width: 900px;
+    margin: 40px auto;
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 800px;
-    height: 850px;
-    padding-right: 40px;
-    margin:40px;
-    margin-top: 100px;
-    margin-left: 550px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
-.divisoria-cadastro {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-.divisoria-cadastro-login{ /*COLUNA 1 LOGIN COLOR/CADASTRO*/
-    color: azure;
-    justify-items: auto center;
-    border-radius: 10px;
-    background: rgb(241,166,75);
-    background: linear-gradient(139deg, rgba(241,166,75,1) 0%, rgba(166,41,0,1) 100%);
-    margin-right: -40px;
-    margin-bottom: -70px;
-    padding-left: 30px;
-    padding-right: 30px;
+
+.divisoria-login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
 }
-.divisoria-cadastro-login button{
-    margin-top: 140px;
-    border: #F28F16 4px solid;
-    background-color: #f3a240;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: azure;
+
+/* Estilos da caixa de cadastro */
+.div-login-centro {
+    flex: 1;
+    padding: 20px;
+    border-right: 2px solid #f0f0f0;
+    text-align: center;
 }
-.divisoria-cadastro-login button:hover{
-    border: #F28F16 4px solid;
-    background-color: azure;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #f3a240;
+
+.caixa-cadastro-login h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
 }
-.container-cadastro form{
-    margin-top: 10px;
-    padding: 10px;
-    position: center;
-    margin-left: 35px;
-    margin-right: 35px;
+
+.caixa-cadastro-login p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
 }
-.container-cadastro .form-input{
-    width: 100%;
-    padding: 10px 0;
-    border: 3px solid #204028;
-    border-radius: 10px;
-    margin: 10px;
-    padding-left: 5px;
-}
-.container-cadastro .form-input:hover{
-    width: 100%;
-    padding: 10px 0;
-    border: 3px solid #f3a240;
-    border-radius: 10px;
-    margin: 10px;
-    padding-left: 5px;
-}
-.container-cadastro form button {
-    width: 100%;
-    padding: 10px 0;
-    color: #204028;
-    border: 3px solid #204028;
-    border-radius: 5px;
-    margin: 10px;
-    padding-left: 5px;
-}
-.container-cadastro form button:hover{
-    width: 100%;
-    padding: 10px 0;
+
+/* Botão de cadastro */
+.btn-cadastro-login {
+    background-color: #4CAF50;
     color: white;
-    background-color: #204028;
-    border: 3px solid #4CAF50;
-    border-radius: 5px;
-    margin: 10px;
-    padding-left: 5px;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.container-cadastro form label{
-    font-weight: bold;
+
+.btn-cadastro-login:hover {
+    background-color: #45a049;
+}
+
+/* Estilo da seção de login */
+.titulo-login h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs do formulário */
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Botão de login */
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Ajustes de layout responsivo */
+@media (max-width: 768px) {
+    .divisoria-login {
+        flex-direction: column;
+    }
+
+    .div-login-centro {
+        border-right: none;
+        border-bottom: 2px solid #f0f0f0;
+    }
 }
