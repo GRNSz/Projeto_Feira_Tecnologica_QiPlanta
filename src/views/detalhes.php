@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto - Lírio-da-paz</title>
-    <link rel="stylesheet" href="/src/views/css/menu.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="stylesheet" href="/src/views/css/detalhes.css"> <!-- Adicione seu CSS aqui -->
 </head>
 
 <body>
