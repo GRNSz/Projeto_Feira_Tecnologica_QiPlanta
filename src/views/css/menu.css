@@ -31,13 +31,15 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     padding: 5px 10px;
+    transition: background-color 0.3s, font-weight 0.3s; /* Transição suave */
 }
 
 nav ul li a:hover {
     background-color: #3e9473;
     font-weight: bold;
 }
-.input-busca{
+
+.input-busca {
     border-radius: 15px;
 }
 
@@ -48,6 +50,7 @@ nav ul li a:hover {
 .search-bar input[type="text"] {
     padding: 5px;
     border: 1px solid #ccc;
+    border-radius: 5px; /* Borda arredondada */
 }
 
 .search-bar button {
@@ -58,6 +61,8 @@ nav ul li a:hover {
     cursor: pointer;
     margin-left: 10px;
     margin-right: 20px;
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s; /* Transição suave */
 }
 
 .search-bar button:hover {
@@ -81,6 +86,12 @@ nav ul li a:hover {
     padding: 10px;
     padding-top: 20px;
     padding-left: 30px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição para o efeito de hover */
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra no hover */
 }
 
 .produto img {
@@ -97,16 +108,13 @@ nav ul li a:hover {
     font-weight: bold;
     background-color: #07914c;
     color: #07914c;
-    font-weight:bold;
     border: #4CAF50 3px solid;
     border-radius: 15px;
     background-color: white;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
 }
 
 .produto button:hover {
     background-color: #3e9473;
-    font-weight:bold;
-    border: #4CAF50 3px solid;
-    border-radius: 15px;
-    color: white;
+    color: white; /* Muda a cor do texto */
 }
