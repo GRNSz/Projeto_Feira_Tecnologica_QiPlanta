@@ -124,3 +124,43 @@ ini_set('display_errors', 1);
 
     $conn = null; // Fechar a conexão
 }
+
+
+_________________________________________________
+
+<?php
+
+// Definindo o namespace
+namespace MeuProjeto\model;
+
+// Definindo a classe Login
+class Login {
+
+    private $login;
+    private $pdo;
+
+    public function __construct($login = null) {
+        $this->login = $login;
+        $this->pdo = new \PDO('mysql:host=localhost;dbname=seu_banco_de_dados', 'seu_usuario', 'sua_senha');
+        $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+    }
+
+    public function verificarLogin() {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $usuario = htmlspecialchars(trim($_POST["usuario"]));
+            $senha = htmlspecialchars(trim($_POST["senha"]));
+
+            $stmt = $this->pdo->prepare("SELECT * FROM usuarios WHERE usuario = :usuario AND senha = :senha");
+            $stmt->bindParam(':usuario', $usuario);
+            $stmt->bindParam(':senha', $senha);
+            $stmt->execute();
+
+            if ($stmt->rowCount() > 0) {
+                header("Location: ./src/menu.php");
+                return; // Interrompe o loop após encontrar o usuário
+            } else {
+                echo("<b style='Color: red; font-size: 20px;'>Acesso Negado!</b>");
+            }
+        }
+    }
+}
