@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png"> <!--Icon -->
+    <a href="src/menu.php">
+  <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png">
+    </a> <!--Icon -->
     <link rel="stylesheet" href="views/css/cadastro&login.css">
 
     <head>
