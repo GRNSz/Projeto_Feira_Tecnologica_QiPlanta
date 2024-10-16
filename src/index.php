@@ -10,12 +10,33 @@
 
     <head>
         <header>
-            <?php include("./views/header.php")  ?>
+        <head>
+<link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
+</head>
+<div class="logo">
+            <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Login/Cadastre-se</a></li>
+                <li><a href="./views/Produtos.php">Produtos</a></li>
+                <li><a href="./views/categorias.php">Categorias</a></li>
+                <li><a href="./views/sobre.php">Sobre Nós</a></li>
+                <li><a href="./views/contato.php">Contato </a></li>
+                <li><a href="./views/carrinho.php">Carrinho</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <form action="pesquisa.php" method="GET">
+                <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
         </header>
         <main>
             <div class="container">
                 <div class="divisoria-login">
-                    <div class="div-login-centro"><!--[Pedro]: parte 01 caixa btn cadastro / img/color -->
+                    <div class="div-login-centro"><!--[Pedro]-->
                         <div class="caixa-cadastro-login">
                             <h2 style="margin-top:60px;">Cadastrar-se</h2><br>
                             <p>Ainda não possui uma conta em nosso site?<br> <strong>Venha se cadastrar</strong></p> <!--[Pedro]: texto teste, podem escolher oque colocar-->

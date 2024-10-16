@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace - Produtos</title>
-    <link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
+    <link rel="stylesheet" href="./css/menu.css"> <!-- Adicione seu CSS aqui -->
 </head>
 <body>
 <header>
-    <?php include("./views/header.php") ?>    
+    <?php include("./header.php") ?>    
 </header>
 <main>
     <section class="anuncios">
@@ -17,7 +18,7 @@
         <div class="produtos-container">
             <div class="produto">
                 <center>
-                    <img src="views/images/liriodapaz.png" alt="Lírio-da-paz">
+                    <img src="./images/liriodapaz.png" alt="Lírio-da-paz">
                     <h3>Lírio-da-paz</h3>
                     <p>Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.</p>
                     <p><strong>Preço: R$ 30,00</strong></p>
@@ -27,7 +28,7 @@
             
             <div class="produto">
                 <center>
-                    <img src="views/images/jiboia.png" alt="Jibóia">
+                    <img src="./images/jiboia.png" alt="Jibóia">
                     <h3>Jibóia</h3>
                     <p>Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.</p>
                     <p><strong>Preço: R$ 25,00</strong></p>
@@ -37,7 +38,7 @@
             
             <div class="produto">
                 <center>
-                    <img src="views/images/espadadesaojorge.png" alt="Espada-de-São-Jorge">
+                    <img src="./images/espadadesaojorge.png" alt="Espada-de-São-Jorge">
                     <h3>Espada-de-São-Jorge</h3>
                     <p>Perfeita para ambientes internos, resistente e não precisa de muita água. Também ajuda na purificação do ar.</p>
                     <p><strong>Preço: R$ 35,00</strong></p>
@@ -48,7 +49,7 @@
     </section>
 </main>
 <footer>
-    <?php include("./views/footer.php") ?>
+    <?php include("./footer.php") ?>
 </footer>
 </body>
 </html>

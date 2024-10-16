@@ -9,7 +9,7 @@
 <body>
     <header>
     <div class="logo">
-        <a href="index.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+        <a href="./menu.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
     </div>
         <nav>
             <ul>
@@ -57,7 +57,7 @@
                     <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
                         <a href="./../index.php">
-                            <button type="button" href="./../index.php">Login</button>
+                            <button type="button">Login</button>
                         </a>
                 </center>
            </div>
