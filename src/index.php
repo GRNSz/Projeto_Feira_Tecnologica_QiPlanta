@@ -10,6 +10,7 @@
     </a> <!--Icon -->
     <link rel="stylesheet" href="views/css/cadastro&login.css">
     <link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
+<<<<<<< HEAD
 </head>
 
 <body>
@@ -24,6 +25,42 @@
                         <div class="caixa-cadastro-login">
                             <h2 style="margin-top:15px;">Cadastrar-se</h2><br>
                             <p>Ainda não possui uma conta em nosso site?<br> <strong>Venha se cadastrar</strong></p> <!--[Pedro]: texto teste, podem escolher oque colocar-->
+=======
+<head>
+        <header>
+            <div class="logo">
+                <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Minha Conta</a></li>
+                    <li><a href="./views/Produtos.php">Produtos</a></li>
+                    <li><a href="./views/categorias.php">Categorias</a></li>
+                    <li><a href="./views/sobre.php">Sobre Nós</a></li>
+                    <li><a href="./views/contato.php">Contato </a></li>
+                    <li><a href="./views/carrinho.php">Carrinhos</a></li> <!-- Samuel: Eu só coloquei um literal 'S' pra não falarem que eu não fiz nada-->
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <form action="pesquisa.php" method="GET">
+                    <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </header>
+        <main>
+            <div class="background">
+                <div class="container">
+                    <div class="divisoria-login">
+                        <div class="div-login-centro"><!--[Pedro]-->
+                            <div class="caixa-cadastro-login">
+                                <h2 style="margin-top:15px;">Cadastrar-se</h2><br>
+                                <p>Ainda não possui uma conta em nosso site?<br> <strong>Venha se cadastrar</strong></p> <!--[Pedro]: texto teste, podem escolher oque colocar-->
+                            </div>
+                            <div class="div-btn-cadastro-login">
+                                <button type="button" class="btn-cadastro-login" onclick="window.location.href = './views/cadastro&login.php'">Cadastrar</button>
+                            </div>
+>>>>>>> 5668170a76e1514c2bfc3912e7798bdfbd0f53d8
                         </div>
                         <div class="div-btn-cadastro-login">
                             <button type="button" class="btn-cadastro-login" onclick="window.location.href = './views/cadastro&login.php'">Cadastrar</button>
