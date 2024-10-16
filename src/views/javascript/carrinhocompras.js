@@ -1,5 +1,5 @@
-    // erros: 11
-
+    // erros: 12
+//#region DIv produto do carrinho 01
 var contadorplanta01 = 0;
 
 function incrementarP1(){
@@ -13,7 +13,23 @@ function incrementarP1(){
     quantidadeplanta.value = contadorplanta01;
 }
 function decrementarP1(){
-        contadorplanta01 = contadorplanta01 - 1;
+   // if(quantidadeplanta >0){
         const quantidadeplanta = document.getElementById("quantidade1");
+        contadorplanta01 = contadorplanta01 - 1;
         quantidadeplanta.value = contadorplanta01;
+   // }
+}
+function deletarP1(){
+    var divP1 = document.getElementById("P1");
+    var resposta = prompt("Para confirmação para deletar o produto\n de seu carrinho digite 'CONFIRMAR'");
+    if(resposta == "CONFIRMAR"){
+        divP1.style.display = "none"
+        //caixinha perguntando se deseja deletar
+
+    }
+}
+//#endregion
+//#region Div produto carrinho 02
+function incrementarP2(){
+
 }
