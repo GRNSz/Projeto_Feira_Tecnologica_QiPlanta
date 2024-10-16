@@ -46,7 +46,7 @@
                                 <p>Ainda não possui uma conta em nosso site?<br> <strong>Venha se cadastrar</strong></p> <!--[Pedro]: texto teste, podem escolher oque colocar-->
                             </div>
                             <div class="div-btn-cadastro-login">
-                                <button type="button" class="btn-cadastro-login" onclick="window.location.href = './views/TelaCadastro.php'">Cadastrar</button>
+                                <button type="button" class="btn-cadastro-login" onclick="window.location.href = './views/cadastro&login.php'">Cadastrar</button>
                             </div>
                         </div>
                         <div style="padding-left: 10px; padding-top:60px; margin:10px">
