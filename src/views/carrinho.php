@@ -23,9 +23,9 @@
                 <center>
                     <h2>lista de compras:</h2>
                 </center>
-                <ul class="lista-carrinho">
+                <ul class="lista-carrinho" style="list-style: none;">
                     <li>
-                        <div class="produto">
+                        <div class="produto" id="P1">
                             <img src="./images/espadadesaojorge.png" style="size: 15px; border-radius:50%">
                             <h3 id="carrinho-nomeplanta">Espada de são Jorge</h3>
 
@@ -35,6 +35,10 @@
                                 <input type="button" id="btn1-" value="-" onclick="decrementarP1()">
                                 <input type="number" id="quantidade1" value="0">
                                 <input type="button" id="btn1+" value="+" onclick="incrementarP1()">
+                            </div>
+                            <div class="escolha">
+                                <button onclick="deletarP1()">Excluir</button>
+                                <button>Finalizar</button>
                             </div>
                         </div>
                     </li>
