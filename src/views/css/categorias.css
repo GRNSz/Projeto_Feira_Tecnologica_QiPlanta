@@ -27,8 +27,11 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-    margin: 0 100px; /* Margens laterais */
+    padding: 0 5%; /* Usa padding ao invés de margens fixas */
+    max-width: 1200px; /* Define um limite de largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
+
 
 .categoria {
     background: white;

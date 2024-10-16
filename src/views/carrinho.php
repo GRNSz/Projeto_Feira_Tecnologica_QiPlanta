@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Carrinho</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
 </head>
+
 <body>
     <header>
         <?php include('header.php'); ?>
@@ -14,7 +16,7 @@
         <Div class="div-carrinho-compras">
             <center>
                 <h2>Meu carrinho de compras:</h2>
-            <br>
+                <br>
                 <p>Aqui onde é possivel gerenciar seu carrinho de compras</p>
             </center>
             <div class="lista-produto-carrinho">
@@ -32,7 +34,7 @@
                                 <label>Quantidade:</label> <br>
                                 <input type="button" id="btn1-" value="-" onclick="decrementarP1()">
                                 <input type="number" id="quantidade1" value="0">
-                                <input type="button" id="btn1+"value="+" onclick="incrementarP1()">
+                                <input type="button" id="btn1+" value="+" onclick="incrementarP1()">
                             </div>
                         </div>
                     </li>
@@ -50,6 +52,7 @@
             </div>
         </Div>
     </main>
-    
+
 </body>
+
 </html>
