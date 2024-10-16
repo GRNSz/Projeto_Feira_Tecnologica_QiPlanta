@@ -9,13 +9,9 @@
   <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png">
     </a> <!--Icon -->
     <link rel="stylesheet" href="views/css/cadastro&login.css">
-
-    <head>
+    <link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
+<head>
         <header>
-
-            <head>
-                <link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
-            </head>
             <div class="logo">
                 <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
             </div>
@@ -65,8 +61,6 @@
                     </div>
                 </div>
         </main>
-
-
         <footer>
             <?php include "views/footer.php"; ?>
         </footer>
