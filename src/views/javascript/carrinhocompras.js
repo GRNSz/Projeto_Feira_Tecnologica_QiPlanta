@@ -1,6 +1,6 @@
-    // erros: 10
+    // erros: 11
 
-let contadorplanta01 = 0;
+var contadorplanta01 = 0;
 
 function incrementarP1(){
     // Incrementa o valor do contador

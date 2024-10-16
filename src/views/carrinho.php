@@ -31,7 +31,7 @@
                                 <script src="./javascript/carrinhocompras.js"></script>
                                 <label>Quantidade:</label> <br>
                                 <input type="button" id="btn1-" value="-" onclick="decrementarP1()">
-                                <input type="number" id="quantidade1"value="0">
+                                <input type="number" id="quantidade1" value="0">
                                 <input type="button" id="btn1+"value="+" onclick="incrementarP1()">
                             </div>
                         </div>
