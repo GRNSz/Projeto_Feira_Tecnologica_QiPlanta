@@ -12,37 +12,61 @@
 
     <head>
         <header>
-            <?php include("./views/header.php")  ?>
+
+            <head>
+                <link rel="stylesheet" href="views/css/menu.css"> <!-- Adicione seu CSS aqui -->
+            </head>
+            <div class="logo">
+                <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Minha Conta</a></li>
+                    <li><a href="./views/Produtos.php">Produtos</a></li>
+                    <li><a href="./views/categorias.php">Categorias</a></li>
+                    <li><a href="./views/sobre.php">Sobre Nós</a></li>
+                    <li><a href="./views/contato.php">Contato </a></li>
+                    <li><a href="./views/carrinho.php">Carrinho</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <form action="pesquisa.php" method="GET">
+                    <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
         </header>
         <main>
-            <div class="container">
-                <div class="divisoria-login">
-                    <div class="div-login-centro"><!--[Pedro]: parte 01 caixa btn cadastro / img/color -->
-                        <div class="caixa-cadastro-login">
-                            <h2 style="margin-top:60px;">Cadastrar-se</h2><br>
-                            <p>Ainda não possui uma conta em nosso site?<br> <strong>Venha se cadastrar</strong></p> <!--[Pedro]: texto teste, podem escolher oque colocar-->
+            <div class="background">
+                <div class="container">
+                    <div class="divisoria-login">
+                        <div class="div-login-centro"><!--[Pedro]-->
+                            <div class="caixa-cadastro-login">
+                                <h2 style="margin-top:15px;">Cadastrar-se</h2><br>
+                                <p>Ainda não possui uma conta em nosso site?<br> <strong>Venha se cadastrar</strong></p> <!--[Pedro]: texto teste, podem escolher oque colocar-->
+                            </div>
+                            <div class="div-btn-cadastro-login">
+                                <button type="button" class="btn-cadastro-login" onclick="window.location.href = './views/TelaCadastro.php'">Cadastrar</button>
+                            </div>
                         </div>
-                        <div class="div-btn-cadastro-login">
-                            <button type="button" class="btn-cadastro-login" onclick="window.location.href = './views/TelaCadastro.php'">Cadastrar</button>
+                        <div style="padding-left: 10px; padding-top:60px; margin:10px">
+                            <div class="titulo-login">
+                                <h1>Login</h1>
+                            </div>
+
+                            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                                <input class="form-input" type="text" name="usuario" placeholder="Digite o nome do Usuario" required>
+                                <input class="form-input" type="password" name="senha" placeholder="Digite a Senha" required>
+
+                                <button type="submit" class="login-btn">Login</button>
+                            </form>
+
                         </div>
-                    </div>
-                    <div style="padding-left: 10px; padding-top:60px; margin:10px">
-                        <div class="titulo-login">
-                            <h1>Login</h1>
-                        </div>
-
-                        <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                            <input class="form-input" type="text" name="usuario" placeholder="Digite o nome do Usuario" required>
-                            <input class="form-input" type="password" name="senha" placeholder="Digite a Senha" required>
-
-                            <button type="submit" class="login-btn">Login</button>
-                        </form>
-
                     </div>
                 </div>
         </main>
 
-        
+
         <footer>
             <?php include "views/footer.php"; ?>
         </footer>
