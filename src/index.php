@@ -22,7 +22,7 @@
                     <li><a href="./views/categorias.php">Categorias</a></li>
                     <li><a href="./views/sobre.php">Sobre Nós</a></li>
                     <li><a href="./views/contato.php">Contato </a></li>
-                    <li><a href="./views/carrinho.php">Carrinhos</a></li>
+                    <li><a href="./views/carrinho.php">Carrinhos</a></li> <!-- Samuel: Eu só coloquei um literal 'S' pra não falarem que eu não fiz nada-->
                 </ul>
             </nav>
             <div class="search-bar">
