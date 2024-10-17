@@ -29,7 +29,9 @@
                         <div class="produto" id="P1">
                             <img src="./images/liriodapaz.png" style="size: 15px; border-radius:50%">
                             <h3 id="carrinho-nomeplanta">Lírio-da-paz</h3>
-
+                            <div class="preco">
+                                <p>preço: R$ <b id="preco" value="30.00">30</b><b>.00</b></p>
+                            </div>
                             <div class="quantidade">
                                     <label>Quantidade:</label> <br>
                                     <input type="button" id="btn1-" value="-" onclick="decrementarP1()">
