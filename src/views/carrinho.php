@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meu Carrinho</title>
         <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
+        <link rel="stylesheet" href="./css/menu.css">
     </head>
     
     <body>
@@ -29,28 +30,20 @@
                         <div class="produto" id="P1">
                             <img src="./images/liriodapaz.png" style="size: 15px; border-radius:50%">
                             <h3 id="carrinho-nomeplanta">Lírio-da-paz</h3>
-
+                            <div class="preco">
+                                <p>preço: R$ <b id="preco" value="30.00">30</b><b>,00</b></p>
+                            </div>
                             <div class="quantidade">
                                     <label>Quantidade:</label> <br>
-                                    <input type="button" id="btn1-" value="-" onclick="decrementarP1()">
-                                    <input type="number" id="quantidade1" value="1">
-                                    <input type="button" id="btn1+" value="+" onclick="incrementarP1()">
+                                    <input class="input-decremento" type="button" id="btn1-" value="-" onclick="decrementarP1()">
+                                    <input class="input-valor" type="number" id="quantidade1" value="1">
+                                    <input class="input-incremento" type="button" id="btn1+" value="+" onclick="incrementarP1()">
                                 </div>
                                 <div class="escolha">
                                     <button onclick="deletarP1()">Excluir</button>
                                     <button>Finalizar</button>
                                 </div>
                             </div>
-                    </li>
-                    <li>
-                        <div class="produto" id="P2">
-                            
-                        </div>
-                    </li>
-                    <li>
-                        <div class="produto">
-                            c
-                        </div>
                     </li>
                 </ul>
             </div>
