@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="./menu.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+            <a href="./menu.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a>
         </div>
         <nav>
             <ul>

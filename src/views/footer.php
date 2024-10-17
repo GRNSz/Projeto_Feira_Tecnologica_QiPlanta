@@ -14,7 +14,7 @@
     <center>
   <p>
     <b>
-      Todos os direitos reservados &copy; 2023 <b>
+      Todos os direitos reservados &copy; 2024 <b>
         <i> - QiPlanta</i> <br>
     </b>
   </p>
