@@ -45,16 +45,6 @@
                                 </div>
                             </div>
                     </li>
-                    <li>
-                        <div class="produto" id="P2">
-                            
-                        </div>
-                    </li>
-                    <li>
-                        <div class="produto">
-                            c
-                        </div>
-                    </li>
                 </ul>
             </div>
         </Div>
