@@ -21,8 +21,8 @@
         </nav>
     </header>
     <main>
-        <div class="container-cadastro">
-            <div class="divisoria-cadastro">
+        <div class="container">
+            <div class="divisoria-login" style="color:antiquewhite;">
                 <div>
 
                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -50,7 +50,7 @@
                         <label>Não sou um robo</label>
 
                         <div style="left:10px;">
-                            <button class="cadastro-btn" id="btn-cadastro" type="submit" value="Cadastrar">Cadastrar</button>
+                            <button class="login-btn" id="btn-cadastro" type="submit" value="Cadastrar">Cadastrar</button>
                         </div>
                     </form>
                 </div>
@@ -59,7 +59,7 @@
                         <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
                         <a href="./../index.php">
-                            <button type="button">Login</button>
+                            <button type="button" class="login-btn">Login</button>
                         </a>
                     </center>
                 </div>
