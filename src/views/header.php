@@ -11,7 +11,7 @@
         <li><a href="categorias.php">Categorias</a></li>
         <li><a href="./sobre.php">Sobre Nós</a></li>
         <li><a href="contato.php">Contato </a></li>
-        <li><a href="./carrinho.php">Carrinho</a></li>
+        <li><a href="./../views/carrinho.php">Carrinho</a></li>
     </ul>
 </nav>
     <div class="search-bar">

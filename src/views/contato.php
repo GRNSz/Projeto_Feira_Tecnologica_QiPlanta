@@ -30,7 +30,7 @@
     </main>
 
     <footer>
-        <?php include "views/footer.php"; ?>
+        <?php include "./footer.php"; ?>
     </footer>
 
     <?php

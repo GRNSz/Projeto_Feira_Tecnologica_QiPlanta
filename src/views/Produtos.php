@@ -15,8 +15,9 @@
     </header>
     <main>
         <section class="anuncios">
-            <h2>Nossos Produtos</h2>
-
+            <center>
+                <h2>Nossos Produtos</h2>
+            </center>
             <div class="produtos-container">
                 <div class="produto">
                     <center>

@@ -9,37 +9,21 @@
 </head>
 
 <body>
-
+<header>
     <?php
-    include "/src/views/header.php";
+        include("./header.php");
     ?>
+</header>
 
-    <header>
-        <div class="logo">
-            <a href="/src/menu.php"><img src="/src/views/images/QiPlanta.png" alt="Logo do Marketplace"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/src/index.php">Login/Cadastre-se</a></li>
-                <li><a href="produtos.php">Produtos</a></li>
-                <li><a href="categorias.php">Categorias</a></li>
-                <li><a href="sobre.php">Sobre Nós</a></li>
-                <li><a href="contato.php">Contato </a></li>
-                <li><a href="carrinho.php">Carrinho</a></li>
-            </ul>
-        </nav>
-        <div class="search-bar">
-            <form action="pesquisa.php" method="GET">
-                <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
-    </header>
+    
 
     <section class="detalhes-produto">
-        <h1 style="margin-left: 70px;">Lírio-da-paz</h1>
-
+        
+        
         <div class="produto">
+            <center>
+                <h1 style="margin-left: 70px;">Lírio-da-paz</h1>
+            </center>
             <img src="/src/views/images/liriodapaz.png" alt="Lírio-da-paz" class="produto-img">
 
             <div class="produto-detalhes">
@@ -67,7 +51,7 @@
     <footer>
         <?php include "footer.php"; ?>
     </footer>
-
+<script src="./javascript/carrinhocompras.js"></script>
 </body>
 
 </html>
