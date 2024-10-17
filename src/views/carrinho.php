@@ -15,7 +15,7 @@
     </header>
     <main>
         <script src="./javascript/carrinhocompras.js"></script>
-        <Div class="div-carrinho-compras">
+        <div class="div-carrinho-compras">
             <center>
                 <h1>Meu carrinho de compras!</h1>
             </center>
@@ -28,6 +28,9 @@
                         <div class="produto" id="P1">
                             <img src="./images/liriodapaz.png" style="size: 15px; border-radius:50%">
                             <h3 id="carrinho-nomeplanta">Lírio-da-paz</h3>
+                            <div class="preco">
+                                <p>R$ <b id="preco" value="30.00">30</b><b>,00</b></p>
+                            </div>
 
                             <div class="quantidade">
                                 <label>Quantidade</label> <br>
@@ -43,7 +46,7 @@
                     </li>
                 </ul>
             </div>
-        </Div>
+        </div>
     </main>
     <footer>
         <?php include("footer.php") ?>

@@ -10,17 +10,13 @@
 
 <body>
     <header>
-        <?php
-        include("header.php");
-        ?>
+        <?php include("header.php"); ?>
     </header>
 
     <section class="detalhes-produto">
-
-
         <div class="produto">
             <center>
-                <h1 style="margin-left: 70px;">Lírio-da-paz</h1>
+                <h1>Lírio-da-paz</h1>
             </center>
             <img src="images/liriodapaz.png" alt="Lírio-da-paz" class="produto-img">
 
@@ -40,12 +36,16 @@
 
             <div class="produto-avaliacoes">
                 <h3>Avaliações dos Clientes</h3>
-                <p><strong>João Silva:</strong> "Uma planta maravilhosa para quem quer decorar o interior da casa sem se preocupar muito com manutenção."</p>
-                <p><strong>Maria Fernanda:</strong> "Adoro o meu Lírio-da-paz! Ele realmente faz uma diferença na qualidade do ar."</p>
+                <div class="avaliacao">
+                    <p><strong>João Silva:</strong> "Uma planta maravilhosa para quem quer decorar o interior da casa sem se preocupar muito com manutenção."</p>
+                </div>
+                <div class="avaliacao">
+                    <p><strong>Maria Fernanda:</strong> "Adoro o meu Lírio-da-paz! Ele realmente faz uma diferença na qualidade do ar."</p>
+                </div>
             </div>
+        </div>
     </section>
 
-    </div>
     <footer>
         <?php include "footer.php"; ?>
     </footer>

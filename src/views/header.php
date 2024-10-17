@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" href="./css/menu.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="stylesheet" href="./css/header.css"> <!-- Adicione seu CSS aqui -->
 </head>
 <div class="logo">
     <a href="./menu.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
