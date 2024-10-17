@@ -5,34 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <a href="src/menu.php">
-        <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png">
-    </a> <!--Icon -->
+    <link rel="icon" href="./views/images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="views/css/cadastro&login.css">
     <link rel="stylesheet" href="views/css/menu.css">
     <link rel="stylesheet" href="views/css/footer.css">
 </head>
 <body>
     <header>
-    <div class="logo">
-        <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
-</div>
-<nav>
-    <ul>
-        <li><a href="./../index.php">Minha Conta</a></li>
-        <li><a href="./views/Produtos.php">Produtos</a></li>
-        <li><a href="./views/categorias.php">Categorias</a></li>
-        <li><a href="./views/sobre.php">Sobre Nós</a></li>
-        <li><a href="./views/contato.php">Contato </a></li>
-        <li><a href="./views/carrinho.php">Carrinho</a></li>
-    </ul>
-</nav>
+        <div class="logo">    
+            <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+        </div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Minha Conta</a></li>
+            <li><a href="./views/Produtos.php">Produtos</a></li>
+            <li><a href="./views/categorias.php">Categorias</a></li>
+            <li><a href="./views/sobre.php">Sobre Nós</a></li>
+            <li><a href="./views/contato.php">Contato </a></li>
+            <li><a href="./views/carrinho.php">Carrinho</a></li>
+        </ul>
+    </nav>
     <div class="search-bar">
         <form action="pesquisa.php" method="GET">
             <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
             <button type="submit">Buscar</button>
         </form>
-</div>
+    </div>
     </header>
     <main>
         <div class="background">
