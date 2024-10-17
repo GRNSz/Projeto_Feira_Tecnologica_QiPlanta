@@ -20,7 +20,7 @@ function decrementarP1(){
     valor = 30.00
 
     const quantidadeplanta = document.getElementById("quantidade1");
-    if(quantidadeplanta == 0){
+    if(quantidadeplanta == 0 || quantidadeplanta < 0){
     }
     if (document.getElementById("quantidade1").value >= 1) {
         contadorplanta01 = contadorplanta01 - 1;

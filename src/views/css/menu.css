@@ -120,3 +120,20 @@ nav ul li a:hover {
     background-color: #3e9473;
     color: white; /* Muda a cor do texto */
 }
+
+.input-incremento{
+    background-color: #4CAF50;
+    border: #07914c 3px solid;
+    color: aliceblue;
+    border-radius: 50%;
+}
+.input-decremento{
+    background-color: #ff2424;
+    border: #ff0f0f 3px solid;
+    color: aliceblue;
+    border-radius: 50%;
+}
+.quantidade .input-valor{
+    border: #07914c 2px solid;
+    border-radius: 15px;
+}
