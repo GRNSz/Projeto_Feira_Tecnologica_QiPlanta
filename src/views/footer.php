@@ -5,11 +5,11 @@
     <hr style="height:2px;border-width:0;color:gray;background-color:white;">
 
     <p>
-      <a href="./menu.php"style=" color: white; text-decoration: none; font-weight: bold;">Home</a>
+      <a href="menu.php"style=" color: white; text-decoration: none; font-weight: bold;">Home</a>
       <br>
-      <a href="sobre.html"style=" color: white; text-decoration: none; font-weight: bold;">Sobre</a>
+      <a href="sobre.php"style=" color: white; text-decoration: none; font-weight: bold;">Sobre</a>
       <br>
-      <a href="contato.html"style=" color: white; text-decoration: none; font-weight: bold;">Contato</a>
+      <a href="contato.php"style=" color: white; text-decoration: none; font-weight: bold;">Contato</a>
     </p>
     <center>
   <p>
