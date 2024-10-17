@@ -25,7 +25,7 @@
                         <h3>Lírio-da-paz</h3>
                         <p>Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.</p>
                         <p><strong>Preço: R$ 30,00</strong></p>
-                        <button><a href="/src/views/detalhes.php">Ver Detalhes</a></button>
+                        <button><a href="detalhes.php">Ver Detalhes</a></button>
                     </center>
                 </div>
 

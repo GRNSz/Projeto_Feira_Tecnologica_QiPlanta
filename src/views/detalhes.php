@@ -5,26 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto - Lírio-da-paz</title>
-    <link rel="stylesheet" href="/src/views/css/detalhes.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="stylesheet" href="css/detalhes.css"> <!-- Adicione seu CSS aqui -->
 </head>
 
 <body>
-<header>
-    <?php
-        include("./header.php");
-    ?>
-</header>
-
-    
+    <header>
+        <?php
+        include("header.php");
+        ?>
+    </header>
 
     <section class="detalhes-produto">
-        
-        
+
+
         <div class="produto">
             <center>
                 <h1 style="margin-left: 70px;">Lírio-da-paz</h1>
             </center>
-            <img src="/src/views/images/liriodapaz.png" alt="Lírio-da-paz" class="produto-img">
+            <img src="images/liriodapaz.png" alt="Lírio-da-paz" class="produto-img">
 
             <div class="produto-detalhes">
                 <p><strong>Preço:</strong> R$ 30,00</p>
@@ -51,7 +49,7 @@
     <footer>
         <?php include "footer.php"; ?>
     </footer>
-<script src="./javascript/carrinhocompras.js"></script>
+    <script src="./javascript/carrinhocompras.js"></script>
 </body>
 
 </html>
