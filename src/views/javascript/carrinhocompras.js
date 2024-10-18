@@ -1,4 +1,23 @@
-     // erros: 19
+/* Versão nova
+ erros:
+*/
+var lirio = { //obj
+    nome: document.getElementById("nomeproduto01"),
+    preco: document.getElementById("preco"),
+    estoque: 100, //document.getElementById("").value
+    //image: Document.getElementById("")
+}
+console.log(lirio.nome)
+console.log(lirio.preco)
+console.log(lirio.estoque)
+
+/*
+function incrementarP1(){
+    var contar = 0
+}
+
+//versão antiga
+// erros: 19
 //#region produto 01
 var contadorplanta01 = 0;
 function incrementarP1(){
@@ -38,5 +57,5 @@ function deletarP1(){
     if(escolha.style.display == 'none'){
         escolha.style.display = "block"
     }
-}
+}*/
 //#endregion
