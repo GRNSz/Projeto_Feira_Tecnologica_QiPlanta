@@ -13,7 +13,7 @@
         <?php include("header.php"); ?>
     </header>
     <main>
-        <h1>Lorem Ipsum PT. 1</h1>
+        <h1>Quem somos?</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor sapien erat, sit amet posuere sem finibus in. Nunc ultrices orci non sem laoreet, a porta eros dapibus. Aliquam sit amet nulla pellentesque, blandit magna eget, rhoncus nisl. Fusce molestie congue mauris, eget venenatis dolor. Maecenas sagittis pulvinar maximus. Donec in augue in ipsum ullamcorper varius a eu diam. Ut et efficitur ex. Nunc ultricies lacus porttitor, rhoncus lectus id, fermentum arcu. Integer interdum magna et vestibulum accumsan.
 
