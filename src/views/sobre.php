@@ -21,12 +21,16 @@
         </p>
         <h1>Qual o nosso objetivo?</h1>
         <p>
-            Nosso objetivo é espalhar o conhecimento sobre plantas e conscientizar o povo a respeito da plantação de árvores no meio-ambiente. <br />
+            Nosso objetivo é espalhar o conhecimento acerca de plantas e conscientizar o povo a respeito da plantação de árvores no meio-ambiente. <br />
             Aqui, vendemos plantas e explicamos suas características acerca do mesmo, além de citar curiosidades interessantes sobre algumas plantas <br />
             que talvez algumas pessoas não saibam. Além disso, postamos blogs sobre o prejuízo que está sendo afetado no meio-ambiente e detalhamos sobre.
         </p>
         <h1>Nosso trajeto</h1>
-        <p>Começamos apenas como uma simples tela de login feito em PHP, mas nosso projeto evoluiu-se para um projeto para a feira tecnológica da Etec.</p>
+        <p>
+            Começamos apenas como uma simples tela de login feito em PHP, mas nosso projeto evoluiu-se para um projeto para a feira tecnológica da Etec. <br />
+            Ao longo do caminho, enfretamos desafios e dificuldades no desenvolvimento do projeto, superando obstáculos com o trabalho em equipe e com a <br />
+            colaboração da nossa equipe de desenvolvedores.
+        </p>
     </main>
     <div style="margin-top: 100px;"></div>
     <footer>
