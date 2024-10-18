@@ -19,6 +19,8 @@
         </p>
         <h1>Qual o nosso objetivo?</h1>
         <p>Nosso objetivo é propagar o conhecimento sobre plantas e conscientizar o povo a respeito da plantação de árvores no meio-ambiente.</p>
+        <h1>Nosso trajeto</h1>
+        <p>Começamos apenas como uma simples tela de login feito em PHP, mas nosso projeto evoluiu-se para um projeto para a feira tecnológica da Etec.</p>
     </main>
     <div style="margin-top: 100px;"></div>
     <footer>
