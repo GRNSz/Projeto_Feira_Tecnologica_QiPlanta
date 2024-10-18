@@ -15,11 +15,10 @@
     <main>
         <h1>Quem somos?</h1>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor sapien erat, sit amet posuere sem finibus in. Nunc ultrices orci non sem laoreet, a porta eros dapibus. Aliquam sit amet nulla pellentesque, blandit magna eget, rhoncus nisl. Fusce molestie congue mauris, eget venenatis dolor. Maecenas sagittis pulvinar maximus. Donec in augue in ipsum ullamcorper varius a eu diam. Ut et efficitur ex. Nunc ultricies lacus porttitor, rhoncus lectus id, fermentum arcu. Integer interdum magna et vestibulum accumsan.
-
-            Morbi purus ligula, dignissim eu ligula quis, finibus aliquam ligula. Donec massa ex, molestie vitae massa in, volutpat condimentum ligula. Etiam nisl risus, imperdiet consectetur rhoncus venenatis, fringilla at turpis. Vivamus consectetur, eros a congue volutpat, velit ipsum elementum velit, consequat ultricies massa libero ut urna. Aliquam erat volutpat. Donec a tortor vel arcu tristique malesuada. Maecenas pellentesque quam non magna dictum posuere. Vivamus accumsan facilisis malesuada. Nunc fringilla lectus magna, ut sollicitudin neque finibus a. Pellentesque tellus magna, tristique ac elit et, sodales blandit mauris. Sed dapibus, urna non suscipit sollicitudin, sem magna congue neque, sed tempus ipsum risus at massa. In et volutpat nisl. Vestibulum rutrum, magna id tristique aliquet, neque ante gravida neque, fringilla consectetur nisi nunc non sapien.</p>
-        <h1>Lorem Ipsum PT. 2</h1>
-        <p>Morbi purus ligula, dignissim eu ligula quis, finibus aliquam ligula. Donec massa ex, molestie vitae massa in, volutpat condimentum ligula. Etiam nisl risus, imperdiet consectetur rhoncus venenatis, fringilla at turpis. Vivamus consectetur, eros a congue volutpat, velit ipsum elementum velit, consequat ultricies massa libero ut urna. Aliquam erat volutpat. Donec a tortor vel arcu tristique malesuada. Maecenas pellentesque quam non magna dictum posuere. Vivamus accumsan facilisis malesuada. Nunc fringilla lectus magna, ut sollicitudin neque finibus a. Pellentesque tellus magna, tristique ac elit et, sodales blandit mauris. Sed dapibus, urna non suscipit sollicitudin, sem magna congue neque, sed tempus ipsum risus at massa. In et volutpat nisl. Vestibulum rutrum, magna id tristique aliquet, neque ante gravida neque, fringilla consectetur nisi nunc non sapien.</p>
+            Somos um grupo que visa espalhar e consicientizar outros indivíduos sobre a importância que a fauna possui para a população mundial. <!-- Fiquei sem criatividade, mas caso queira implementar algo a mais, fique a vontade. -->
+        </p>
+        <h1>Qual o nosso objetivo?</h1>
+        <p>Nosso objetivo é propagar o conhecimento sobre plantas e conscientizar o povo a respeito da plantação de árvores no meio-ambiente.</p>
     </main>
     <div style="margin-top: 100px;"></div>
     <footer>
