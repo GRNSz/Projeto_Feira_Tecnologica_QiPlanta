@@ -29,15 +29,16 @@
                     <li>
                         <div class="produto" id="P1">
                             <img src="./images/liriodapaz.png" style="size: 15px; border-radius:50%">
-                            <h3 id="carrinho-nomeplanta">Lírio-da-paz</h3>
+                            <h3 id="nomeproduto01">Lírio-da-paz</h3>
                             <div class="preco">
                                 <p>preço: R$ <b id="preco" value="30.00">30</b><b>,00</b></p>
                             </div>
                             <div class="quantidade">
                                     <label>Quantidade:</label> <br>
-                                    <input class="input-decremento" type="button" id="btn1-" value="-" onclick="decrementarP1()">
-                                    <input class="input-valor" type="number" id="quantidade1" value="1">
-                                    <input class="input-incremento" type="button" id="btn1+" value="+" onclick="incrementarP1()">
+                                    <!-- Novo -->
+                                    <input class="input-valor" type="number" id="quanti1" value="0" min="0" oninput="quanti1.value=value" onchange="quantidadep1.value=value">
+                                    <br>
+                                    <input type="range" name="quantidade" id="quantidadep1" value="0" min="0" max="200" oninput="quanti1.value=value" onchange="alterarinfo()">
                                 </div>
                                 <div class="escolha">
                                     <button onclick="deletarP1()">Excluir</button>
