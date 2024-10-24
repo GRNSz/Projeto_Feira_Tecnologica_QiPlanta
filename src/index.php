@@ -106,7 +106,7 @@ use MeuProjeto\model\Login;
 //$sysu = new MeuProjeto\model\UsuarioSistema();
 
 // Verifica o login (se o formulário foi enviado)
-$login->verificarLogin();
+//$login->verificarLogin();
 //$sysu->nome = "GustavoR";
 ?>
 

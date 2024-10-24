@@ -5,5 +5,8 @@
     use MeuProjeto\controller\UsuarioController;
 
     $usuarioController = new UsuarioController();
+    var_dump($usuarioController);
+
+    $usuarioController->store();
 
     ?>
