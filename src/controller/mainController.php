@@ -1,7 +1,9 @@
 <?php 
 
-    include_once __DIR__ . "./../src/vendor/autoload.php";
+    include_once __DIR__ . "./../../vendor/autoload.php";
 
-    use App\Controller\UsuarioController;
+    use MeuProjeto\controller\UsuarioController;
 
-    new UsuarioController();
+    $usuarioController = new UsuarioController();
+
+    ?>

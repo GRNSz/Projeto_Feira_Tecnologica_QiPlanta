@@ -1,45 +1,27 @@
 <?php
 
-namespace App\Controller;
+namespace MeuProjeto\Controller;
 
-
-class UsuarioController
-{
-    private $usuarioService;
-
-    public function __construct()
-    {
-        $this->usuarioService = new UsuarioService();
-    }
+class UsuarioController {
 
     public function index()
     {
-        $usuarios = $this->usuarioService->getAllUsuarios();
-        // Render view with $usuarios
+        //require __DIR__ . "./../views/cadastro&login.php";
+        header("Location: ./../views/cadastro&login.php");
     }
-
-    public function show($id)
+    public function store()
     {
-        $usuario = $this->usuarioService->getUsuarioById($id);
-        // Render view with $usuario
-    }
+        $nome = $_POST['nome'];
+        $endereco = $_POST['endereco'];
+        $email = $_POST['email'];
+        $numcell = $_POST['numcell'];
+        $senha = $_POST['senha'];
+        $senha2 = $_POST['senha2'];
 
-    public function create($data)
-    {
-        $this->usuarioService->createUsuario($data);
-        // Redirect or render success message
-    }
-
-    public function update($id, $data)
-    {
-        $this->usuarioService->updateUsuario($id, $data);
-        // Redirect or render success message
-    }
-
-    public function delete($id)
-    {
-        $this->usuarioService->deleteUsuario($id);
-        // Redirect or render success message
+        if ($senha != $senha2) {
+            echo "As senhas não conferem";
+            return;
+        }
     }
 }
-?>
+
