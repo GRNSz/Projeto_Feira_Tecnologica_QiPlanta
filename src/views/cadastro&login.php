@@ -78,11 +78,15 @@
     use MeuProjeto\model\Cadastrar;
     //use MeuProjeto\persistence\ConnectionFactory;
 
-    // Cria uma instância da classe Cadastrar
-    $cadastrar = new Cadastrar();
+    // Inclui a classe Usuario
+    require_once __DIR__ . "/../model/Usuario.php";
 
-    // Chama o método getCadastrar
-    $cadastrar->getCadastrar();
+    use MeuProjeto\model\Usuario;
+
+    // Cria uma instância da classe Usuario
+
+    // Chama o método getUsuario
+    $usuario->getUsuario();
     ?>
 
 </body>

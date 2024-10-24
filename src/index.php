@@ -100,13 +100,14 @@ use MeuProjeto\model\Login;
 //use MeuProjeto\model\UsuarioSistema;
 
 // Instancia a classe Login
-$login = new Login();
+//$login = new Login();
+//A CLASSE LOGIN ESTÁ COMENTADA POIS ESTÁ EM MANUTENÇÃO, NÃO ESTÁ FUNCIONANDO CORRETAMENTE;
+
 //$sysu = new MeuProjeto\model\UsuarioSistema();
 
 // Verifica o login (se o formulário foi enviado)
 $login->verificarLogin();
 //$sysu->nome = "GustavoR";
 ?>
-
 
 </html>
