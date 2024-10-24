@@ -1,3 +1,6 @@
+//ESTE CÓDIGO ESTÁ INATIVO NO MOMENTO, FAZENDO ALTERAÇÕES NO BANCO DE DADOS PARA IMPLEMENTAÇÃO DO 
+CONTROLLER.
+
 <?php
 // Definindo o namespace
 namespace MeuProjeto\model;
