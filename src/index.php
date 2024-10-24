@@ -28,7 +28,7 @@
     <div class="search-bar">
         <form action="pesquisa.php" method="GET">
             <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
-            <button type="submit">Buscars</button>
+            <button type="submit">Buscar</button>
         </form>
     </div>
     </header>
