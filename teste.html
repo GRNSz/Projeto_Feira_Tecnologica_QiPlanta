@@ -289,3 +289,26 @@ class Usuario {
 }
 
 ob_end_flush();
+
+_________________________________________________
+
+/* Versão nova
+ erros: 5
+*/
+
+function alterarpreco(){
+//ta dando ruim na hr de atualizar o valor
+const quanti1 = document.getElementById('quanti1').value;
+const preco = document.getElementById('preco').innerText;
+const precoTotal = quanti1 * preco;
+document.getElementById('preco').innerText = precoTotal.toFixed(2);
+
+}
+
+
+function alterarinfo(){
+    alterarpreco();
+
+}
+//versão antiga
+// erros: 19

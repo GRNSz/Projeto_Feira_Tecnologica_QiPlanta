@@ -14,7 +14,7 @@
             <?php include('header.php'); ?>
         </header>
         <main>
-            <script src="./javascript/carrinhocompras.js"></script>
+            <script src="./../javascript/carrinhocompras.js"></script>
             <Div class="div-carrinho-compras">
             <center>
                 <h2>Meu carrinho de compras:</h2>
@@ -31,7 +31,7 @@
                             <img src="./images/liriodapaz.png" style="size: 15px; border-radius:50%">
                             <h3 id="nomeproduto01">Lírio-da-paz</h3>
                             <div class="preco">
-                                <p>preço: R$ <b id="preco" value="30.00">30</b><b>,00</b></p>
+                                <p>preço: R$ <b id="preco" value="30.00">30</b></p>
                             </div>
                             <div class="quantidade">
                                     <label>Quantidade:</label> <br>
