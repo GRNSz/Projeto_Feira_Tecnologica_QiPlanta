@@ -21,10 +21,9 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container-cadastro">
             <div class="divisoria-login" style="color:antiquewhite;">
                 <div>
-
                     <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <h1>Cadastro de Cliente </h1><br>
 

@@ -32,10 +32,8 @@
             colaboração da nossa equipe de desenvolvedores.
         </p>
     </main>
-    <div style="margin-top: 100px;"></div>
     <footer>
         <?php include("./footer.php") ?>
     </footer>
 </body>
-
 </html>
