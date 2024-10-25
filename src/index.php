@@ -92,21 +92,21 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-//include("main.php");
-// Usa a classe Login do namespace MeuProjeto\Login     
+include("main.php");
+//Usa a classe Login do namespace MeuProjeto\Login     
 include(__DIR__ . '/../vendor/autoload.php');
 
 use MeuProjeto\model\Login;
 //use MeuProjeto\model\UsuarioSistema;
 
 // Instancia a classe Login
-//$login = new Login();
+$login = new Login();
 //A CLASSE LOGIN ESTÁ COMENTADA POIS ESTÁ EM MANUTENÇÃO, NÃO ESTÁ FUNCIONANDO CORRETAMENTE;
 
 //$sysu = new MeuProjeto\model\UsuarioSistema();
 
 // Verifica o login (se o formulário foi enviado)
-//$login->verificarLogin();
+$login->verificarLogin();
 //$sysu->nome = "GustavoR";
 ?>
 
