@@ -80,13 +80,15 @@
 
     // Inclui a classe Usuario
     require_once __DIR__ . "/../model/Usuario.php";
+    require_once __DIR__ . "/../controller/UsuarioController.php";
+    require_once __DIR__ . "/../controller/mainController.php";
 
     use MeuProjeto\model\Usuario;
 
     // Cria uma instância da classe Usuario
 
     // Chama o método getUsuario
-    $usuario->getUsuario();
+    //$usuario->getUsuario();
     ?>
 
 </body>
