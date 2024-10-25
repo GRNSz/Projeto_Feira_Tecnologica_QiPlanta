@@ -1,52 +1,60 @@
 <?php
-// Definindo o namespace
+
 namespace MeuProjeto\model;
 
-// Definindo a classe Login
+use MeuProjeto\persistence\ConnectionFactory;
+
+
 class Login {
+    private $nome;
+    private $senha;
 
-    private $login;
-    private $pdo;
-
-    public function __construct($login = null) {
-        $this->login = $login;
-        try {
-            $this->pdo = new \PDO('mysql:host=localhost;dbname=bdqiplanta', 'root', '');
-            $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-        } catch (\PDOException $e) {
-            die("Erro na conexão com o banco de dados: " . $e->getMessage());
-        }
-        ob_start();
+    public function __construct($nome, $senha) {
+        $this->nome = $nome;
+        $this->senha = $senha;
     }
 
-    public function verificarLogin() {
-        if ($_SERVER["REQUEST_METHOD"] === "POST") {
-            $usuario = htmlspecialchars(trim($_POST["usuario"]));
-            $senha = htmlspecialchars(trim($_POST["senha"]));
-    
-            if (empty($usuario) || empty($senha)) {
-                echo "<b style='color: red; font-size: 20px;'>Usuário ou senha não podem estar vazios!</b>";
-                return;
-            }
-    
-            // Consultar o banco de dados para verificar se o usuário existe
-            $stmt = $this->pdo->prepare("SELECT * FROM usuarios WHERE nome = :usuario");
-            $stmt->bindParam(':usuario', $usuario);
-            $stmt->execute();
-            $user = $stmt->fetch(\PDO::FETCH_ASSOC);
-    
-            // Verificar a senha utilizando password_verify
-            if ($user && password_verify($senha, $user['senha'])) {
-                // Certifique-se de que não houve saída anterior
-                if (!headers_sent()) {
-                    header("Location: /src/menu.php");
-                    exit;
-                } else {
-                    echo "Erro: Não é possível redirecionar. Headers já enviados.";
-                }
+    public function getNome() {
+        return $this->nome;
+    }
+
+    public function getSenha() {
+        return $this->senha;
+    }
+
+    public function validate() {
+        // Obtém a conexão com o banco de dados
+        $connection = ConnectionFactory::getConnection();
+
+        // Prepara a query de seleção
+        $query = "SELECT * FROM usuarios WHERE nome = :nome";
+        $stmt = $connection->prepare($query);
+
+        // Vincula os parâmetros
+        $stmt->bindParam(':nome', $this->nome);
+
+        // Executa a query
+        $stmt->execute();
+
+        // Verifica se o usuário existe
+        if ($stmt->rowCount() > 0) {
+            $usuario = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+            // Verifica se a senha está correta
+            if (password_verify($this->senha, $usuario['senha'])) {
+                header('Location: ./views/menu.php');
+                exit(); // Certifique-se de sair após o redirecionamento
             } else {
-                echo "<b style='color: red; font-size: 20px;'>Acesso Negado!</b>";
+                echo "Senha incorreta.";
+                return false; // Senha incorreta
             }
+            } else {
+                echo "Senha incorreta.";
+                return false; // Senha incorreta
+        } else {
+            echo "Usuário não encontrado.";
+            return false; // Usuário não encontrado
         }
     }
 }
+?>

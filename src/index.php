@@ -87,27 +87,26 @@
 </body>
 
 <?php
+
+require_once(__DIR__ . '/../vendor/autoload.php');
+require_once __DIR__ . '/../model/Login.php';
+require_once __DIR__ . '/../model/Usuario.php';
+
 //Este código abaixo exibe os erros que o PHP der na tela do usuário propositalmente, para que assim possam fazer a verificação manual do problema que possa estar ocorrendo.
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-include("main.php");
-//Usa a classe Login do namespace MeuProjeto\Login     
-include(__DIR__ . '/../vendor/autoload.php');
+include "./src/main.php";   
+include "./../model/Login.php";
 
 use MeuProjeto\model\Login;
+use MeuProjeto\model\Usuario;
+
 //use MeuProjeto\model\UsuarioSistema;
 
-// Instancia a classe Login
-$login = new Login();
-//A CLASSE LOGIN ESTÁ COMENTADA POIS ESTÁ EM MANUTENÇÃO, NÃO ESTÁ FUNCIONANDO CORRETAMENTE;
+$login = new Login($arg1, $arg2); // Replace $arg1 and $arg2 with the actual arguments required by the Login constructor
 
-//$sysu = new MeuProjeto\model\UsuarioSistema();
-
-// Verifica o login (se o formulário foi enviado)
-$login->verificarLogin();
-//$sysu->nome = "GustavoR";
 ?>
 
 </html>

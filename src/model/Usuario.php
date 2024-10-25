@@ -1,6 +1,6 @@
 <?php 
 
-namespace Src\Model;
+namespace src\model;
 
 class Usuario {
     private $nome;
