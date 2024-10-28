@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-namespace src\model;
+namespace MeuProjeto\models;
 
 class Usuario {
     private $nome;
@@ -8,17 +8,16 @@ class Usuario {
     private $email;
     private $numcell;
     private $senha;
-    private $senha2;
 
-    public function __construct($nome, $endereco, $email, $numcell, $senha, $senha2) {
+    public function __construct($nome, $endereco, $email, $numcell, $senha) {
         $this->nome = $nome;
         $this->endereco = $endereco;
         $this->email = $email;
         $this->numcell = $numcell;
-        $this->senha = $senha;
-        $this->senha2 = $senha2;
+        $this->senha = password_hash($senha, PASSWORD_BCRYPT); // Hash da senha para segurança
     }
 
+    // Getters
     public function getNome() {
         return $this->nome;
     }
@@ -39,10 +38,7 @@ class Usuario {
         return $this->senha;
     }
 
-    public function getSenha2() {
-        return $this->senha2;
-    }
-
+    // Setters
     public function setNome($nome) {
         $this->nome = $nome;
     }
@@ -60,12 +56,7 @@ class Usuario {
     }
 
     public function setSenha($senha) {
-        $this->senha = $senha;
-    }
-
-    public function setSenha2($senha2) {
-        $this->senha2 = $senha2;
+        $this->senha = password_hash($senha, PASSWORD_BCRYPT);
     }
 }
-
 ?>

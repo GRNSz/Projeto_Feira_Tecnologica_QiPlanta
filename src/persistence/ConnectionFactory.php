@@ -2,8 +2,6 @@
 
 namespace MeuProjeto\persistence;
 
-
-
 class ConnectionFactory {
 
     private static $connection = null;
