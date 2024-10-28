@@ -1,7 +1,7 @@
 <?php 
 
     namespace MeuProjeto\controllers;
-    use MeuProjeto\persistence\ConnectionFactory;
+    use MeuProjeto\configuration\ConnectionFactory;
 
     class UsuarioController {
        // public function index()
@@ -12,6 +12,9 @@
         public function store($pegainfo)
         {
  
+            // Puxa a classe de conexão com o banco de dados
+            require_once __DIR__ . "/../configuration/ConnectionFactory.php";
+
             // Cria uma conexão com o banco de dados
             $connection = ConnectionFactory::getConnection();
 

@@ -1,7 +1,7 @@
 <?php
 
 use FTP\Connection;
-use MeuProjeto\persistence\ConnectionFactory;
+use MeuProjeto\configuration\ConnectionFactory;
 
     class ValidaCadastro{
 
