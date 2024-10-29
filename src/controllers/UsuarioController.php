@@ -67,12 +67,12 @@
             }
 
             // Debugging 
-            var_dump($nome);
-            var_dump($senha);
-            var_dump($senha2);
-            var_dump($endereco);
-            var_dump($email);
-            var_dump($numcell);
+            // var_dump($nome);
+            // var_dump($senha);
+            // var_dump($senha2);
+            // var_dump($endereco);
+            // var_dump($email);
+            // var_dump($numcell);
     }
 
         public function login($pegainfo) {
