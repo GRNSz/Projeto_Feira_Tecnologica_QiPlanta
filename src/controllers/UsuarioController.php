@@ -30,6 +30,7 @@
             $connection = ConnectionFactory::getConnection();
 
             $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+            $senhaHash2 = password_hash($senha2, PASSWORD_DEFAULT);
 
             # Prepara a query de inserção
             $stmt = $connection->prepare("INSERT INTO usuarios (nome, senha, senha2, endereco, email, numcell) VALUES (:nome, :senha, :senha2, :endereco, :email, :numcell)");
@@ -51,7 +52,7 @@
 
             $stmt->bindParam(':nome', $nome);
             $stmt->bindParam(':senha', $senhaHash);
-            $stmt->bindParam(':senha2', $senha2);
+            $stmt->bindParam(':senha2', $senhaHash2);
             $stmt->bindParam(':endereco', $endereco);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':numcell', $numcell);
