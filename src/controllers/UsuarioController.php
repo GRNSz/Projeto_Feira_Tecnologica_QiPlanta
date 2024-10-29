@@ -12,6 +12,25 @@
 
         public function store($pegainfo)
         {
+
+            # Verifica se o método de requisição é POST
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $pegainfo = $_POST;
+            }
+
+            # Pega os valores para armazenar no banco
+            $nome = $pegainfo['nome'];
+            $senha = $pegainfo['senha'];
+            $senha2 = $pegainfo['senha2'];
+            $endereco = $pegainfo['endereco'];
+            $email = $pegainfo['email'];
+            $numcell = $pegainfo['numcell'];
+
+            if ($senha != $senha2) {
+                print "As senhas não coincidem!";
+                return;
+            }
+
             # Cria a conexão com o banco
             $connection = ConnectionFactory::getConnection();
 
@@ -57,6 +76,27 @@
                 echo "Erro ao cadastrar!";
             }
 
+            # Abaixo fazemos a validação do login e senha com o banco de dados
+            $query = "SELECT * FROM usuarios WHERE nome = :nome, senha = :senha";
+            $stmt = $connection->prepare($query);
+
+            $stmt->bindParam(':nome', $nome);
+            $stmt->bindParam(':senha', $senha);
+
+            $stmt->execute();
+
+            if ($stmt->rowCount()) {
+                $nome = $stmt->fetch(\PDO::FETCH_ASSOC);
+                if (password_verify($senha, $nome['senha'])) {
+                    echo "Login bem-sucedido!";
+                    header("Location: ./../views/menu.php");
+                } else {
+                    echo "Senha incorreta.";
+                }
+            } else {
+                echo "Email não encontrado.";
+            }
+
             // Debugging 
             var_dump($nome);
             var_dump($senha);
@@ -64,20 +104,6 @@
             var_dump($endereco);
             var_dump($email);
             var_dump($numcell);
-
-}
-        public function index(){
-
-            
-            $connection = ConnectionFactory::getConnection();
-
-            # Faz um select na tabela de usuários para validar se os dados digitados existem no banco  
-            $stmt = $connection->prepare("SELECT * FROM usuarios WHERE nome = :nome AND senha = :senha");
-            
-
     }
-
 }
-
-  
 ?>
