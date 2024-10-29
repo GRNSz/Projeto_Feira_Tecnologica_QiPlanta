@@ -56,10 +56,10 @@
                 </div>
                 <div class="divisoria-cadastro-login">
                     <center>
+                        <a>
                         <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
-                        <a href="./../index.php">
-                            <button type="button" class="login-btn">Login</button>
+                        <button type="button" class="login-btn">Login</button>
                         </a>
                     </center>
                 </div>
@@ -73,35 +73,18 @@
     <?php
     // Inclui o autoload do Composer
     require __DIR__ . "/../../vendor/autoload.php";
-    require __DIR__ . "/../persistence/connectionFactory.php";
+    require __DIR__ . "/../configuration/ConnectionFactory.php";
 
-    include 'valida_cadastro.php';
+   // include 'valida_cadastro.php';
 
-    use MeuProjeto\models\Cadastrar;
+    // use MeuProjeto\models\Cadastrar;
     //use MeuProjeto\persistence\ConnectionFactory;
 
     // Inclui a classe Usuario
-    require_once __DIR__ . "/../model/Usuario.php";
-    require_once __DIR__ . "/../controller/UsuarioController.php";
-    require_once __DIR__ . "/../controller/mainController.php";
+    // require_once __DIR__ . "/../model/Usuario.php";
+    // require_once __DIR__ . "/../controller/UsuarioController.php";
+    // require_once __DIR__ . "/../controller/mainController.php";
 
-    use MeuProjeto\models\Usuario;
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-        
-        // Captura os dados do formulário
-        $nome = $_POST['nome'];
-        $endereco = $_POST['endereco'];
-        $email = $_POST['email'];
-        $numcell = $_POST['numcell'];
-        $senha = $_POST['senha'];
-        $senha2 = $_POST['senha2'];
-
-        // Cria uma instância da classe valida_cadastro
-        $validador = new ValidaCadastro($nome, $endereco, $email, $numcell, $senha, $senha2);
-        $validador->ValidaCadastro();
-
-    }
     // Chama o método getUsuario
    // $usuario->getUsuario();
    // $usuario->getSenha();

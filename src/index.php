@@ -50,8 +50,8 @@
                         <div class="titulo-login">
                             <h1>Login</h1>
                         </div>
-                        <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                            <input class="form-input" type="text" name="usuario" placeholder="Digite o nome do Usuario" required>
+                        <form action="./controllers/mainController.php?r=UsuarioController&action=index" method="GET">
+                            <input class="form-input" type="text" name="nome" placeholder="Digite o nome do Usuario" required>
                             <input class="form-input" type="password" name="senha" placeholder="Digite a Senha" required>
                             <button type="submit" class="login-btn">Login</button>
                         </form>
@@ -86,30 +86,10 @@
 
 <?php
 
-require_once(__DIR__ . '/../vendor/autoload.php');
-require_once __DIR__ . '/../model/Login.php';
-require_once __DIR__ . '/../model/Usuario.php';
-
-include_once __DIR__ . "./controllers/mainController.php";
-include_once __DIR__ . "./controllers/UsuarioController.php";
-
-// Exibe todos os erros do PHP na tela para facilitar a depuração
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-include __DIR__ . "/main.php";
-
-use MeuProjeto\model\Login;
-//use MeuProjeto\model\Usuario;
-
-// Defina os argumentos necessários para os construtores
-$nome = 'nome'; // Substitua 'valor1' pelo valor real
-$senha = 'senha'; // Substitua 'valor2' pelo valor real
-
-// Instancia a classe Login com os argumentos necessários
-$login = new Login($nome, $senha); // Substitua $arg1 e $arg2 pelos argumentos reais necessários pelo construtor de Login
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../configuration/ConnectionFactory.php';
+require_once __DIR__ . '/../controllers/UsuarioController.php';
+require_once __DIR__ . '/../controllers/mainController.php';
 
 ?>
-
 </html>

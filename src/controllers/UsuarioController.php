@@ -2,6 +2,7 @@
 
     namespace MeuProjeto\controllers;
     use MeuProjeto\configuration\ConnectionFactory;
+    //require '/../configuration/ConnectionFactory.php'; 
 
     class UsuarioController {
        // public function index()
@@ -11,27 +12,28 @@
 
         public function store($pegainfo)
         {
- 
-            // Puxa a classe de conexão com o banco de dados
-            require_once __DIR__ . "/../configuration/ConnectionFactory.php";
-
-            // Cria uma conexão com o banco de dados
+            # Cria a conexão com o banco
             $connection = ConnectionFactory::getConnection();
 
-            // Verifica se a conexão foi bem-sucedida
+            # Prepara a query de inserção
+            $stmt = $connection->prepare("INSERT INTO usuarios (nome, senha, senha2, endereco, email, numcell) VALUES (:nome, :senha, :senha2, :endereco, :email, :numcell)");
+
+            # Verifica se a query foi preparada com sucesso
+            if (!$stmt) {
+                die("Falha na preparação da query: " . $connection->errorInfo()[2]);
+            }
+
+            # Verifica se a conexão foi estabelecida com sucesso
             if (!$connection) {
                 die("Conexão falhou: " . $connection->errorInfo()[2]);
             }
 
-            // Prepara a query para evitar SQL Injection
-            $sqlInsert = $connection->prepare("INSERT INTO usuarios (nome, senha, senha2, endereco, email, numcell) VALUES (?, ?, ?, ?, ?, ?)");
-
-            // Verifica se a preparação da query foi bem-sucedida
-
-            if (!$sqlInsert) {
-                die("Falha na preparação da query: " . $connection->errorInfo()[2]);
+            # Verifica se o método de requisição é POST
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $pegainfo = $_POST;
             }
 
+            # Pega os valores para armazenar no banco
             $nome = $pegainfo['nome'];
             $senha = $pegainfo['senha'];
             $senha2 = $pegainfo['senha2'];
@@ -39,16 +41,43 @@
             $email = $pegainfo['email'];
             $numcell = $pegainfo['numcell'];
 
-            // Debugging
+            $stmt->bindParam(':nome', $nome);
+            $stmt->bindParam(':senha', $senha);
+            $stmt->bindParam(':senha2', $senha2);
+            $stmt->bindParam(':endereco', $endereco);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':numcell', $numcell);
+
+            $stmt->execute();
+
+            if ($stmt->rowCount()){
+                echo "Cadastro realizado com sucesso!";
+                header("Location: ./../views/menu.php");
+            } else {
+                echo "Erro ao cadastrar!";
+            }
+
+            // Debugging 
+            var_dump($nome);
+            var_dump($senha);
+            var_dump($senha2);
+            var_dump($endereco);
+            var_dump($email);
+            var_dump($numcell);
+
+}
+        public function index(){
+
             
-            $sqlInsert->bindParam(1, $pegainfo['nome']);
-            $sqlInsert->bindParam(2, $pegainfo['senha']);
-            $sqlInsert->bindParam(3, $pegainfo['senha2']);
-            $sqlInsert->bindParam(4, $pegainfo['endereco']);
-            $sqlInsert->bindParam(5, $pegainfo['email']);
-            $sqlInsert->bindParam(6, $pegainfo['numcell']);
+            $connection = ConnectionFactory::getConnection();
+
+            # Faz um select na tabela de usuários para validar se os dados digitados existem no banco  
+            $stmt = $connection->prepare("SELECT * FROM usuarios WHERE nome = :nome AND senha = :senha");
             
-        }
 
     }
+
+}
+
+  
 ?>

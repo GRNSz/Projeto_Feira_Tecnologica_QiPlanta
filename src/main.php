@@ -7,7 +7,7 @@ require __DIR__ . "/../vendor/autoload.php";
 
 include "./src/model/Login.php";
 include "./src/model/Usuario.php";
-include "./src/persistence/ConnectionFactory.php";
+include "./src/configuration/ConnectionFactory.php";
 
 use MeuProjeto\model\Login;
 use MeuProjeto\configuration\ConnectionFactory;
