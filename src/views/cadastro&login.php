@@ -56,9 +56,9 @@
                 </div>
                 <div class="divisoria-cadastro-login">
                     <center>
-                        <a>
                         <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
+                        <a href="./../index.php">
                         <button type="button" class="login-btn">Login</button>
                         </a>
                     </center>
@@ -74,20 +74,6 @@
     // Inclui o autoload do Composer
     require __DIR__ . "/../../vendor/autoload.php";
     require __DIR__ . "/../configuration/ConnectionFactory.php";
-
-   // include 'valida_cadastro.php';
-
-    // use MeuProjeto\models\Cadastrar;
-    //use MeuProjeto\persistence\ConnectionFactory;
-
-    // Inclui a classe Usuario
-    // require_once __DIR__ . "/../model/Usuario.php";
-    // require_once __DIR__ . "/../controller/UsuarioController.php";
-    // require_once __DIR__ . "/../controller/mainController.php";
-
-    // Chama o método getUsuario
-   // $usuario->getUsuario();
-   // $usuario->getSenha();
     ?>
 
 </body>

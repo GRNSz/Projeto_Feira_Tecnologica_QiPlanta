@@ -1,10 +1,8 @@
 <?php 
 
     $autoloadpath= __DIR__ . "/../../vendor/autoload.php";
-    
-    //var_dump($autoloadpath);
-
     include_once $autoloadpath;
+    //var_dump($autoloadpath);
 
     //"/../../vendor/autoload.php";
 
@@ -17,13 +15,9 @@
     }
 
     # Detecta se a requisição é o metodo POST
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') 
-    {
-    // use MeuProjeto\controllers\UsuarioController;
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $routeControllerClass = "MeuProjeto\\controllers\\" . $rota;
-
     $rotaControllerInstance = new $routeControllerClass();
-
     $rotaControllerInstance->$action($_POST);
-    }
+}
 ?>

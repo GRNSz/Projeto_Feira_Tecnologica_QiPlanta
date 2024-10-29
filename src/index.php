@@ -50,7 +50,7 @@
                         <div class="titulo-login">
                             <h1>Login</h1>
                         </div>
-                        <form action="./controllers/mainController.php?r=UsuarioController&action=store" method="POST">
+                        <form action="./controllers/mainController.php?r=UsuarioController&action=login" method="POST">
                             <input class="form-input" type="text" name="nome" placeholder="Digite o nome do Usuario" required>
                             <input class="form-input" type="password" name="senha" placeholder="Digite a Senha" required>
                             <button type="submit" class="login-btn">Login</button>

@@ -13,11 +13,6 @@
         public function store($pegainfo)
         {
 
-            # Verifica se o método de requisição é POST
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $pegainfo = $_POST;
-            }
-
             # Pega os valores para armazenar no banco
             $nome = $pegainfo['nome'];
             $senha = $pegainfo['senha'];
@@ -33,6 +28,8 @@
 
             # Cria a conexão com o banco
             $connection = ConnectionFactory::getConnection();
+
+            $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
 
             # Prepara a query de inserção
             $stmt = $connection->prepare("INSERT INTO usuarios (nome, senha, senha2, endereco, email, numcell) VALUES (:nome, :senha, :senha2, :endereco, :email, :numcell)");
@@ -52,16 +49,8 @@
                 $pegainfo = $_POST;
             }
 
-            # Pega os valores para armazenar no banco
-            $nome = $pegainfo['nome'];
-            $senha = $pegainfo['senha'];
-            $senha2 = $pegainfo['senha2'];
-            $endereco = $pegainfo['endereco'];
-            $email = $pegainfo['email'];
-            $numcell = $pegainfo['numcell'];
-
             $stmt->bindParam(':nome', $nome);
-            $stmt->bindParam(':senha', $senha);
+            $stmt->bindParam(':senha', $senhaHash);
             $stmt->bindParam(':senha2', $senha2);
             $stmt->bindParam(':endereco', $endereco);
             $stmt->bindParam(':email', $email);
@@ -76,27 +65,6 @@
                 echo "Erro ao cadastrar!";
             }
 
-            # Abaixo fazemos a validação do login e senha com o banco de dados
-            $query = "SELECT * FROM usuarios WHERE nome = :nome, senha = :senha";
-            $stmt = $connection->prepare($query);
-
-            $stmt->bindParam(':nome', $nome);
-            $stmt->bindParam(':senha', $senha);
-
-            $stmt->execute();
-
-            if ($stmt->rowCount()) {
-                $nome = $stmt->fetch(\PDO::FETCH_ASSOC);
-                if (password_verify($senha, $nome['senha'])) {
-                    echo "Login bem-sucedido!";
-                    header("Location: ./../views/menu.php");
-                } else {
-                    echo "Senha incorreta.";
-                }
-            } else {
-                echo "Email não encontrado.";
-            }
-
             // Debugging 
             var_dump($nome);
             var_dump($senha);
@@ -105,5 +73,42 @@
             var_dump($email);
             var_dump($numcell);
     }
-}
+
+        public function login($pegainfo) {
+
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $pegainfo = $_POST;
+            }
+
+            $nome = $pegainfo['nome'];
+            $senha = $pegainfo['senha'];
+
+            $connection = ConnectionFactory::getConnection();
+
+            $query = "SELECT * FROM usuarios WHERE nome = :nome";
+            $stmt = $connection->prepare($query);
+
+            $stmt->bindParam(':nome', $nome);
+
+            $stmt->execute();
+
+            if ($stmt->rowCount() > 0) {
+                $usuario = $stmt->fetch(\PDO::FETCH_ASSOC);
+
+                //var_dump("Chegou aqui?");
+                if (password_verify($senha, $usuario['senha'])) {
+                    echo "Login bem-sucedido!";
+                    header("Location: ./../views/menu.php");
+                    exit();
+                } else {
+                    echo "Senha incorreta.";
+                }
+            } else {
+                echo "Usuário não encontrado.";
+            }
+
+        }    
+
+    }
+
 ?>
