@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 footer {
   background: rgb(57,115,72);
   background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
@@ -13,4 +14,21 @@ footer {
 footer p {
   color: white; /* Cor do texto */
   font-size: 14px; /* Tamanho da fonte */
+=======
+footer {
+  background: rgb(57,115,72);
+  background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+  height: 250px; /* Altura */
+  width: 100%; /* Largura */
+  padding-top: 5%;  /*espaçamento interno*/
+  /* display: flex; /* Tipo de exibição */
+  align-items: center; /* Alinhamento vertical */
+  justify-content: center; /* Alinhamento horizontal */
+}
+
+/* Estilo do texto do footer */
+footer p {
+  color: white; /* Cor do texto */
+  font-size: 14px; /* Tamanho da fonte */
+>>>>>>> 3b224059639604c3868ecad29549ea02b6f4bf62
 }

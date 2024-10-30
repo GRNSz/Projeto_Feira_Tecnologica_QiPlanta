@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset básico para remover margens/paddings padrão */
 * {
     margin: 0;
@@ -140,3 +141,147 @@ header h1 {
         border-bottom: 2px solid #f0f0f0;
     }
 }
+=======
+/* Reset básico para remover margens/paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/Teste-Background.png'); /* Altere para o caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #fff;
+}
+
+/* Container principal */
+.container {
+    width: 90%; /* Ajuste para se adaptar melhor ao zoom */
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(97, 161, 102, 0.5); /* Fundo cinza com menos opacidade */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.8);
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+
+
+/* Divisória de login */
+.divisoria-login {
+    display: flex;
+    flex-wrap: nowrap; /* Garante que os itens fiquem lado a lado */
+    justify-content: space-between;
+    gap: 2%; /* Espaçamento percentual */
+    width: 100%; /* Mantém 100% da largura disponível */
+    padding: 10px;
+}
+
+/* Estilos da caixa de cadastro */
+.div-login-centro {
+    flex: 1;
+    padding: 20px;
+    margin-right: 2%; /* Espaçamento entre colunas */
+    text-align: center;
+    box-shadow: inset -2px 0 0 #f0f0f0; /* Simula a borda de maneira responsiva */
+    align-self: flex-start; /* Mantém o item no topo à esquerda */
+}
+
+.caixa-cadastro-login h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.caixa-cadastro-login p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+/* Botão de cadastro */
+.btn-cadastro-login {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cadastro-login:hover {
+    background-color: #45a049;
+}
+
+/* Estilo da seção de login */
+.titulo-login h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs do formulário */
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Botão de login */
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Ajustes de layout responsivo */
+@media (max-width: 768px) {
+    .divisoria-login {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+    }
+
+    .div-login-centro {
+        margin-right: 0;
+        border-right: none;
+        border-bottom: 2px solid #f0f0f0;
+    }
+}
+>>>>>>> 3b224059639604c3868ecad29549ea02b6f4bf62
