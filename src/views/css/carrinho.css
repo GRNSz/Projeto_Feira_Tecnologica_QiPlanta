@@ -1,0 +1,140 @@
+/* Define o estilo básico para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Define que a altura mínima do body é 100% da altura da tela */
+}
+
+header, footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Faz com que o main ocupe o espaço disponível */
+}
+
+/* Estilo da div principal do carrinho de compras */
+.div-carrinho-compras {
+    margin-top: 30px;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #aaacaa;
+    margin-bottom: 15px;
+}
+
+/* Estilo da lista de produtos no carrinho */
+.lista-produto-carrinho {
+    margin-top: 20px;
+}
+
+ul.lista-carrinho {
+    padding: 0;
+}
+
+ul.lista-carrinho li {
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada produto dentro do carrinho */
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.produto h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilo da quantidade e botões */
+.quantidade {
+    display: flex;
+    align-items: center;
+}
+
+.quantidade label {
+    margin-right: 10px;
+}
+
+.quantidade input[type="number"] {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.quantidade input[type="button"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.quantidade input[type="button"]:hover {
+    background-color: #45a049;
+}
+
+/* Botões de exclusão e finalizar */
+.escolha {
+    display: flex;
+    gap: 10px;
+}
+
+.escolha button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.escolha button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+}
