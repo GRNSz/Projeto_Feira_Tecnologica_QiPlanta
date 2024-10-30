@@ -21,7 +21,7 @@
             <img src="images/liriodapaz.png" alt="Lírio-da-paz" class="produto-img">
 
             <div class="produto-detalhes">
-                <p><strong>Preço:</strong> R$ 30,00</p>
+                <p><strong>Preço:</strong><b id="preco-lirio"> R$ 30,00</b></p>
                 <p><strong>Descrição:</strong> Além de purificar o ar, o Lírio-da-paz é ótimo para ambientes internos devido à sua tolerância à sombra e baixa necessidade de água. É uma planta perfeita para trazer tranquilidade ao lar.</p>
                 <p><strong>Cuidados:</strong> Rega moderada, preferencialmente quando o solo estiver seco. Manter em locais com sombra ou luz indireta.</p>
                 <p><strong>Categoria:</strong> Plantas de Interior</p>
