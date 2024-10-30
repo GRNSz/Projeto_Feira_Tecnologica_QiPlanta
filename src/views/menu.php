@@ -32,7 +32,7 @@
                     <img src="./images/jiboia.png" alt="Produto 2">
                     <h3>Jibóia</h3>
                     <p>Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.<br> Quer saber mais sobre a importância dessa planta pra história da vida? Clica abaixo!</p>
-                    <button shref="detalhes.php?id=2">Conhecer vida</button>
+                    <button shref="detalhes.php?id=2">Ver Detalhes</button>
                 </center>
             </div>
 
@@ -41,7 +41,7 @@
                     <img src="./images/espadadesaojorge.png" alt="Produto 2">
                     <h3>Espada-de-São-Jorge</h3>
                     <p>Perfeita para ambientes internos, resistente e não precisa de muita água. Também ajuda na purificação do ar.<br> Quer saber mais sobre a importância dessa planta pra história da vida? Clica abaixo!</p>
-                    <button href="detalhes.php?id=3">Conhecer vida</button>
+                    <button href="detalhes.php?id=3">Ver Detalhes</button>
                 </center>
             </div><!-- Adicione mais produtos conforme necessário -->
         </section>

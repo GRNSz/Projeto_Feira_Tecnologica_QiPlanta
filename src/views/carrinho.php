@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Meu Carrinho</title>
         <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
+        <link rel="stylesheet" href="./css/menu.css">
     </head>
     
     <body>
@@ -13,7 +14,7 @@
             <?php include('header.php'); ?>
         </header>
         <main>
-            <script src="./javascript/carrinhocompras.js"></script>
+            <script src="./../javascript/carrinhocompras.js"></script>
             <Div class="div-carrinho-compras">
             <center>
                 <h2>Meu carrinho de compras:</h2>
@@ -28,29 +29,22 @@
                     <li>
                         <div class="produto" id="P1">
                             <img src="./images/liriodapaz.png" style="size: 15px; border-radius:50%">
-                            <h3 id="carrinho-nomeplanta">Lírio-da-paz</h3>
-
+                            <h3 id="nomeproduto01">Lírio-da-paz</h3>
+                            <div class="preco">
+                                <p>preço: R$ <b id="preco" value="30.00">30</b></p>
+                            </div>
                             <div class="quantidade">
                                     <label>Quantidade:</label> <br>
-                                    <input type="button" id="btn1-" value="-" onclick="decrementarP1()">
-                                    <input type="number" id="quantidade1" value="1">
-                                    <input type="button" id="btn1+" value="+" onclick="incrementarP1()">
+                                    <!-- Novo -->
+                                    <input class="input-valor" type="number" id="quanti1" value="0" min="0" oninput="quanti1.value=value" onchange="quantidadep1.value=value">
+                                    <br>
+                                    <input type="range" name="quantidade" id="quantidadep1" value="0" min="0" max="200" oninput="quanti1.value=value" onchange="alterarinfo()">
                                 </div>
                                 <div class="escolha">
                                     <button onclick="deletarP1()">Excluir</button>
                                     <button>Finalizar</button>
                                 </div>
                             </div>
-                    </li>
-                    <li>
-                        <div class="produto" id="P2">
-                            
-                        </div>
-                    </li>
-                    <li>
-                        <div class="produto">
-                            c
-                        </div>
                     </li>
                 </ul>
             </div>
