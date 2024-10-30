@@ -40,7 +40,18 @@
 
     <?php
 
+    // Inclui o autoload do Composer
+    require __DIR__ . "/../../vendor/autoload.php";
+    require __DIR__ . "/../persistence/connectionFactory.php";
 
+    use MeuProjeto\model\CadastrarProduto;
+    //use MeuProjeto\persistence\ConnectionFactory;
+
+    // Cria uma instância da classe Cadastrar
+    $cadastrarProduto = new CadastrarProduto();
+
+    // Chama o método getCadastrar
+    $cadastrarProduto->getCadastrarProduto();
 
     ?>
 

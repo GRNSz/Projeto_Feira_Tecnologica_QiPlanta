@@ -21,15 +21,15 @@
         </nav>
     </header>
     <main>
-        <div class="container-cadastro">
+        <div class="container">
             <div class="divisoria-login" style="color:antiquewhite;">
                 <div>
 
-                    <form action="./../controllers/mainController.php?r=UsuarioController&action=store" method="POST">
+                    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                         <h1>Cadastro de Cliente </h1><br>
 
                         <label for="username">Nome de Usuário:</label><br>
-                        <input class="form-input" type="text" id="nome" name="nome" placeholder="Insira um nome de usuário" required><br><br>
+                        <input class="form-input" type="text" id="username" name="nome" placeholder="Insira um nome de usuário" required><br><br>
 
                         <label for="username">Endereço:</label><br>
                         <input class="form-input" type="text" id="endereco" name="endereco" placeholder="Digite o seu Endereço" required><br><br>
@@ -41,10 +41,10 @@
                         <input class="form-input" type="number" id="numcell" name="numcell" placeholder="(xx) xxx xxx xxx" required><br><br>
 
                         <label for="password">Senha:</label><br>
-                        <input class="form-input" type="password" id="senha" name="senha" placeholder="Insira uma senha" required>
+                        <input class="form-input" type="password" id="password" name="senha" placeholder="Insira uma senha" required>
 
                         <label for="password">Repita sua senha:</label><br>
-                        <input class="form-input" type="password" id="senha2" name="senha2" placeholder="Confirme sua senha" required><br><br>
+                        <input class="form-input" type="password" id="password" name="senha2" placeholder="Confirme sua senha" required><br><br>
 
                         <input type="checkbox" name="robot" id="robot" required>
                         <label>Não sou um robo</label>
@@ -59,7 +59,7 @@
                         <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
                         <a href="./../index.php">
-                        <button type="button" class="login-btn">Login</button>
+                            <button type="button" class="login-btn">Login</button>
                         </a>
                     </center>
                 </div>
@@ -73,7 +73,22 @@
     <?php
     // Inclui o autoload do Composer
     require __DIR__ . "/../../vendor/autoload.php";
-    require __DIR__ . "/../configuration/ConnectionFactory.php";
+    require __DIR__ . "/../persistence/connectionFactory.php";
+
+    use MeuProjeto\model\Cadastrar;
+    //use MeuProjeto\persistence\ConnectionFactory;
+
+    // Inclui a classe Usuario
+    require_once __DIR__ . "/../model/Usuario.php";
+    require_once __DIR__ . "/../controller/UsuarioController.php";
+    require_once __DIR__ . "/../controller/mainController.php";
+
+    use MeuProjeto\model\Usuario;
+
+    // Cria uma instância da classe Usuario
+
+    // Chama o método getUsuario
+    //$usuario->getUsuario();
     ?>
 
 </body>
