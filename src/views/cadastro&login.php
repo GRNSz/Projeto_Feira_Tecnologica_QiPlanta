@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>
-        <div class="container-cadastro">
+        <div class="container">
             <div class="divisoria-login" style="color:antiquewhite;">
                 <div>
 

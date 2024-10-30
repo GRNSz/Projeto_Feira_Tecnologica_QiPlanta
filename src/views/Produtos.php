@@ -25,7 +25,7 @@
                         <h3 id="nomeproduto01">Lírio-da-paz</h3>
                         <p>Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.</p>
                         <p><strong>Preço: R$ 30,00</strong></p>
-                        <button onclick="window.location.href='detalhes.php'"><a >Ver Detalhes</a></button>
+                        <button onclick="window.location.href='/src/views/detalhes.php'"><a >Ver Detalhes</a></button>
                     </center>
                 </div>
 
@@ -55,4 +55,5 @@
         <?php include("./footer.php") ?>
     </footer>
 </body>
+
 </html>
