@@ -1,6 +1,6 @@
 <?php 
 
-    $autoloadpath= __DIR__ . "/../../vendor/autoload.php";
+    $autoloadpath = __DIR__ . "/../../vendor/autoload.php";
     include_once $autoloadpath;
     //var_dump($autoloadpath);
 
