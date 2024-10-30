@@ -94,16 +94,6 @@ error_reporting(E_ALL);
 // Usa a classe Login do namespace MeuProjeto\Login     
 include(__DIR__ . '/../vendor/autoload.php');
 
-use MeuProjeto\model\Login;
-//use MeuProjeto\model\UsuarioSistema;
-
-// Instancia a classe Login
-$login = new Login();
-//$sysu = new MeuProjeto\model\UsuarioSistema();
-
-// Verifica o login (se o formulário foi enviado)
-$login->verificarLogin();
-//$sysu->nome = "GustavoR";
 ?>
 
 
