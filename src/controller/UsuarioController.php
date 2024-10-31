@@ -2,7 +2,7 @@
 
 namespace MeuProjeto\controller;
 
-use MeuProjeto\persistence\ConnectionFactory;
+use MeuProjeto\configuration\ConnectionFactory;
 use src\model\Usuario;
 use MeuProjeto\model\Login;
 
