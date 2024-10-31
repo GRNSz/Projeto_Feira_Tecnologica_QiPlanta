@@ -1,5 +1,4 @@
-// erros: 19
-//#region produto 01
+//#region Contador valor
 var contadorplanta01 = 0;
 function incrementarP1() {
   valor = 30.0;
