@@ -57,6 +57,15 @@
                         <button onclick="window.location.href='detalhes.php?id=3'">Ver Detalhes</button>
                     </center>
                 </div> <!-- Adicione mais produtos conforme necessário -->
+                <div class="produto">
+                    <center>
+                        <img src="./images/espadadesaojorge.png" alt="Espada-de-São-Jorge">
+                        <h3>Espada-de-São-Jorge</h3>
+                        <p>Perfeita para ambientes internos, resistente e não precisa de muita água. Também ajuda na purificação do ar.</p>
+                        <p><strong>Preço: R$ 35,00</strong></p>
+                        <button onclick="window.location.href='detalhes.php?id=3'">Ver Detalhes</button>
+                    </center>
+                </div> <!-- Adicione mais produtos conforme necessário -->
             </div>
         </section>
     </main>
