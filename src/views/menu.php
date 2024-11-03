@@ -41,7 +41,7 @@
                 </center>
             </div>
 
-            <div class="produto">
+            <div class="produto" id="plantas">
                 <center>
                     <img src="./images/espadadesaojorge.png" alt="Espada-de-São-Jorge">
                     <h3>Espada-de-São-Jorge - A Guardiã da Proteção</h3>
