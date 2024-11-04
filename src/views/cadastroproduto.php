@@ -29,7 +29,7 @@
 <body>
     <div class="container">
         <h2>Cadastro de Produto</h2>
-        <form action="./controllers/mainController.php?r=CadastroProduto&action=cadastra" method="POST">
+        <form action="./../controllers/mainController.php?r=CadastroProduto&action=cadastra" method="POST">
             <div class="form-group">
                 <label for="nome">Nome do Produto</label>
                 <input type="text" id="nome_produto" name="nomeProduto" required>
