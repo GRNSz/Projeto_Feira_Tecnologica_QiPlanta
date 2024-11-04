@@ -1,41 +1,31 @@
-// erros: 19
-//#region produto 01
-var contadorplanta01 = 0;
-function incrementarP1() {
-  valor = 30.0;
+document.addEventListener('DOMContentLoaded', function() {
+  const quantidadeInput = document.getElementById('quanti1');
+  const quantidadeRange = document.getElementById('quantidadep1');
+  const precoElement = document.getElementById('preco');
+  const nomeProduto = document.getElementById('nomeproduto01').innerText;
 
-  contadorplanta01 = contadorplanta01 + 1;
-  valor = valor * contadorplanta01;
-
-  const quantidadeplanta = document.getElementById("quantidade1");
-  const preco = document.getElementById("preco");
-  quantidadeplanta.style.color = "black";
-  quantidadeplanta.value = contadorplanta01;
-  console.log(valor);
-  document.getElementById("preco").innerHTML = valor;
-}
-
-function decrementarP1() {
-  valor = 30.0;
-
-  const quantidadeplanta = document.getElementById("quantidade1");
-  if (quantidadeplanta == 0 || quantidadeplanta < 0) {
+  function atualizarPreco() {
+      const quantidade = parseInt(quantidadeInput.value);
+      const precoUnitario = parseFloat(precoElement.getAttribute('value'));
+      const precoTotal = quantidade * precoUnitario;
+      precoElement.innerText = precoTotal.toFixed(2);
   }
-  if (document.getElementById("quantidade1").value >= 1) {
-    contadorplanta01 = contadorplanta01 - 1;
-    valor = valor * contadorplanta01;
-    quantidadeplanta.value = contadorplanta01;
-    document.getElementById("preco").innerHTML = valor;
-  } else {
-    quantidadeplanta.style.color = "red";
-  }
-}
 
-function deletarP1() {
-  var divP1 = document.getElementById("P1");
-  var escolha = document.getElementById("confirmar");
-  if (escolha.style.display == "none") {
-    escolha.style.display = "block";
-  }
-}
-//#endregion
+  quantidadeInput.addEventListener('input', function() {
+      quantidadeRange.value = quantidadeInput.value;
+      atualizarPreco();
+  });
+
+  quantidadeRange.addEventListener('input', function() {
+      quantidadeInput.value = quantidadeRange.value;
+      atualizarPreco();
+  });
+
+  window.deletarP1 = function() {
+      const produto = document.getElementById('P1');
+      produto.remove();
+      alert(`${nomeProduto} foi removido do carrinho.`);
+  };
+
+  atualizarPreco();
+});

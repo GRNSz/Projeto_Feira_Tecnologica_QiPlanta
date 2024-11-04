@@ -14,7 +14,7 @@
             <?php include('header.php'); ?>
         </header>
         <main>
-            <script src="./../javascript/carrinhocompras.js"></script>
+            <script src="./javascript/carrinhocompras.js"></script>
             <Div class="div-carrinho-compras">
             <center>
                 <h2>Meu carrinho de compras:</h2>
