@@ -66,10 +66,10 @@
 
                 <div class="produto">
                     <center>
-                        <img src="./images/buqueRosas.png" alt="Buquê de Rosas">
-                        <h3>Buquê com 12 Rosas Vermelhas</h3>
-                        <p>Lindo Buquê com doze rosas vermelhas nacionais. Ideal para presentear alguém especial.</p>
-                        <p><strong>Preço: R$ 90,00</strong></p>
+                        <img src="./images/girassol.png" alt="Buquê de Rosas">
+                        <h3>Flor Girassol</h3>
+                        <p>O girassol é uma planta alta com flores grandes e amarelas que seguem o movimento do sol. Suas sementes são comestíveis e usadas para produzir óleo. É símbolo de alegria e luz.</p>
+                        <p><strong>Preço: R$ 13,00</strong></p>
                         <button onclick="detalhes()">Ver Detalhes</button>
                         <div id="verDetalhes"></div>
                     </center>
