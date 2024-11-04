@@ -64,6 +64,17 @@
                     </center>
                 </div>
 
+                <div class="produto">
+                    <center>
+                        <img src="./images/buqueRosas.png" alt="Buquê de Rosas">
+                        <h3>Buquê com 12 Rosas Vermelhas</h3>
+                        <p>Lindo Buquê com doze rosas vermelhas nacionais. Ideal para presentear alguém especial.</p>
+                        <p><strong>Preço: R$ 90,00</strong></p>
+                        <button onclick="detalhes()">Ver Detalhes</button>
+                        <div id="verDetalhes"></div>
+                    </center>
+                </div>
+
             </div>
         </section>
     </main>
