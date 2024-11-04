@@ -52,6 +52,18 @@
                         <div id="verDetalhes"></div>
                     </center>
                 </div> <!-- Adicione mais produtos conforme necessário -->
+
+                <div class="produto">
+                    <center>
+                        <img src="./images/jiboia.png" alt="Jibóia">
+                        <h3>Jibóia</h3>
+                        <p>Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.</p>
+                        <p><strong>Preço: R$ 25,00</strong></p>
+                        <button onclick="detalhes()">Ver Detalhes</button>
+                        <div id="verDetalhes"></div>
+                    </center>
+                </div>
+
             </div>
         </section>
     </main>
