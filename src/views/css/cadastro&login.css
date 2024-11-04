@@ -4,21 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('../images/Teste-Background.png'); /* Altere para o caminho da sua imagem */
+    display: flex;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: aliceblue;
+    flex-direction: column;
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
-    color: #333;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url('./../../views/images/Teste-Background.png');
 }
 
-/* Container principal */
+/*          Container principal          */
+.container-login {
+    padding: 2%;
+    width: 90%; /* Ajuste para se adaptar melhor ao zoom */
+    margin-top: 8%;
+    margin-left: 30%;
+    max-width: 900px;
+    margin-right: 30%;
+    margin-bottom: 15%;
+    border-radius: 24px;
+    background-color: rgba(97, 161, 102, 0.5); /* Fundo cinza com menos opacidade */
+    box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.6);
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
 .container-cadastro {
     width: 90%; /* Ajuste para se adaptar melhor ao zoom */
     max-width: 900px;
@@ -32,22 +44,8 @@ body {
     box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.8);
     backdrop-filter: blur(5px); /* Efeito de desfoque */
 }
-.container-login {
-    width: 90%; /* Ajuste para se adaptar melhor ao zoom */
-    max-width: 900px;
-    margin-top: 8%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 15%;
-    padding: 2%;
-    background-color: rgba(97, 161, 102, 0.5); /* Fundo cinza com menos opacidade */
-    border-radius: 24px;
-    box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.8);
-    backdrop-filter: blur(5px); /* Efeito de desfoque */
-}
 
-/* Divisória de login */
-.divisoria-login {
+.divisoria {    /* Divisória de login */
     display: flex;
     flex-wrap: nowrap; /* Garante que os itens fiquem lado a lado */
     justify-content: space-between;
@@ -55,17 +53,39 @@ body {
     width: 100%; /* Mantém 100% da largura disponível */
     padding: 10px;
 }
-
-/* Estilos da caixa de cadastro */
-.div-login-centro {
+.div-login-cadastro {     /* Caixa de cadastro no login */
     flex: 1;
     padding: 20px;
-    display: flex;
     margin-right: 2%; /* Espaçamento entre colunas */
     text-align: center;
     box-shadow: inset -2px 0 0 #f0f0f0; /* Simula a borda de maneira responsiva */
     align-self: flex-start; /* Mantém o item no topo à esquerda */
 }
+.titulo-login h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+
 .divisoria-cadastro-login{
     margin-top:25%;
     padding: 10px auto;
@@ -102,12 +122,6 @@ body {
     background-color: #45a049;
 }
 
-/* Estilo da seção de login */
-.titulo-login h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #333;
-}
 
 /* Inputs do formulário */
 .form-input {
@@ -120,22 +134,7 @@ body {
 }
 
 /* Botão de login */
-.login-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 14px 28px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-}
 
-.login-btn:hover {
-    background-color: #45a049;
-}
 
 /* Ajustes de layout responsivo */
 @media (max-width: 768px) {

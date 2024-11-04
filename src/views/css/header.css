@@ -1,23 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0%;
-}
-
+/* Header e Logo */
 header {
-    margin: 0px;
+    margin: 0;
     display: flex;
     align-items: center;
-    height: 100%;
     justify-content: space-between;
     padding: 10px;
-    background: rgb(57,115,72);
-    background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+    background: rgb(57, 115, 72);
+    background: linear-gradient(8deg, rgba(57, 115, 72, 1) 0%, rgba(45, 89, 56, 1) 30%, rgba(32, 64, 40, 1) 100%);
 }
 
 .logo img {
-    height: 80px; /* Ajuste o tamanho do logo conforme necessário */
+    height: 80px;
 }
 
+/* Navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -32,7 +28,7 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     padding: 5px 10px;
-    transition: background-color 0.3s, font-weight 0.3s; /* Transição suave */
+    transition: background-color 0.3s, font-weight 0.3s;
 }
 
 nav ul li a:hover {
@@ -40,32 +36,69 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.input-busca {
-    border-radius: 15px;
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown ul li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown ul li:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Barra de Pesquisa */
 .search-bar {
     display: flex;
+    align-items: center;
 }
 
-.search-bar input[type="text"] {
+.input-busca {
     padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px; /* Borda arredondada */
+    border-radius: 15px;
+    margin-right: 5px;
 }
 
+/* Botão de busca */
 .search-bar button {
-    padding: 5px;
-    border: 1px solid #ccc;
-    background-color: #07914c;
+    padding: 5px 10px;
+    background: #3e9473;
+    border: none;
     color: white;
+    border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 20px;
-    border-radius: 5px; /* Borda arredondada */
-    transition: background-color 0.3s; /* Transição suave */
+    transition: background-color 0.3s;
 }
 
 .search-bar button:hover {
-    background-color: #3e9473;
+    background-color: #2d7049;
 }
