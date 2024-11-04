@@ -23,7 +23,7 @@
                 <input class="form-input" type="text" name="nome" placeholder="Digite seu nome" required>
                 <input class="form-input" type="email" name="email" placeholder="Digite seu email" required>
                 <input class="form-input" type="text" name="assunto" placeholder="Assunto" required>
-                <textarea class="form-input" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                <textarea style="resize: vertical" class="form-input" name="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
                 <button type="submit" class="login-btn">Enviar</button>
             </form>
         </div>
