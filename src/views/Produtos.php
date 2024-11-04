@@ -7,6 +7,7 @@
     <title>Marketplace - Produtos</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/menu.css"> <!-- Adicione seu CSS aqui -->
+    <script src="./javascript/detalhesProdutos.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                         <h3 id="nomeproduto01">Lírio-da-paz</h3>
                         <p>Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.</p>
                         <p><strong>Preço: R$ 30,00</strong></p>
-                        <button onclick="window.location.href='detalhes.php?id=2'"><a >Ver Detalhes</a></button>
+                        <button onclick="window.location.href='detalhes.php?id=1'"><a >Ver Detalhes</a></button>
                     </center>
                 </div>
 
@@ -35,7 +36,8 @@
                         <h3>Jibóia</h3>
                         <p>Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.</p>
                         <p><strong>Preço: R$ 25,00</strong></p>
-                        <button onclick="window.location.href='detalhes.php?id=2'">Ver Detalhes</button>
+                        <button onclick="detalhes()">Ver Detalhes</button>
+                        <div id="verDetalhes"></div>
                     </center>
                 </div>
 

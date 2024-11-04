@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto - Lírio-da-paz</title>
     <link rel="stylesheet" href="/src/views/css/detalhes.css"> <!-- Adicione seu CSS aqui -->
+    <script src="./javascript/detalhesProdutos.js"></script>
 </head>
 
 <body>
@@ -27,13 +28,14 @@
             <img src="/src/views/images/liriodapaz.png" alt="Lírio-da-paz" class="produto-img">
 
             <div class="produto-detalhes">
+                <div id="1"></div>
                 <p><strong>Preço:</strong><b id="preco-lirio"> R$ 30,00</b></p>
                 <p><strong>Descrição:</strong> Além de purificar o ar, o Lírio-da-paz é ótimo para ambientes internos devido à sua tolerância à sombra e baixa necessidade de água. É uma planta perfeita para trazer tranquilidade ao lar.</p>
                 <p><strong>Cuidados:</strong> Rega moderada, preferencialmente quando o solo estiver seco. Manter em locais com sombra ou luz indireta.</p>
                 <p><strong>Categoria:</strong> Plantas de Interior</p>
 
                 <button class="adicionar-carrinho" onclick="window.location.href='carrinho.php?add=1'">Adicionar ao Carrinho</button>
-            </div>
+            </s>
 
             <div class="produto-video">
                 <h2>Conheça mais sobre o Lírio-da-paz</h2>
