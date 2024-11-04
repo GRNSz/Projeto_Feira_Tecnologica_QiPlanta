@@ -26,7 +26,8 @@
                         <h3 id="nomeproduto01">Lírio-da-paz</h3>
                         <p>Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.</p>
                         <p><strong>Preço: R$ 30,00</strong></p>
-                        <button onclick="window.location.href='detalhes.php?id=1'"><a >Ver Detalhes</a></button>
+                        <button onclick="detalhes()">Ver Detalhes</button>
+                        <div id="verDetalhes"></div>
                     </center>
                 </div>
 
@@ -47,7 +48,8 @@
                         <h3>Espada-de-São-Jorge</h3>
                         <p>Perfeita para ambientes internos, resistente e não precisa de muita água. Também ajuda na purificação do ar.</p>
                         <p><strong>Preço: R$ 35,00</strong></p>
-                        <button onclick="window.location.href='detalhes.php?id=3'">Ver Detalhes</button>
+                        <button onclick="detalhes()">Ver Detalhes</button>
+                        <div id="verDetalhes"></div>
                     </center>
                 </div> <!-- Adicione mais produtos conforme necessário -->
             </div>
