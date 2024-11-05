@@ -3,6 +3,7 @@ footer {
   background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
   height: 250px; /* Altura */
   width: 100%; /* Largura */
+  margin-block-end: 0%;
   padding-top: 30px;  /*espaçamento interno*/
   /* display: flex; /* Tipo de exibição */
   align-items: center; /* Alinhamento vertical */
