@@ -75,6 +75,17 @@
                     </center>
                 </div>
 
+                <div class="produto">
+                    <center>
+                        <img src="./images/gerbera.png" alt="Buquê de Rosas">
+                        <h3>Vaso de Gérbera</h3>
+                        <p>O girassol é uma planta alta com flores grandes e amarelas que seguem o movimento do sol. Suas sementes são comestíveis e usadas para produzir óleo. É símbolo de alegria e luz.</p>
+                        <p><strong>Preço: R$ 13,00</strong></p>
+                        <button onclick="detalhes()">Ver Detalhes</button>
+                        <div id="verDetalhes"></div>
+                    </center>
+                </div>
+
             </div>
         </section>
     </main>
