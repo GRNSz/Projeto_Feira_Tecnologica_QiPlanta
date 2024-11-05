@@ -84,7 +84,7 @@
                         <img src="./images/gerbera.png" alt="Buquê de Rosas">
                         <h3>Vaso de Gérbera</h3>
                         <p>A gérbera é uma flor vibrante e colorida, conhecida por suas pétalas grandes e simétricas. Ela se assemelha a uma margarida e vem em várias cores, como vermelho, laranja, rosa, amarelo e branco.</p>
-                        <p><strong>Preço: R$ 13,00</strong></p>
+                        <p><strong>Preço: R$ 50,00</strong></p>
                         <button onclick="detalhes()">Ver Detalhes</button>
                         <div id="verDetalhes"></div>
                     </center>
