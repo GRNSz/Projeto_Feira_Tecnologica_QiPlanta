@@ -18,7 +18,7 @@
 
     
 
-    <section class="detalhes-produto">
+    <section class="detalhes-produto">     
         
         
         <div class="produto">
@@ -26,7 +26,7 @@
                 <h1 style="margin-left: 70px;">Lírio-da-paz</h1>
             </center>
             <img src="/src/views/images/liriodapaz.png" alt="Lírio-da-paz" class="produto-img">
-
+            
             <div class="produto-detalhes">
                 <div id="1"></div>
                 <p><strong>Preço:</strong><b id="preco-lirio"> R$ 30,00</b></p>
