@@ -13,28 +13,9 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.php">Minha Conta</a></li>
-                <li><a href="./views/Produtos.php">Produtos</a></li>
-                <li><a href="./views/categorias.php">Categorias</a></li>
-                <li><a href="./views/sobre.php">Sobre Nós</a></li>
-                <li><a href="./views/contato.php">Contato</a></li>
-                <li><a href="./views/carrinho.php">Carrinho</a></li>
-            </ul>
-        </nav>
-        <div class="search-bar">
-            <form action="pesquisa.php" method="GET">
-                <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
+        <?php include("./../src/views/header.php") ?>
     </header>
     <main>
-        <div class="background">
             <div class="container">
                 <div class="divisoria-login">
                     <div class="div-login-centro">
