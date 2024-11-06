@@ -82,6 +82,13 @@ class ProdutoController {
                 'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
                 'categoria' => 'Ferramentas'
             ],
+            10 => [
+                'nome' => 'Enxadinha para Jardim',
+                'preco' => 4.00,
+                'imagem' => './images/enxadinha.png',
+                'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
+                'categoria' => 'Ferramentas'
+            ],
         ];
     }
 
