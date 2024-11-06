@@ -4,12 +4,15 @@ footer {
   height: 250px; /* Altura */
   width: 100%; /* Largura */
   padding-top: 2%;  /* espaçamento interno */
-  padding: 10px;
+  padding: 15px 0;
   display:table; /* Tipo de exibição */
   align-items: center; /* Alinhamento vertical */
   justify-content: center; /* Alinhamento horizontal */
-  margin-top: auto; /* Mantém o footer na parte inferior */
+  margin-top: 20px; /* Mantém o footer na parte inferior */
+  text-align: center;
+
 }
+
 footer img{
   border-radius:50%;
   height: 90px;

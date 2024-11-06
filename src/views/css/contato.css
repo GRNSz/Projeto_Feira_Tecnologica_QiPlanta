@@ -11,7 +11,7 @@ body {
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
-    color: #333;
+    color: #ffffff;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
