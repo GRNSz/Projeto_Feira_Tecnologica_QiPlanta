@@ -1,207 +1,237 @@
+/* Reset básico e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0%;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+    animation: fadeIn 1s ease-out;
 }
 
 header {
-    margin: 0px;
+    margin: 0;
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 80px;
     justify-content: space-between;
-    padding: 10px;
-    background: rgb(57,115,72);
-    background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+    padding: 0 2rem;
+    background: linear-gradient(45deg, #2d573f, #397348, #204028);
+    background-size: 200% 200%;
+    animation: gradientBG 10s ease infinite;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
 }
 
 .logo img {
-    height: 80px; /* Ajuste o tamanho do logo conforme necessário */
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1) rotate(5deg);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
+    gap: 2rem;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    padding: 5px 10px;
-    transition: background-color 0.3s, font-weight 0.3s; /* Transição suave */
+    padding: 0.8rem 1.2rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.5s;
 }
 
 nav ul li a:hover {
-    background-color: #3e9473;
-    font-weight: bold;
+    background-color: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
 }
 
-.input-busca {
-    border-radius: 15px;
+nav ul li a:hover:before {
+    left: 100%;
 }
 
 .search-bar {
     display: flex;
+    gap: 0.5rem;
 }
 
 .search-bar input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Borda arredondada */
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.9);
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.search-bar input[type="text"]:focus {
+    width: 250px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.3);
+    outline: none;
 }
 
 .search-bar button {
-    padding: 5px;
-    border: 1px solid #ccc;
-    background-color: #07914c;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #4CAF50;
     color: white;
+    border-radius: 25px;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 20px;
-    border-radius: 5px; /* Borda arredondada */
-    transition: background-color 0.3s; /* Transição suave */
+    transition: all 0.3s ease;
 }
 
 .search-bar button:hover {
     background-color: #3e9473;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .anuncios {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-left: 70px;
+    padding: 3rem;
+    background-color: transparent;
+}
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .produto {
-    border: 1px solid #ddd;
-    border-radius: 24px;
-    margin-top: 45px;
-    margin-left: 500px;
-    margin-right: 500px;
-    justify-items: center;
-    margin-bottom: 15px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-left: 30px;
-    transition: transform 0.3s, box-shadow 0.3s; /* Transição para o efeito de hover */
-}
-
-.produto:hover {
-    transform: scale(1.05); /* Efeito de zoom */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra no hover */
-}
-
-.produto img {
-    margin-top: 15px;
-    border-radius: 50%;
-    max-width: 20%;
-    height: auto;
-}
-
-.produto button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-weight: bold;
-    background-color: #07914c;
-    color: #07914c;
-    border: #4CAF50 3px solid;
-    border-radius: 15px;
-    background-color: white;
-    transition: background-color 0.3s, color 0.3s; /* Transição suave */
-}
-
-.produto button:hover {
-    background-color: #3e9473;
-    color: white; /* Muda a cor do texto */
-}
-
-/* Estilização do banner */
-.banner {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    position: relative;
-}
-
-.slides {
-    display: flex;
-    width: 300%;
-    height: 100%;
-    animation: slide 15s infinite;
-}
-
-.slide {
-    width: 100%;
-    height: auto;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0%); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0%); }
-}
-
-/* Estilos para melhorar o visual */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0%;
-}
-
-header {
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: space-between;
-    padding: 10px;
-    background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
-}
-
-.produto {
-    border: 1px solid #ddd;
-    border-radius: 24px;
-    margin: 45px auto;
-    max-width: 800px;
-    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    padding: 2rem;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.4s ease;
+    animation: floatAnimation 3s ease-in-out infinite;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 .produto:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
 .produto img {
-    margin-top: 15px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
     border-radius: 50%;
-    max-width: 150px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+.produto:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.produto h3 {
+    color: #2d573f;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.produto p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 .produto button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-weight: bold;
-    background-color: #07914c;
+    background: linear-gradient(45deg, #4CAF50, #45a049);
     color: white;
     border: none;
-    border-radius: 15px;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .produto button:hover {
-    background-color: #3e9473;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(76,175,80,0.4);
 }
 
-.anuncios {
-    padding: 20px;
-    background-color: #f9f9f9;
-    text-align: center;
+.produto button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: 0.5s;
+}
+
+.produto button:hover:before {
+    left: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .search-bar {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .produtos-container {
+        grid-template-columns: 1fr;
+    }
 }

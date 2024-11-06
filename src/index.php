@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <?php include("./../src/views/header.php") ?>
+        <?php include("./views/header.php") ?>
     </header>
     <main>
             <div class="container">
