@@ -75,13 +75,7 @@ class ProdutoController {
                 'descricao' => 'A pazinha de jardim é uma ferramenta prática para plantar, transplantar e cuidar de pequenas plantas. Com lâmina resistente e cabo ergonômico, facilita o trabalho em áreas menores e de difícil acesso. Ideal para jardineiros iniciantes e experientes.',
                 'categoria' => 'Ferramentas'
             ],
-            9 => [
-                'nome' => 'Pazinha para Jardim',
-                'preco' => 30.00,
-                'imagem' => './images/pazinha.png',
-                'descricao' => 'A pazinha de jardim é uma ferramenta prática para plantar, transplantar e cuidar de pequenas plantas. Com lâmina resistente e cabo ergonômico, facilita o trabalho em áreas menores e de difícil acesso. Ideal para jardineiros iniciantes e experientes.',
-                'categoria' => 'Ferramentas'
-            ],
+            
         ];
     }
 
