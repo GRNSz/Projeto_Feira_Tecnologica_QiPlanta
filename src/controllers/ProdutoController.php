@@ -62,7 +62,7 @@ class ProdutoController {
                 'cuidados' => 'A gérbera precisa de luz indireta, solo bem drenado e rega regular. Mantenha-a em temperaturas amenas e fertilize mensalmente. Retire flores murchas e cuide de pragas como pulgões.'
             ],
             7 => [
-                'nome' => 'Vassora para Grama',
+                'nome' => 'Vassoura para Grama',
                 'preco' => 30.00,
                 'imagem' => './images/vassoura.png',
                 'descricao' => 'A vassoura para grama é ideal para varrer folhas e detritos em jardins e áreas externas. Com cerdas resistentes e design ergonômico, oferece conforto e eficiência na limpeza de gramados e calçadas.',
