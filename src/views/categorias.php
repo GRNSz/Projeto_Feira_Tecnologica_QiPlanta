@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias - Marketplace</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
-    <link rel="stylesheet" href="./css/categorias.css"> <!-- Adicione o CSS personalizado -->
+    <link rel="stylesheet" href="./css/categorias.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>

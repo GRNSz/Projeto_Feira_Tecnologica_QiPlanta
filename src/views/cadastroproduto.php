@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produto</title>
-    <link rel="stylesheet" href="css/cadastro_produto.css">
+   <!-- <link rel="stylesheet" href="css/cadastro_produto.css"> -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src = "./javascript/processaCadastro.js"></script>
-    <style>
+    <style> /*Vou atualizar deepois ksks*/
         .form-group {
             display: flex;
             flex-direction: column;
@@ -27,6 +29,11 @@
 </head>
 
 <body>
+<header>
+    <?php include("./header.php"); ?>
+</header>
+
+<main>
     <div class="container">
         <h2>Cadastro de Produto</h2>
         <form action="./../controllers/mainController.php?r=CadastroProduto&action=cadastra" method="POST">
@@ -56,6 +63,11 @@
             </div>
         </form>
     </div>
+</main>
+
+<footer>
+    <?php include("./footer.php") ?>
+</footer>
 
     <?php
 
@@ -63,7 +75,6 @@
         require_once './controllers/CadastroProduto.php';
 
     ?>
-
 </body>
 
 </html>

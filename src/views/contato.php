@@ -7,6 +7,8 @@
     <title>Contato</title>
     <link rel="icon" href="views/images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/contato.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>

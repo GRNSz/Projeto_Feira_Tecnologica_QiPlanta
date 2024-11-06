@@ -13,12 +13,20 @@
 
 body {
     font-family: 'Arial', sans-serif;
+<<<<<<< HEAD
     background-image: url('../images/Teste-Background.png');
     background-attachment: fixed; /* Efeito parallax no fundo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #333;
+=======
+    background-image: url('../images/Teste-Background.png'); /* Altere para o caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    color: azure;
+>>>>>>> 4049a34d39d5c72acdac8acd82b2bdd54ec16858
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -82,7 +90,7 @@ body {
 }
 
 .caixa-cadastro-login h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
     color: aliceblue;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -91,6 +99,9 @@ body {
 
 .caixa-cadastro-login h2:hover {
     transform: scale(1.05);
+}
+.caixa-cadastro-login h2::first-letter{
+    font-size: 26px;
 }
 
 .caixa-cadastro-login p {
@@ -132,8 +143,16 @@ body {
     box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
 }
 
+<<<<<<< HEAD
 .btn-cadastro-login:hover:before {
     left: 100%;
+=======
+/* Estilo da seção de login */
+.titulo-login h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: azure;
+>>>>>>> 4049a34d39d5c72acdac8acd82b2bdd54ec16858
 }
 
 /* Inputs do formulário com animação */
