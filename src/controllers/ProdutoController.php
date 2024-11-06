@@ -52,7 +52,15 @@ class ProdutoController {
                 'descricao' => 'O girassol é uma planta alta com flores grandes e amarelas que seguem o movimento do sol. Suas sementes são comestíveis e usadas para produzir óleo. É símbolo de alegria e luz.',
                 'categoria' => 'Flores',
                 'cuidados' => 'Necessita de luz solar direta, solo bem drenado e rega regular.'
-            ]
+            ],
+            6 => [
+                'nome' => 'Vaso de Gérbera',
+                'preco' => 50.00,
+                'imagem' => './images/gerbera.png',
+                'descricao' => 'A gérbera é uma flor vibrante e colorida, conhecida por suas pétalas grandes e simétricas. Ela se assemelha a uma margarida e vem em várias cores, como vermelho, laranja, rosa, amarelo e branco.',
+                'categoria' => 'Flores',
+                'cuidados' => 'A gérbera precisa de luz indireta, solo bem drenado e rega regular. Mantenha-a em temperaturas amenas e fertilize mensalmente. Retire flores murchas e cuide de pragas como pulgões.'
+            ],
         ];
     }
 
