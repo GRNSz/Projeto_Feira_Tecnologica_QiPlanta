@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
 
 <body>

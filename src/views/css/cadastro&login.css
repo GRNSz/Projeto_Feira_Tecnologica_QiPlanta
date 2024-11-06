@@ -11,7 +11,7 @@ body {
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
-    color: #333;
+    color: azure;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -55,9 +55,12 @@ body {
 }
 
 .caixa-cadastro-login h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
     color: aliceblue;
+}
+.caixa-cadastro-login h2::first-letter{
+    font-size: 26px;
 }
 
 .caixa-cadastro-login p {
@@ -86,7 +89,7 @@ body {
 .titulo-login h1 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #333;
+    color: azure;
 }
 
 /* Inputs do formulário */
