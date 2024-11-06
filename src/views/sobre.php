@@ -8,6 +8,68 @@
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2d5938;
+            border-bottom: 2px solid #397348;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 2em;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #333;
+            margin: 20px 0;
+            text-align: justify;
+            padding: 0 20px;
+        }
+
+        main {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            main {
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 1.5em;
+            }
+            
+            p {
+                padding: 0 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
