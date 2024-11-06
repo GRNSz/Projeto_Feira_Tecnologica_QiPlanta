@@ -68,6 +68,13 @@ class ProdutoController {
                 'descricao' => 'A vassoura para grama é ideal para varrer folhas e detritos em jardins e áreas externas. Com cerdas resistentes e design ergonômico, oferece conforto e eficiência na limpeza de gramados e calçadas.',
                 'categoria' => 'Ferramentas'
             ],
+            8 => [
+                'nome' => 'Pazinha para Jardim',
+                'preco' => 30.00,
+                'imagem' => './images/pazinha.png',
+                'descricao' => 'A pazinha de jardim é uma ferramenta prática para plantar, transplantar e cuidar de pequenas plantas. Com lâmina resistente e cabo ergonômico, facilita o trabalho em áreas menores e de difícil acesso. Ideal para jardineiros iniciantes e experientes.',
+                'categoria' => 'Ferramentas'
+            ],
         ];
     }
 
