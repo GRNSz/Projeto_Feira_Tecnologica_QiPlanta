@@ -84,13 +84,4 @@
     <!-- <a href=" ./controllers/mainController.php?r=UsuarioController&action=index">TESTE</a> -->
 
 </body>
-
-<?php
-
-require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../configuration/ConnectionFactory.php';
-require_once __DIR__ . '/../controllers/UsuarioController.php';
-require_once __DIR__ . '/../controllers/mainController.php';
-
-?>
 </html>

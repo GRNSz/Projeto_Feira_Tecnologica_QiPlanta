@@ -58,7 +58,7 @@
                     <center>
                         <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
-                        <a href="./../index.php">
+                        <a href="./login.php">
                         <button type="button" class="login-btn">Login</button>
                         </a>
                     </center>
