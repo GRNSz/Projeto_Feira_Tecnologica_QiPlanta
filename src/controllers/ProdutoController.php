@@ -61,6 +61,34 @@ class ProdutoController {
                 'categoria' => 'Flores',
                 'cuidados' => 'A gérbera precisa de luz indireta, solo bem drenado e rega regular. Mantenha-a em temperaturas amenas e fertilize mensalmente. Retire flores murchas e cuide de pragas como pulgões.'
             ],
+            7 => [
+                'nome' => 'Vassoura para Grama',
+                'preco' => 30.00,
+                'imagem' => './images/vassoura.png',
+                'descricao' => 'A vassoura para grama é ideal para varrer folhas e detritos em jardins e áreas externas. Com cerdas resistentes e design ergonômico, oferece conforto e eficiência na limpeza de gramados e calçadas.',
+                'categoria' => 'Ferramentas'
+            ],
+            8 => [
+                'nome' => 'Pazinha para Jardim',
+                'preco' => 3.00,
+                'imagem' => './images/pazinha.png',
+                'descricao' => 'A pazinha de jardim é uma ferramenta prática para plantar, transplantar e cuidar de pequenas plantas. Com lâmina resistente e cabo ergonômico, facilita o trabalho em áreas menores e de difícil acesso. Ideal para jardineiros iniciantes e experientes.',
+                'categoria' => 'Ferramentas'
+            ],
+            9 => [
+                'nome' => 'Enxadinha para Jardim',
+                'preco' => 4.00,
+                'imagem' => './images/enxadinha.png',
+                'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
+                'categoria' => 'Ferramentas'
+            ],
+            10 => [
+                'nome' => 'Enxadinha para Jardim',
+                'preco' => 4.00,
+                'imagem' => './images/enxadinha.png',
+                'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
+                'categoria' => 'Ferramentas'
+            ],
         ];
     }
 
