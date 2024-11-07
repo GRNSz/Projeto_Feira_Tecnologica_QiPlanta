@@ -15,40 +15,49 @@
         </div>
         <nav>
             <ul>
-                <li><a href="./../index.php">Login</a></li>
+                <li><a href="./login.php">Login</a></li>
                 <li><a href="menu.php">Home</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <div class="container-cadastro">
-            <div class="divisoria-login" style="color:antiquewhite;">
-                <div>
+            <div class="divisoria" style="color:antiquewhite;">
+                <div> <!-- forms -->
 
                     <form action="./../controllers/mainController.php?r=UsuarioController&action=store" method="POST">
-                        <h1>Cadastro de Cliente </h1><br>
+                            <center>
+                                <h1>Cadastro de Cliente </h1><br>
+                            </center>
 
-                        <label for="username">Nome de Usuário:</label><br>
-                        <input class="form-input" type="text" id="nome" name="nome" placeholder="Insira um nome de usuário" required><br><br>
-
-                        <label for="username">Endereço:</label><br>
-                        <input class="form-input" type="text" id="endereco" name="endereco" placeholder="Digite o seu Endereço" required><br><br>
-
+                            <label for="username">Nome de Usuário:</label><br>
+                            <input class="form-input" type="text" id="nome" name="nome" placeholder="Insira um nome de usuário" required>
+                            
+                            <label for="username">Endereço:</label><br>
+                        <input class="form-input" type="text" id="endereco" name="endereco" placeholder="Digite o seu Endereço" required>
+                        
                         <label for="username">Email:</label><br>
-                        <input class="form-input" type="text" id="email" name="email" placeholder="Insira o seu e-mail" required><br><br>
-
+                        <input class="form-input" type="text" id="email" name="email" placeholder="Insira o seu e-mail" required>
+                        
                         <label for="username">Numero do Celular:</label><br>
-                        <input class="form-input" type="number" id="numcell" name="numcell" placeholder="(xx) xxx xxx xxx" required><br><br>
+                        <input class="form-input" type="number" id="numcell" name="numcell" placeholder="(xx) xxx xxx xxx" required>
+                        
+                        <div class="divisoria">
+                            <div><!--senha -->
+                                <label for="password">Senha:</label><br>
+                                <input class="form-input" type="password" id="senha" name="senha" placeholder="Insira uma senha" required>
+                            </div>
 
-                        <label for="password">Senha:</label><br>
-                        <input class="form-input" type="password" id="senha" name="senha" placeholder="Insira uma senha" required>
-
-                        <label for="password">Repita sua senha:</label><br>
-                        <input class="form-input" type="password" id="senha2" name="senha2" placeholder="Confirme sua senha" required><br><br>
-
+                            <div><!--confirmar senha -->
+                                <label for="password">Repita sua senha:</label><br>
+                                <input class="form-input" type="password" id="senha2" name="senha2" placeholder="Confirme sua senha" required>
+                            </div>
+                        </div>
+                        
+                        
                         <input type="checkbox" name="robot" id="robot" required>
                         <label>Não sou um robo</label>
-
+                        
                         <div style="left:10px;">
                             <button class="login-btn" id="btn-cadastro" type="submit" value="Cadastrar">Cadastrar</button>
                         </div>
@@ -58,13 +67,14 @@
                     <center>
                         <img src="./images/QiPlanta.png" alt="Logo do Marketplace" style="height: 200px; margin-top: 40px;">
                         <p>Ja possui uma conta? <br></p> <br>
-                        <a href="./../index.php">
-                        <button type="button" class="login-btn">Login</button>
+                        <a href="./login.php">
+                            <button type="button" class="login-btn">Login</button>
                         </a>
                     </center>
                 </div>
             </div>
         </div>
+    </div>
     </main>
     <footer>
         <?php include("footer.php") ?>

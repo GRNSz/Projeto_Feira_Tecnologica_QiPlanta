@@ -87,9 +87,8 @@ body {
 
 
 .divisoria-cadastro-login{
-    margin-top:25%;
-    padding: 10px auto;
-    margin-left:5%;
+    display: flex;
+    align-items: center;
 }
 
 .caixa-cadastro-login h2 {
