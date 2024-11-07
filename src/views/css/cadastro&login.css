@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 body {
-    display: flex;
     line-height: 1.6;
     min-height: 100vh;
     color: aliceblue;
     flex-direction: column;
+    align-items: center;
     background-size: cover; /* Faz a imagem cobrir todo o fundo */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
@@ -17,15 +17,18 @@ body {
     background-image: url('./../../views/images/Teste-Background.png');
 }
 
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
 /*          Container principal          */
 .container-login {
     padding: 2%;
     width: 90%; /* Ajuste para se adaptar melhor ao zoom */
-    margin-top: 8%;
-    margin-left: 30%;
     max-width: 900px;
-    margin-right: 30%;
-    margin-bottom: 15%;
+    margin: 10%;
     border-radius: 24px;
     background-color: rgba(97, 161, 102, 0.5); /* Fundo cinza com menos opacidade */
     box-shadow: 0px 4px 12px rgba(74, 250, 58, 0.6);
@@ -34,10 +37,7 @@ body {
 .container-cadastro {
     width: 90%; /* Ajuste para se adaptar melhor ao zoom */
     max-width: 900px;
-    margin-top: 8%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-bottom: 15%;
+   margin: 10%;
     padding: 2%;
     background-color: rgba(97, 161, 102, 0.5); /* Fundo cinza com menos opacidade */
     border-radius: 24px;

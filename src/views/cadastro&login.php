@@ -5,7 +5,7 @@
     <title>Tela de Cadastro</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/cadastro&login.css" />
-    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/header.css" />
 </head>
 
 <body>
