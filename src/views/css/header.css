@@ -12,6 +12,15 @@ header {
 
 .logo img {
     height: 80px;
+    border-radius:50%;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+
+.logo img:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Navegação */
@@ -29,12 +38,29 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     padding: 5px 10px;
-    transition: background-color 0.3s, font-weight 0.3s;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 nav ul li a:hover {
-    background-color: #3e9473;
-    font-weight: bold;
+    background-color: rgba(62, 148, 115, 0.5);
+    transform: translateY(-2px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* Dropdown */
@@ -53,10 +79,16 @@ nav ul li a:hover {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
 }
 
 .dropdown:hover ul {
-    display: block;
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
 }
 
 .dropdown ul li {
@@ -83,10 +115,18 @@ nav ul li a:hover {
 }
 
 .input-busca {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    margin-right: 5px;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.input-busca:focus {
+    width: 250px;
+    border-color: #3e9473;
+    box-shadow: 0 0 10px rgba(62, 148, 115, 0.3);
+    outline: none;
 }
 
 /* Botão de busca */
@@ -97,9 +137,11 @@ nav ul li a:hover {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.2s ease;
+    transform: scale(1);
 }
 
 .search-bar button:hover {
-    background-color: #2d7049;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
 }
