@@ -2,13 +2,13 @@
     <link rel="stylesheet" href="./css/menu.css"> <!-- Adicione seu CSS aqui -->
 </head>
     <div class="logo">
-        <a href="./views/menu.php"><img src="./views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
+        <a href="./menu.php"><img src="./images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
 </div>
 <nav>
     <ul>
         <li><a href="./../index.php">Minha Conta</a></li>
-        <li><a href="./views/Produtos.php">Produtos</a></li>
-        <li><a href="./views/categorias.php">Categorias</a></li>
+        <li><a href="./Produtos.php">Produtos</a></li>
+        <li><a href="./categorias.php">Categorias</a></li>
         <li><a href="./sobre.php">Sobre Nós</a></li>
         <li><a href="./contato.php">Contato </a></li>
         <li><a href="./carrinho.php">Carrinho</a></li>
