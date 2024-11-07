@@ -8,7 +8,6 @@ footer {
   display:table; /* Tipo de exibição */
   align-items: center; /* Alinhamento vertical */
   justify-content: center; /* Alinhamento horizontal */
-  margin-top: 20px; /* Mantém o footer na parte inferior */
   text-align: center;
   position: fixed;
   left: 0;
