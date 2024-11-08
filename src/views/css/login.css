@@ -1,0 +1,203 @@
+/* Variáveis CSS para melhor manutenção */
+:root {
+    --primary-color: #4CAF50;
+    --primary-hover: #45a049;
+    --text-color: aliceblue;
+    --container-bg: rgba(97, 161, 102, 0.5);
+    --shadow-color: rgba(74, 250, 58, 0.6);
+    --input-bg: rgba(255, 255, 255, 0.9);
+    --border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Reset mais moderno */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    min-height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    background: url('./../../views/images/Teste-Background.png') center/cover no-repeat;
+    font-family: 'Arial', sans-serif;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    min-height: calc(100vh - 400px);
+}
+/*          Container principal          */
+.container-login,
+.container-cadastro {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: var(--container-bg);
+    box-shadow: 0 4px 12px var(--shadow-color);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.container-login:hover,
+.container-cadastro:hover {
+    transform: translateY(-2px);
+}
+
+.divisoria {    /* Divisória de login */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+}
+.div-login-cadastro {     /* Caixa de cadastro no login */
+    flex: 1;
+    padding: 30px;
+    margin-right: 40px;
+    text-align: center;
+    box-shadow: inset -2px 0 0 rgba(240, 240, 240, 0.3);
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo-login h2{
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.login-btn,
+.btn-cadastro-login {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover,
+.btn-cadastro-login:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.divisoria-cadastro-login{
+    display: flex;
+    align-items: center;
+}
+
+.caixa-cadastro-login h2 {
+    font-size: 24px;
+    margin-top: 4%;
+    padding: 2%;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.caixa-cadastro-login p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+/* Inputs do formulário */
+.form-input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    background: var(--input-bg);
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Ajustes de layout responsivo */
+@media (max-width: 768px) {
+    main {
+        padding: 40px 20px;
+    }
+
+    .container-login {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .divisoria {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .div-login-cadastro {
+        margin-right: 0;
+        box-shadow: none;
+        border-bottom: 2px solid rgba(240, 240, 240, 0.3);
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-height: 800px) {
+    main {
+        padding: 100px 20px;
+    }
+}
+
+/* Ajuste específico para a página de cadastro */
+.container-cadastro .divisoria {
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.container-cadastro form {
+    flex: 2;
+    padding-right: 20px;
+}
+
+.divisoria-cadastro-login {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    .container-cadastro {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .container-cadastro .divisoria {
+        gap: 30px;
+    }
+}
+
+@media (max-height: 800px) {
+    .container-cadastro {
+        margin: 20px auto;
+    }
+}
