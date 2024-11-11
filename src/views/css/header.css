@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    margin: 0px;
+    margin: 0;
     display: flex;
     align-items: center;
     height: 100%;
@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-    height: 80px; /* Ajuste o tamanho do logo conforme necessário */
+    height: 80px;
 }
 
 nav ul {
@@ -31,7 +31,7 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     padding: 5px 10px;
-    transition: background-color 0.3s, font-weight 0.3s; /* Transição suave */
+    transition: background-color 0.3s, font-weight 0.3s;
 }
 
 nav ul li a:hover {
@@ -50,7 +50,7 @@ nav ul li a:hover {
 .search-bar input[type="text"] {
     padding: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px; /* Borda arredondada */
+    border-radius: 5px;
 }
 
 .search-bar button {
@@ -61,10 +61,24 @@ nav ul li a:hover {
     cursor: pointer;
     margin-left: 10px;
     margin-right: 20px;
-    border-radius: 5px; /* Borda arredondada */
-    transition: background-color 0.3s; /* Transição suave */
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .search-bar button:hover {
     background-color: #3e9473;
+}
+
+@media screen and (max-width: 767px) {
+    .logo img {
+        content: url("../images/QiPlantaLogo.png");
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
 }
