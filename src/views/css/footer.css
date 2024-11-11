@@ -79,5 +79,7 @@ footer a:hover {
 }
 
 footer * {
-  animation: fadeInUp 0.5s ease forwards;
+  animation: fadeInUp 0.5s;
+  will-change: transform, opacity;
+  filter: none; /* Garante que não haja desfoque */
 }

@@ -57,7 +57,7 @@
             <h2>Conheça mais sobre o Lírio-da-paz</h2>
             <div class="video-container">
                 <!-- Restaurando o vídeo indexado original -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FR_qHmrIh6E?si=5ZFKbOxEFBGXGLGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="510" height="230" src="https://www.youtube.com/embed/FR_qHmrIh6E?si=5ZFKbOxEFBGXGLGy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
     </main>
