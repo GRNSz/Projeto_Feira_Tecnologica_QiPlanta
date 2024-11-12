@@ -6,7 +6,7 @@
 
     class CadastroProduto {
 
-        public function store($pegainfo)
+        public function cadastraProd($pegainfo)
         {
             # Pega os valores para armazenar no banco
             $nome = $pegainfo['nome'];

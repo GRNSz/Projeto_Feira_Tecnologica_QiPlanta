@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h2>Cadastro de Produto</h2>
-        <form action="processa_cadastro.php" method="post">
+        <form action="./controllers/mainController.php?r=CadastroProduto&action=cadastraProd" method="POST">
             <div class="form-group">
                 <label for="nome">Nome do Produto</label>
                 <input type="text" id="nome_produto" name="nome_produto" required>

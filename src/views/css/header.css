@@ -1,13 +1,12 @@
 /* Header e Logo */
 header {
     margin: 0;
-    height: 100%;
     display: flex;
-    align-items: center;
+    vertical-align: middle; /* Alinha verticalmente */
     justify-content: space-between;
-    padding: 10px;
     background: rgb(57, 115, 72);
     background: linear-gradient(8deg, rgba(57, 115, 72, 1) 0%, rgba(45, 89, 56, 1) 30%, rgba(32, 64, 40, 1) 100%);
+    padding: 0;
 }
 
 .logo img {
@@ -31,7 +30,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -40,6 +39,7 @@ nav ul li a {
     padding: 5px 10px;
     transition: all 0.3s ease;
     position: relative;
+    white-space: nowrap;
 }
 
 nav ul li a::after {
@@ -58,9 +58,8 @@ nav ul li a:hover::after {
 }
 
 nav ul li a:hover {
-    background-color: rgba(62, 148, 115, 0.5);
     transform: translateY(-2px);
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+
 }
 
 /* Dropdown */
@@ -112,6 +111,8 @@ nav ul li a:hover {
 .search-bar {
     display: flex;
     align-items: center;
+    white-space: nowrap;
+
 }
 
 .input-busca {
@@ -120,6 +121,7 @@ nav ul li a:hover {
     border-radius: 20px;
     transition: all 0.3s ease;
     width: 200px;
+    white-space: nowrap;
 }
 
 .input-busca:focus {

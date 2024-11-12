@@ -7,6 +7,7 @@
     <title>Marketplace - A Natureza ao Seu Alcance</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/menu.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="manifest"href="./json/manifest.json">
 </head>
 
 <body>

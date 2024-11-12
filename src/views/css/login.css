@@ -4,9 +4,10 @@
     --primary-hover: #45a049;
     --text-color: aliceblue;
     --container-bg: rgba(97, 161, 102, 0.5);
-    --shadow-color: rgba(74, 250, 58, 0.6);
+
     --input-bg: rgba(255, 255, 255, 0.9);
     --border-color: rgba(255, 255, 255, 0.2);
+    --shadow-color: rgb(49, 163, 38);
 }
 
 /* Reset mais moderno */
@@ -26,7 +27,7 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-main{
+main {
     flex: 1;
     display: flex;
     align-items: center;
@@ -34,7 +35,8 @@ main{
     padding: 80px 20px;
     min-height: calc(100vh - 400px);
 }
-/*          Container principal          */
+
+/* Container principal */
 .container-login,
 .container-cadastro {
     width: 90%;
@@ -53,7 +55,7 @@ main{
     transform: translateY(-2px);
 }
 
-.divisoria {    /* Divisória de login */
+.divisoria {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -61,7 +63,8 @@ main{
     width: 100%;
     padding: 20px;
 }
-.div-login-cadastro {     /* Caixa de cadastro no login */
+
+.div-login-cadastro {
     flex: 1;
     padding: 30px;
     margin-right: 40px;
@@ -72,7 +75,8 @@ main{
     flex-direction: column;
     justify-content: center;
 }
-.titulo-login h2{
+
+.titulo-login h2 {
     font-size: 34px;
     margin-bottom: 20px;
     color: aliceblue;
@@ -97,7 +101,7 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.divisoria-cadastro-login{
+.divisoria-cadastro-login {
     display: flex;
     align-items: center;
 }
@@ -158,6 +162,41 @@ main{
     }
 }
 
+@media (max-width: 600px) {
+    .container-login,
+    .container-cadastro {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .titulo-login h2 {
+        font-size: 28px;
+    }
+
+    .login-btn,
+    .btn-cadastro-login {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .form-input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .divisoria {
+        gap: 20px;
+    }
+
+    .caixa-cadastro-login h2 {
+        font-size: 22px;
+    }
+
+    .caixa-cadastro-login p {
+        font-size: 14px;
+    }
+}
+
 @media (min-height: 800px) {
     main {
         padding: 100px 20px;
@@ -184,20 +223,18 @@ main{
     padding: 20px;
 }
 
-/* Media queries para responsividade */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container-cadastro {
         margin: 20px auto;
-        padding: 20px;
+        padding: 16px;
     }
 
     .container-cadastro .divisoria {
-        gap: 30px;
+        gap: 20px;
     }
-}
 
-@media (max-height: 800px) {
-    .container-cadastro {
-        margin: 20px auto;
+    .div-login-cadastro,
+    .divisoria-cadastro-login {
+        padding: 16px;
     }
 }
