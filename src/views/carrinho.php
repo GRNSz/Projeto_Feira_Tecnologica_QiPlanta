@@ -7,6 +7,7 @@
     <title>Meu Carrinho</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/carrinho.css">
+    <script src="./../javascript/carrinhocompras.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,6 @@
         <?php include('header.php'); ?>
     </header>
     <main>
-        <script src="./../javascript/carrinhocompras.js"></script>
         <div class="div-carrinho-compras">
             <center>
                 <h1>Meu carrinho de compras!</h1>
@@ -25,23 +25,23 @@
                 </center>
                 <ul class="lista-carrinho" style="list-style: none;">
                     <li>
-                        <div class="produto" id="P1">
-                            <img src="./images/liriodapaz.png" style="size: 15px; border-radius:50%">
-                            <h3 id="carrinho-nomeplanta">Lírio-da-paz</h3>
-                            <div class="preco">
-                                <p>R$ <b id="preco" value="30.00">30</b></p>
-                            </div>
+                        <div class="produto">
 
+                        <center>
+                            <img src="./images/liriodapaz.png" alt="Lirio-da-Paz" size="15px;">
+                            <h3 id="carrinho-nomeplanta">Lírio da Paz</h3>
+                            
+                            <div class="preco">
+                                <p>R$ <strong id="preco" value="30.00">30,00</strong></p>
+                            </div> <br>
                             <div class="quantidade">
+                                <label>Quantidade:</label>    
+                                <button type="button" class="btn-decrementar" onclick="decrementar_p1()">-</button>
+                                <input type="number" class="input-quantidadeProduto" onchange="Quantidade-p1.value" name="Quantidade-produto" value="1" min="0" id="Quantidade-p1">
+                                <button type="button" class="btn-incrementar" onclick="incrementar_p1()">+</button>
                                 
-                            <!-- Novo -->
-                            <label>Quantidade:</label> <br>
-                                <input class="input-valor" type="number" id="quanti1" value="0" min="0" oninput="quanti1.value=value" onchange="quantidadep1.value=value">
-                            <br>
-                                <input type="range" name="quantidadep1" id="quantidadep1" value="0" min="0" max="200" oninput="quanti1.value=value">
-                            
-                            
                             </div>
+                        </center>
                         </div>
                     </li>
                 </ul>
