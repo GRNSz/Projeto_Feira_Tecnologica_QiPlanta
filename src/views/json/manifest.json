@@ -1,8 +1,8 @@
 {
     "name": "QiPlanta",
     "short_name": "QiPlanta",
-    "start_url": "menu.php",
-    "scope": "/src/views/",
+    "start_url": "/src/views/menu.php",
+    "scope": "/",
     "display": "fullscreen",
     "background_color": "#ffffff",
     "theme_color": "#4CAF50",
