@@ -2,6 +2,7 @@
 
     namespace MeuProjeto\controllers;
 
+
     class PesquisaProduto {
 
     private $produtos;

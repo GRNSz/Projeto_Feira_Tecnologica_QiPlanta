@@ -1,5 +1,6 @@
 <head>
     <link rel="stylesheet" href="./../../src/views/css/header.css"> <!-- Adicione seu CSS aqui -->
+    <script src="./../src/javacript/barrapesquisa.js"></script>
 </head>
 <div class="logo">
     <a href="/src/views/menu.php"><img src="./../../src/views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
@@ -56,6 +57,6 @@
 <div class="search-bar">
     <form action="./controllers/mainController.php?r=PesquisaProduto&action=buscarID" method="GET">
         <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
-        <button type="submit">Buscar</button>
+        <button type="submit" onclick="buscaProduto()">Buscar</button>
     </form>
 </div>
