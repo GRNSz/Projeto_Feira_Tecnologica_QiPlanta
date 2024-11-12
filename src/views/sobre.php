@@ -7,6 +7,7 @@
     <title>Sobre nós</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/menu.css"> <!-- linkado com o css "principal" -->
+    <link rel="stylesheet" href="./css/sobre.css"> <!-- linkado com o css "sobre" -->
 </head>
 
 <body>
