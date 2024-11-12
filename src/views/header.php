@@ -54,7 +54,7 @@
     </ul>
 </nav>
 <div class="search-bar">
-    <form action="pesquisa.php" method="GET">
+    <form action="./controllers/mainController.php?r=PesquisaProduto&action=buscarID" method="GET">
         <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
         <button type="submit">Buscar</button>
     </form>
