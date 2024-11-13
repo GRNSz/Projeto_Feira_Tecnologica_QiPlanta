@@ -4,97 +4,54 @@ require_once __DIR__ . '/../controllers/ProdutoController.php';
 use MeuProjeto\controllers\ProdutoController;
 
 $controller = new ProdutoController();
-$id = isset($_GET['id']) ? $_GET['id'] : null;
-
-// Verifica se o ID é válido
-if ($id === null || !is_numeric($id)) {
-    // Exibe uma mensagem de erro
-    echo "ID do produto inválido.";
-    exit;
-}
-
-$produto = $controller->getDetalhes($id);
-
-// Verifica se o produto foi encontrado
-if (!$produto) {
-    // Exibe uma mensagem de erro
-    echo "Produto não encontrado.";
-    exit;
-}
+$produtos = $controller->listarTodos();
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo htmlspecialchars($produto['nome']); ?> | Detalhes do Produto</title>
+    <title>Marketplace - Produtos</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
-    <link rel="stylesheet" href="css/detalhes.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <script src="./javascript/detalhesProdutos.js"></script>
 </head>
+
 <body>
     <header>
-        <?php include("header.php"); ?>
+        <?php include "./header.php" ?>
     </header>
-
     <main>
-        <section class="detalhes-produto">
-            <div class="produto">
-                <div class="produto-imagem">
-                    <img src="<?php echo htmlspecialchars($produto['imagem']); ?>" alt="<?php echo htmlspecialchars($produto['nome']); ?>" class="produto-img">
-                </div>
-
-                <div class="produto-info">
-                    <h1 class="produto-titulo"><?php echo htmlspecialchars($produto['nome']); ?></h1>
-                    <div class="preco">
-                        R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
+        <section class="anuncios">
+            <center>
+                <h2>Nossos Produtos</h2>
+            </center>
+            <div class="produtos-container">
+                <?php foreach ($produtos as $id => $produto): ?>
+                    <div class="produto">
+                        <center>
+                            <img src="<?php echo $produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>">
+                            <h3><?php echo $produto['nome']; ?></h3>
+                            <p><?php echo $produto['descricao']; ?></p>
+                            <p><strong>Preço: R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></strong></p>
+                            <button onclick="window.location.href='detalhes.php?id=<?php echo $id; ?>'">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                                </svg>
+                                Ver Detalhes
+                            </button>
+                        </center>
                     </div>
-
-                    <div class="info-section">
-                        <h3>Descrição</h3>
-                        <p><?php echo htmlspecialchars($produto['descricao']); ?></p>
-                    </div>
-
-                    <?php if (isset($produto['cuidados'])): ?>
-                    <div class="info-section">
-                        <h3>Cuidados Especiais</h3>
-                        <p><?php echo htmlspecialchars($produto['cuidados']); ?></p>
-                    </div>
-                    <?php endif; ?>
-
-                    <div class="info-section">
-                        <h3>Categoria</h3>
-                        <p><?php echo htmlspecialchars($produto['categoria']); ?></p>
-                    </div>
-
-                    <button class="adicionar-carrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
-                            <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z" />
-                        </svg>
-                        Adicionar ao Carrinho
-                    </button>
-                </div>
+                <?php endforeach; ?>
             </div>
         </section>
-
-        <?php if (isset($produto['video'])): ?>
-        <div class="produto-video">
-            <h2>Conheça mais sobre <?php echo htmlspecialchars($produto['nome']); ?></h2>
-            <div class="video-container">
-                <iframe width="510" height="230" 
-                    src="https://www.youtube.com/embed/<?php echo htmlspecialchars($produto['video']); ?>" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-        <?php endif; ?>
     </main>
-
     <footer>
-        <?php include "footer.php"; ?>
+        <?php include("./footer.php") ?>
     </footer>
-    <script src="./javascript/carrinhocompras.js"></script>
 </body>
+
 </html>
