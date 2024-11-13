@@ -5,10 +5,20 @@ use MeuProjeto\controllers\ProdutoController;
 
 $controller = new ProdutoController();
 $id = isset($_GET['id']) ? $_GET['id'] : null;
+
+// Verifica se o ID é válido
+if ($id === null || !is_numeric($id)) {
+    // Exibe uma mensagem de erro
+    echo "ID do produto inválido.";
+    exit;
+}
+
 $produto = $controller->getDetalhes($id);
 
+// Verifica se o produto foi encontrado
 if (!$produto) {
-    header('Location: produtos.php');
+    // Exibe uma mensagem de erro
+    echo "Produto não encontrado.";
     exit;
 }
 ?>
@@ -18,7 +28,7 @@ if (!$produto) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $produto['nome']; ?> | Detalhes do Produto</title>
+    <title><?php echo htmlspecialchars($produto['nome']); ?> | Detalhes do Produto</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="css/detalhes.css">
 </head>
@@ -30,31 +40,31 @@ if (!$produto) {
     <main>
         <section class="detalhes-produto">
             <div class="produto">
-                <div class="produto-imagem"></div>
-                    <img src="<?php echo $produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>" class="produto-img">
+                <div class="produto-imagem">
+                    <img src="<?php echo htmlspecialchars($produto['imagem']); ?>" alt="<?php echo htmlspecialchars($produto['nome']); ?>" class="produto-img">
                 </div>
 
                 <div class="produto-info">
-                    <h1 class="produto-titulo"><?php echo $produto['nome']; ?></h1>
-                    <div class="preco"></div>
+                    <h1 class="produto-titulo"><?php echo htmlspecialchars($produto['nome']); ?></h1>
+                    <div class="preco">
                         R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
                     </div>
 
                     <div class="info-section">
                         <h3>Descrição</h3>
-                        <p><?php echo $produto['descricao']; ?></p>
+                        <p><?php echo htmlspecialchars($produto['descricao']); ?></p>
                     </div>
 
                     <?php if (isset($produto['cuidados'])): ?>
                     <div class="info-section">
                         <h3>Cuidados Especiais</h3>
-                        <p><?php echo $produto['cuidados']; ?></p>
+                        <p><?php echo htmlspecialchars($produto['cuidados']); ?></p>
                     </div>
                     <?php endif; ?>
 
                     <div class="info-section">
                         <h3>Categoria</h3>
-                        <p><?php echo $produto['categoria']; ?></p>
+                        <p><?php echo htmlspecialchars($produto['categoria']); ?></p>
                     </div>
 
                     <button class="adicionar-carrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
@@ -69,10 +79,10 @@ if (!$produto) {
 
         <?php if (isset($produto['video'])): ?>
         <div class="produto-video">
-            <h2>Conheça mais sobre <?php echo $produto['nome']; ?></h2>
+            <h2>Conheça mais sobre <?php echo htmlspecialchars($produto['nome']); ?></h2>
             <div class="video-container">
                 <iframe width="510" height="230" 
-                    src="https://www.youtube.com/embed/<?php echo $produto['video']; ?>" 
+                    src="https://www.youtube.com/embed/<?php echo htmlspecialchars($produto['video']); ?>" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -87,4 +97,4 @@ if (!$produto) {
     </footer>
     <script src="./javascript/carrinhocompras.js"></script>
 </body>
-</html></div></svg></button>
+</html>
