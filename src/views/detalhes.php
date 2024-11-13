@@ -38,7 +38,7 @@ if (!$produto) {
     <section class="detalhes-produto">
         <div class="produto">
             <center>
-                <h1 style="margin-left: 70px;"><?php echo $produto['nome']; ?></h1>
+                <h1 style="margin-left: 20px;"><?php echo $produto['nome']; ?></h1>
             </center>
             <img src="<?php echo $produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>" class="produto-img">
             
