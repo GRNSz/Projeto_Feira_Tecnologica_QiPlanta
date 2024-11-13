@@ -27,7 +27,7 @@ class ProdutoController {
                 'descricao' => 'Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.',
                 'cuidados' => 'Regar moderadamente, manter em ambiente com luz indireta ou sombra parcial.',
                 'categoria' => 'Plantas Trepadeiras',
-                'video' => 'codigo_do_video_jiboia'
+                'video' => 'Qu4b5NXi-PA'
             ],
             3 => [
                 'nome' => 'Espada-de-São-Jorge',
@@ -35,7 +35,8 @@ class ProdutoController {
                 'imagem' => './images/espadadesaojorge.png',
                 'descricao' => 'Perfeita para ambientes internos, resistente e não precisa de muita água. Também ajuda na purificação do ar.',
                 'cuidados' => 'Regar apenas quando o solo estiver seco, tolera luz direta e indireta.',
-                'categoria' => 'Plantas de Interior'
+                'categoria' => 'Plantas de Interior',
+                'video' => 'REucVLerVWo'
             ],
             4 => [
                 'nome' => 'Buquê com 12 Rosas Vermelhas',
@@ -51,7 +52,8 @@ class ProdutoController {
                 'imagem' => './images/girassol.png',
                 'descricao' => 'O girassol é uma planta alta com flores grandes e amarelas que seguem o movimento do sol. Suas sementes são comestíveis e usadas para produzir óleo. É símbolo de alegria e luz.',
                 'categoria' => 'Flores',
-                'cuidados' => 'Necessita de luz solar direta, solo bem drenado e rega regular.'
+                'cuidados' => 'Necessita de luz solar direta, solo bem drenado e rega regular.',
+                'video' => 's24eiRIRsDM'
             ],
             6 => [
                 'nome' => 'Vaso de Gérbera',
@@ -59,7 +61,8 @@ class ProdutoController {
                 'imagem' => './images/gerbera.png',
                 'descricao' => 'A gérbera é uma flor vibrante e colorida, conhecida por suas pétalas grandes e simétricas. Ela se assemelha a uma margarida e vem em várias cores, como vermelho, laranja, rosa, amarelo e branco.',
                 'categoria' => 'Flores',
-                'cuidados' => 'A gérbera precisa de luz indireta, solo bem drenado e rega regular. Mantenha-a em temperaturas amenas e fertilize mensalmente. Retire flores murchas e cuide de pragas como pulgões.'
+                'cuidados' => 'A gérbera precisa de luz indireta, solo bem drenado e rega regular. Mantenha-a em temperaturas amenas e fertilize mensalmente. Retire flores murchas e cuide de pragas como pulgões.',
+                'video' => 'zqE8U6MJUWY'
             ],
             7 => [
                 'nome' => 'Vassoura para Grama',
@@ -81,14 +84,7 @@ class ProdutoController {
                 'imagem' => './images/enxadinha.png',
                 'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
                 'categoria' => 'Ferramentas'
-            ],
-            10 => [
-                'nome' => 'Enxadinha para Jardim',
-                'preco' => 4.00,
-                'imagem' => './images/enxadinha.png',
-                'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
-                'categoria' => 'Ferramentas'
-            ],
+            ]  
         ];
     }
 
