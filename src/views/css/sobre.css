@@ -1,0 +1,47 @@
+/* Animation keyframes for bounce effect */
+@keyframes pageLoad {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(20px);
+        opacity: 0.8;
+    }
+    75% {
+        transform: translateY(-10px);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animations to main content */
+.content {
+    animation: pageLoad 1s ease-out forwards, fadeIn 1.2s ease-in;
+}
+
+/* Center content and fix spacing */
+main {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    box-sizing: border-box;
+}
