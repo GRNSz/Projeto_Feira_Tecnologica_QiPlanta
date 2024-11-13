@@ -45,3 +45,6 @@ main {
     padding: 2rem 0;
     box-sizing: border-box;
 }
+body{
+    background: url('./../../views/images/Teste-Background.png') center/cover no-repeat;
+}
