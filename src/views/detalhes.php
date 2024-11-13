@@ -1,12 +1,16 @@
 <?php
+// Importação do controlador de produtos
 require_once __DIR__ . '/../controllers/ProdutoController.php';
 
+// Definição do namespace para usar o controlador
 use MeuProjeto\controllers\ProdutoController;
 
+// Inicialização do controlador e obtenção do ID do produto da URL
 $controller = new ProdutoController();
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 $produto = $controller->getDetalhes($id);
 
+// Redirecionamento caso o produto não seja encontrado
 if (!$produto) {
     header('Location: Produtos.php');
     exit;
@@ -17,11 +21,10 @@ if (!$produto) {
 <html lang="pt-BR">
 
 <head>
+    <!-- Meta tags e configurações básicas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto - <?php echo $produto['nome']; ?></title>
-    <link rel="stylesheet" href="/src/views/css/detalhes.css">
-    <script src="./javascript/detalhesProdutos.js"></script>
 </head>
 
 <body>
