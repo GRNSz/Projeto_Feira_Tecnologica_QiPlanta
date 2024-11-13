@@ -28,7 +28,7 @@
                 </div>
 
                 <div> <!-- Div do Form -->
-                    <form action="./controllers/mainController.php?r=UsuarioController&action=login" method="POST">
+                    <form action="./../controllers/mainController.php?r=UsuarioController&action=login" method="POST">
                         <div class="titulo-login">
                             <center>
                                 <h2>Login</h2>

@@ -102,7 +102,7 @@
                     header("Location: ./../views/menu.php");
                     exit();
                 } else {
-                    echo "Senha incorreta.";
+                    echo "<img src='./../views/images/ErroSenhaIncorreta.jpg' alt='Senha incorreta'>";
                 }
             } else {
                 echo "Usuário não encontrado.";
