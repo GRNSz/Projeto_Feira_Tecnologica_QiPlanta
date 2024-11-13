@@ -26,7 +26,7 @@ main {
     padding: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 60px; /* Aumentado para mais espaçamento */
 }
 
 .produto-imagem {
@@ -38,11 +38,6 @@ main {
 .produto-img {
     width: 100%;
     height: auto;
-    transition: transform 0.5s ease;
-}
-
-.produto-img:hover {
-    transform: scale(1.05);
 }
 
 .produto-info {
@@ -65,11 +60,6 @@ main {
     width: 60px;
     height: 3px;
     background: linear-gradient(90deg, #3e9473, #2d5938);
-    transition: width 0.3s ease;
-}
-
-.produto-titulo:hover::after {
-    width: 100px;
 }
 
 .preco {
@@ -84,12 +74,6 @@ main {
     padding: 15px;
     border-left: 3px solid #3e9473;
     background: rgba(62, 148, 115, 0.05);
-    transition: all 0.3s ease;
-}
-
-.info-section:hover {
-    transform: translateX(10px);
-    background: rgba(62, 148, 115, 0.1);
 }
 
 .adicionar-carrinho {
@@ -103,21 +87,7 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: all 0.3s ease;
     margin-top: 20px;
-}
-
-.adicionar-carrinho:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(62, 148, 115, 0.3);
-}
-
-.adicionar-carrinho svg {
-    transition: transform 0.3s ease;
-}
-
-.adicionar-carrinho:hover svg {
-    transform: rotate(90deg);
 }
 
 .produto-video {
@@ -144,8 +114,8 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 
