@@ -26,7 +26,6 @@ if (!$produto) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto - <?php echo $produto['nome']; ?></title>
     <link rel="" href="./images/icons8-pinheiro-162.png" type="image/png">
-    <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/detalhes.css">
 </head>
 
@@ -37,13 +36,10 @@ if (!$produto) {
 
     <section class="detalhes-produto">
         <div class="produto">
-            <center>
-                <h1 style="margin-left: 20px;"><?php echo $produto['nome']; ?></h1>
-            </center>
             <img src="<?php echo $produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>" class="produto-img">
             
             <div class="produto-detalhes">
-                <div id="<?php echo $id; ?>"></div>
+                <h1><?php echo $produto['nome']; ?></h1>
                 <p><strong>Preço:</strong><b id="preco-produto"> R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></b></p>
                 <p><strong>Descrição:</strong> <?php echo $produto['descricao']; ?></p>
                 <?php if (isset($produto['cuidados'])): ?>

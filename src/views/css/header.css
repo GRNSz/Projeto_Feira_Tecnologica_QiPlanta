@@ -122,10 +122,15 @@ nav ul li a:hover {
     transition: all 0.3s ease;
     width: 200px;
     white-space: nowrap;
+    border-radius: 6px;
+    height: 40px;
+    margin-right: 0px;
+    border-bottom-right-radius:0px ;
+    border-top-right-radius:  0px;
 }
 
 .input-busca:focus {
-    width: 250px;
+    width: px;
     border-color: #3e9473;
     box-shadow: 0 0 10px rgba(62, 148, 115, 0.3);
     outline: none;
@@ -137,10 +142,13 @@ nav ul li a:hover {
     background: #3e9473;
     border: none;
     color: white;
-    border-radius: 5px;
     cursor: pointer;
     transition: all 0.2s ease;
-    transform: scale(1);
+    height: 35px;
+    border-bottom-right-radius:6px ;
+    border-top-right-radius:  6px;
+    margin-left: -5px;
+    margin-bottom:  -3px;
 }
 
 .search-bar button:hover {

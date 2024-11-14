@@ -6,6 +6,16 @@
     <a href="/src/views/menu.php"><img src="./../../src/views/images/QiPlanta.png" alt="Logo do Marketplace"></a> <!-- Substitua pelo caminho do seu logo -->
 </div>
 <nav>
+<div class="search-bar">
+    <form action="./controllers/mainController.php?r=PesquisaProduto&action=buscarID" method="GET">
+        <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
+        <button type="submit" onclick="buscaProduto()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+</button>
+    </form>
+</div>
     <ul>
         <li>
             
@@ -28,7 +38,7 @@
         </li>
         <li>
             <a href="./../../src/views/categorias.php">
-            <img src="../views/images/Categorias.png" width="20px" height="20px">
+            <img src="../views/images/Categorias.png" style="width: 25px;">
   <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1"/>
 </i>
                 Categorias
@@ -57,9 +67,3 @@
         </li>
     </ul>
 </nav>
-<div class="search-bar">
-    <form action="./controllers/mainController.php?r=PesquisaProduto&action=buscarID" method="GET">
-        <input class="input-busca" type="text" name="query" placeholder="Pesquisar produtos..." required>
-        <button type="submit" onclick="buscaProduto()">Buscar</button>
-    </form>
-</div>
