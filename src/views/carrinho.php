@@ -25,7 +25,7 @@
                 </center>
                 <ul class="lista-carrinho" style="list-style: none;">
                     <li>
-                        <div class="produto">
+                        <div class="produto" id="div1">
 
                         <center>
                             <img src="./images/liriodapaz.png" alt="Lirio-da-Paz" size="15px;">
@@ -40,6 +40,7 @@
                                 <input type="number" class="input-quantidadeProduto" onchange="Quantidade-p1.value" name="Quantidade-produto" value="1" min="0" id="Quantidade-p1">
                                 <button type="button" class="btn-incrementar" onclick="incrementar_p1()">+</button>
                                 
+                                <button onclick="deletarCarrinho()">Remover</button>
                             </div>
                         </center>
                         </div>

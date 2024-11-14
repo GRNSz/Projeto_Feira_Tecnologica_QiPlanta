@@ -23,5 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    window.deletarCarrinho = function() {
+        const item_produto = document.getElementById("div1").style.display = "none";
+ 
+     };
+
     atualizarPreco();
 });
