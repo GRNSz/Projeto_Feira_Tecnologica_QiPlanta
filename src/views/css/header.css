@@ -156,21 +156,39 @@ nav ul li a:hover {
     box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
 }
 
+/*Responsividade para celulares*/
 @media screen and (max-width: 767px) {
-
-    body {
-        width: 100%;
-    }
-
     .logo img {
         content: url("../images/QiPlanta.png");
+        height: 50px;
     }
 
-    nav ul li {
+    nav ul li, .search-bar {
         display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*Responsividade para tablets*/
+@media screen and (max-width: 1200px) {
+    .logo img {
+        height: 60px;
+    }
+
+    .input-busca {
+        width: 5em;
     }
 
     .search-bar {
-        display: none;
+        justify-content: center;
+        width: 60%;
+    }
+
+    nav ul {
+        gap: 10px;
     }
 }
