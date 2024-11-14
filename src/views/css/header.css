@@ -1,21 +1,32 @@
-/* Header e Logo */
-header {
+/* Remover scroll lateral e garantir que o conteúdo ocupe 100% da largura */
+body, html {
     margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgb(57, 115, 72);
-    background: linear-gradient(8deg, rgba(57, 115, 72, 1) 0%, rgba(45, 89, 56, 1) 30%, rgba(32, 64, 40, 1) 100%);
     padding: 0;
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; /* Ocupa 100% da largura da viewport */
+    max-width: 100%; /* Impede que o header ultrapasse a largura máxima */
+    background: linear-gradient(8deg, rgba(57, 115, 72, 1) 0%, rgba(45, 89, 56, 1) 30%, rgba(32, 64, 40, 1) 100%);
+    padding: 0 10px;
+    gap: 10px; /* Espaçamento inicial entre itens */
+    box-sizing: border-box;
+}
+
+/* Logo */
 .logo img {
     height: 80px;
-    border-radius:50%;
+    border-radius: 50%;
     transition: all 0.3s ease;
     border: 3px solid transparent;
 }
-
 
 .logo img:hover {
     border-color: #ffffff;
@@ -23,14 +34,20 @@ header {
 }
 
 /* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espaçamento inicial para itens de navegação */
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline-block;
+    align-items: center;
+    gap: 20px; /* Espaço entre os itens do menu */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
@@ -38,8 +55,15 @@ nav ul li a {
     color: #ffffff;
     padding: 5px 10px;
     transition: all 0.3s ease;
-    position: relative;
-    white-space: nowrap;
+    text-align: center;
+}
+
+nav ul li a span {
+    display: block; /* Mostra o texto dos itens */
+}
+
+nav ul li a i {
+    font-size: 1.2rem;
 }
 
 nav ul li a::after {
@@ -59,7 +83,6 @@ nav ul li a:hover::after {
 
 nav ul li a:hover {
     transform: translateY(-2px);
-
 }
 
 /* Dropdown */
@@ -105,14 +128,13 @@ nav ul li a:hover {
     background-color: #f1f1f1;
 }
 
-
-
 /* Barra de Pesquisa */
 .search-bar {
     display: flex;
     align-items: center;
     white-space: nowrap;
-
+    height: 40px; /* Define a altura fixa */
+    padding: 0 10px; /* Ajusta o espaçamento interno para manter o layout adequado */
 }
 
 .input-busca {
@@ -121,16 +143,14 @@ nav ul li a:hover {
     border-radius: 20px;
     transition: all 0.3s ease;
     width: 200px;
-    white-space: nowrap;
-    border-radius: 6px;
-    height: 40px;
+    height: 100%; /* Garantir que a altura seja 100% do contêiner */
     margin-right: 0px;
-    border-bottom-right-radius:0px ;
-    border-top-right-radius:  0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
 }
 
 .input-busca:focus {
-    width: px;
+    width: 250px;
     border-color: #3e9473;
     box-shadow: 0 0 10px rgba(62, 148, 115, 0.3);
     outline: none;
@@ -144,14 +164,46 @@ nav ul li a:hover {
     color: white;
     cursor: pointer;
     transition: all 0.2s ease;
-    height: 35px;
-    border-bottom-right-radius:6px ;
-    border-top-right-radius:  6px;
+    height: 100%; /* Garantir que o botão tenha a mesma altura da barra de pesquisa */
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
     margin-left: -5px;
-    margin-bottom:  -3px;
 }
 
 .search-bar button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
+}
+
+/* Responsivo: ícones em vez de texto para telas pequenas */
+@media (max-width: 768px) {
+    header {
+        padding-top: 10px;
+        height: auto;
+    }
+    /* Oculta o texto das opções e mostra apenas os ícones */
+    nav ul li a span {
+        display: none;
+    }
+
+    nav ul li a i {
+        font-size: 1.5rem; /* Aumenta o tamanho do ícone */
+    }
+
+    .logo img {
+        height: 50px; /* Reduz o tamanho da logo */
+    }
+
+    .search-bar {
+        display: none; /* Opcional: oculta a barra de pesquisa em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        gap: 10px; /* Diminui o espaçamento entre itens no header */
+        height: auto;
+        justify-content: center;
+        padding-top: 10px;
+    }
 }
