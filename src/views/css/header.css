@@ -147,3 +147,22 @@ nav ul li a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
 }
+
+@media screen and (max-width: 767px) {
+
+    body {
+        width: 100%;
+    }
+
+    .logo img {
+        content: url("../images/QiPlanta.png");
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}
