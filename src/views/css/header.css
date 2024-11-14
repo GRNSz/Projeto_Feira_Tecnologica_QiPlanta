@@ -175,6 +175,7 @@ nav ul li a:hover {
     box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
 }
 
+<<<<<<< HEAD
 /* Responsivo: ícones em vez de texto para telas pequenas */
 @media (max-width: 768px) {
     header {
@@ -205,5 +206,41 @@ nav ul li a:hover {
         height: auto;
         justify-content: center;
         padding-top: 10px;
+=======
+/*Responsividade para celulares*/
+@media screen and (max-width: 767px) {
+    .logo img {
+        content: url("../images/QiPlanta.png");
+        height: 50px;
+    }
+
+    nav ul li, .search-bar {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*Responsividade para tablets*/
+@media screen and (max-width: 1200px) {
+    .logo img {
+        height: 60px;
+    }
+
+    .input-busca {
+        width: 5em;
+    }
+
+    .search-bar {
+        justify-content: center;
+        width: 60%;
+    }
+
+    nav ul {
+        gap: 10px;
+>>>>>>> 5cc32372f625c9a58ab9f8ad62eda3c74be2c436
     }
 }
