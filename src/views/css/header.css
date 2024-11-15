@@ -55,7 +55,8 @@ nav ul li a {
     color: #ffffff;
     padding: 5px 10px;
     transition: all 0.3s ease;
-    text-align: center;
+    text-align: flex-end;
+    position: relative;
 }
 
 nav ul li a span {
@@ -138,9 +139,9 @@ nav ul li a:hover {
 }
 
 .input-busca {
-    padding: 8px 15px;
+    padding: 10px 10px;
     border: 2px solid transparent;
-    border-radius: 20px;
+    border-radius: 6px;
     transition: all 0.3s ease;
     width: 200px;
     height: 100%; /* Garantir que a altura seja 100% do contêiner */
@@ -158,7 +159,10 @@ nav ul li a:hover {
 
 /* Botão de busca */
 .search-bar button {
-    padding: 5px 10px;
+    padding-top:8px;
+    padding-bottom:12px;
+    padding-left: 5%;
+    padding-right: 5%;
     background: #3e9473;
     border: none;
     color: white;
