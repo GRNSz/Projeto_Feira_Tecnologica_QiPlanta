@@ -29,7 +29,7 @@
                     <h3>Lírio-da-paz - A Guardiã do Ar</h3>
                     <p>Com sua elegância, o Lírio-da-paz não só purifica o ambiente, mas também simboliza paz e harmonia. Ótima para interiores, traz tranquilidade ao seu lar.<br>
                         Descubra como essa planta mudou a história da vida na Terra!</p>
-                    <button onclick="window.location.href='./detalhes.php';">Ver Detalhes</button>
+                    <button onclick="window.location.href='./produtos.php';">Ver Produtos</button>
                 </center>
             </div>
 
@@ -39,7 +39,7 @@
                     <h3>Jibóia - A Trepadeira da Resiliência</h3>
                     <p>Resistente e adaptável, a Jibóia prospera em qualquer ambiente. Sua presença é sinônimo de flexibilidade e renovação do ar. <br>
                         Saiba mais sobre como essa planta inspirou gerações!</p>
-                    <button href="./detalhes.php?id=2">Conhecer Vida</button>
+                    <button onclick="window.location.href='./produtos.php';">Ver Produtos</button>
                 </center>
             </div>
 
@@ -49,7 +49,7 @@
                     <h3>Espada-de-São-Jorge - A Guardiã da Proteção</h3>
                     <p>Com suas folhas imponentes, a Espada-de-São-Jorge é conhecida por sua resistência e poder de purificar o ar. Ideal para quem busca uma conexão espiritual com a natureza.<br>
                         Descubra o poder ancestral dessa planta incrível!</p>
-                    <button href="detalhes.php?id=3">Conhecer Vida</button>
+                    <button onclick="window.location.href='./produtos.php';">Ver Produtos</button>
                 </center>
             </div>
         </section>
