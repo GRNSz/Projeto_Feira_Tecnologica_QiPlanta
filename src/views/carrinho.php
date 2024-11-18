@@ -19,7 +19,7 @@
         <center>
             <h1>Meu carrinho de compras!</h1>
         </center>
-        <div class="lista-produto-carrinho">
+        < class="lista-produto-carrinho">
             <center>
                 <h2>Esqueceu alguma coisa? Não se preocupe.<br> Pode voltar lá! Estaremos aqui</h2>
             </center>
@@ -40,5 +40,4 @@
     <?php include("footer.php") ?>
 </footer>
 </body>
-
 </html>

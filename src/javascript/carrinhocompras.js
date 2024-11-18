@@ -86,18 +86,17 @@ let add_Carrinho =document.getElementById('btn_addCarrinho');
                             });
 */
 
-function adicionarProduto() {
+ function adicionarProduto() {
     const nome = "Produto 1"; // Substitua pelo nome do produto
     const preco = "30,00"; // Substitua pelo preço do produto
     const imagem = ""; // Substitua pelo link da imagem do produto
-    const id = Date.now(); // Gera um ID único baseado no timestamp
+   const id = Date.now(); // Gera um ID único baseado no timestamp
 
     const lista = document.getElementById('minha-lista');
-    lista.appendChild(criarLi(nome, preco, imagem, id));
+   lista.appendChild(criarLi(nome, preco, imagem, id));
 
     verificarCarrinho() //verificador se tem item //
 }
-
 
 // Funções de incremento e decremento
 function incrementar_p1(id) {
