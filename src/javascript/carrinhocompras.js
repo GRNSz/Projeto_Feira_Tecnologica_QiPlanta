@@ -64,6 +64,28 @@ function criarLi(nome, preco, imagem, id) {
 //#endregion
 
 //#region Montando <li> produto
+const btn_addCarrinho = document.getElementById("btn_addCarrinho");
+
+    btn_addCarrinho.addEventListener('click', () =>{
+        criarLi();
+    });
+/*function coleta_infoProduto(){
+
+    
+}
+function coleta_infoProduto(){ 
+  if (window.location.href === 'http://localhost:3000/src/views/detalhes.php?id=1'){
+    let nome = document.getElementById("nome_produto").innerText
+    
+    alert(nome);
+  }
+}
+  
+let add_Carrinho =document.getElementById('btn_addCarrinho');
+                        add_Carrinho.addEventListener('click', () =>{
+                            });
+*/
+
 function adicionarProduto() {
     const nome = "Produto 1"; // Substitua pelo nome do produto
     const preco = "30,00"; // Substitua pelo preço do produto

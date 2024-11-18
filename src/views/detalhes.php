@@ -49,7 +49,7 @@ if (!$produto) {
                     <p><strong>Categoria:</strong> <?php echo $produto['categoria']; ?></p>
                 <?php endif; ?>
 
-                <button class="adicionar-carrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
+                <button class="adicionar-carrinho" id="btn_addCarrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
                     Adicionar ao Carrinho
                 </button>
             </div>
