@@ -13,11 +13,11 @@ class ConnectionFactory {
         // Verifica se a conexão já foi estabelecida
         if (!isset(self::$connection)) {
             // Obtém as configurações do banco de dados a partir de variáveis de ambiente ou usa valores padrão
-            $host = 'qiserver.mysql.database.azure.com';
+            $host = 'localhost';
             $db = 'bdqiplanta';
-            $username = 'gustavo';
-            $password = 'Qiplanta123@';
-            $dsn = 'mysql:host=qiserver.mysql.database.azure.com;dbname=bdqiplanta';
+            $username = 'root';
+            $password = '';
+            $dsn = 'mysql:host=localhost;dbname=bdqiplanta';
 
             try {
                 // Cria uma nova conexão PDO
