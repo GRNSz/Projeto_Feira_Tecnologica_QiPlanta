@@ -84,6 +84,13 @@ class ProdutoController {
                 'imagem' => './images/enxadinha.png',
                 'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
                 'categoria' => 'Ferramentas'
+            ],
+            10 => [
+                'nome' => 'Vaso Floreiro Roma Cristal 18cm',
+                'preco' => 32.00,
+                'imagem' => './images/vasoTransparente.png',
+                'descricao' => 'O Vaso Floreiro Roma Cristal 18cm é elegante e perfeito para pequenos arranjos. Feito em cristal transparente, traz um toque sofisticado a qualquer ambiente.',
+                'categoria' => 'Vasos'
             ]
         ];
     }
