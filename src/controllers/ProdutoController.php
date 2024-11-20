@@ -91,6 +91,13 @@ class ProdutoController {
                 'imagem' => './images/vasoTransparente.png',
                 'descricao' => 'O Vaso Floreiro Roma Cristal 18cm é elegante e perfeito para pequenos arranjos. Feito em cristal transparente, traz um toque sofisticado a qualquer ambiente.',
                 'categoria' => 'Vasos'
+            ],
+            11 => [
+                'nome' => 'Vaso de Jardim Verde Menta',
+                'preco' => 19.50,
+                'imagem' => './images/vasoVerde.png',
+                'descricao' => 'O Vaso de Jardim Verde Menta é uma peça charmosa e prática, ideal para plantas externas. Com seu tom suave de verde menta, adiciona frescor e beleza ao jardim ou varanda.',
+                'categoria' => 'Vasos'
             ]
         ];
     }
