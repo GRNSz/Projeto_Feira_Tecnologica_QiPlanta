@@ -25,7 +25,7 @@ if (!$produto) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto - <?php echo $produto['nome']; ?></title>
-    <link rel="" href="./images/icons8-pinheiro-162.png" type="image/png">
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/detalhes.css">
 </head>
 
