@@ -89,7 +89,7 @@ class ProdutoController {
                 'nome' => 'Vaso Floreiro Roma Cristal 18cm',
                 'preco' => 32.00,
                 'imagem' => './images/vasoTransparente.png',
-                'descricao' => 'O Vaso Floreiro Roma Cristal 18cm é elegante e perfeito para pequenos arranjos. Feito em cristal transparente, traz um toque sofisticado a qualquer ambiente.',
+                'descricao' => 'Este vaso é uma peça elegante e perfeito para pequenos arranjos. Feito em cristal transparente, traz um toque sofisticado a qualquer ambiente.',
                 'categoria' => 'Vasos'
             ],
             11 => [
