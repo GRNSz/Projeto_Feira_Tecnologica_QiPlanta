@@ -98,6 +98,13 @@ class ProdutoController {
                 'imagem' => './images/vasoVerde.png',
                 'descricao' => 'O Vaso de Jardim Verde Menta é uma peça charmosa e prática, ideal para plantas externas. Com seu tom suave de verde menta, adiciona frescor e beleza ao jardim ou varanda.',
                 'categoria' => 'Vasos'
+            ],
+            12 => [
+                'nome' => 'Vaso Decorativo para Tulipa Em Vidro Transparente 20cm',
+                'preco' => 24.30,
+                'imagem' => './images/vasoPlantaCarnivora.png',
+                'descricao' => 'O Vaso Decorativo para Tulipa em Vidro Transparente 20cm tem um design inspirado nas plantas carnívoras Nepenthes. Com seu formato único e elegante, é perfeito para destacar tulipas e outros arranjos, adicionando um toque moderno e sofisticado ao ambiente.',
+                'categoria' => 'Vasos'
             ]
         ];
     }
