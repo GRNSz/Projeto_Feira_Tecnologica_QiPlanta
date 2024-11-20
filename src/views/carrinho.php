@@ -21,7 +21,7 @@ if (isset($_GET['add'])) {
         if (isset($_SESSION['carrinho'][$idProduto])) {
             $_SESSION['carrinho'][$idProduto]++;
         } else {
-            $_SESSION['carrinho'][$idProduto] = 5; // Primeira vez adicionando este produto? Bem-vindo ao carrinho!
+            $_SESSION['carrinho'][$idProduto] = 1; // Primeira vez adicionando este produto? Bem-vindo ao carrinho!
         }
     } else {
         // Alguém tentou adicionar algo suspeito? Não, obrigado!
@@ -91,22 +91,26 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
                             <li class="produto">
                                 <center>
 
-                                    <h2>Produto:<strong> <?php echo htmlspecialchars($produto['nome']); // Sem SQL Injection, por favor! ?></strong></h2>
-                                    <img src="<?php echo htmlspecialchars($produto['imagem']); ?>" class="produto-img"> 
-                                    <p>Quantidade: <?php echo $quantidade; ?></p>
+                                    <h3>Produto:
+                                        <strong> <?php echo htmlspecialchars($produto['nome']); // Sem SQL Injection, por favor! ?></strong>
+                                    </h3>
+                                    <img src="<?php echo htmlspecialchars($produto['imagem']); ?>"> 
+                                    <p>Quantidade:<br>    <b><?php echo $quantidade; ?></b></p>
                                     <p>Preço Unitário: R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></p>
-                                    <p>Subtotal: R$ <?php echo number_format($produto['preco'] * $quantidade, 2, ',', '.'); ?></p>
+                                    <p>Subtotal: <b style="color:#3f9442;">R$  <?php echo number_format($produto['preco'] * $quantidade, 2, ',', '.'); ?></b></p>
                                     <button type="button" onclick="window.location.href='carrinho.php?add=<?php echo $idProduto; ?>'" class="btn-incrementar">+</button>
                                     <button type="button" onclick="window.location.href='carrinho.php?remove=<?php echo $idProduto; ?>'" class="btn-decrementar">-</button>
-                        
                                 </center>
+                        
                             </li>
                         <?php endif; ?>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <div>
-                        <center>
-                            <h2>O carrinho de compras está vazio :(</h2> <!-- Vamos lá, encha isso de produtos! -->
+                        <center style="display:flex">
+                            <h2>O carrinho de compras está vazio :(
+                            <!--<span style='font-size:100px;font-size:35px;'>&#129402;</span>-->
+                            </h2> <br><!-- Vamos lá, encha isso de produtos! -->
                         </center>
                     </div>
                 <?php endif; ?>
