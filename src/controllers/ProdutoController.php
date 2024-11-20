@@ -86,7 +86,7 @@ class ProdutoController {
                 'categoria' => 'Ferramentas'
             ],
             10 => [
-                'nome' => 'Vaso Floreiro Roma Cristal 18cm',
+                'nome' => 'Vaso Floreiro Roma Cristal',
                 'preco' => 32.00,
                 'imagem' => './images/vasoTransparente.png',
                 'descricao' => 'Este vaso é uma peça elegante e perfeito para pequenos arranjos. Feito em cristal transparente, traz um toque sofisticado a qualquer ambiente.',
@@ -100,7 +100,7 @@ class ProdutoController {
                 'categoria' => 'Vasos'
             ],
             12 => [
-                'nome' => 'Vaso Decorativo para Tulipa 20cm',
+                'nome' => 'Vaso Decorativo para Tulipa',
                 'preco' => 24.30,
                 'imagem' => './images/vasoPlantaCarnivora.png',
                 'descricao' => 'O vaso possui um design inspirado nas plantas carnívoras Nepenthes. Com seu formato único e elegante, é perfeito para destacar tulipas e outros arranjos, adicionando um toque moderno e sofisticado ao ambiente.',
