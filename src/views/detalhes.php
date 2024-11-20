@@ -2,8 +2,11 @@
 // Importação do controlador de produtos
 require_once __DIR__ . '/../controllers/ProdutoController.php';
 
-// Definição do namespace para usar o controlador
+// Namespace do controlador
 use MeuProjeto\controllers\ProdutoController;
+
+// Inicializa a sessão
+session_start();
 
 // Inicialização do controlador e obtenção do ID do produto da URL
 $controller = new ProdutoController();
@@ -21,11 +24,9 @@ if (!$produto) {
 <html lang="pt-BR">
 
 <head>
-    <!-- Meta tags e configurações básicas -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Produto - <?php echo $produto['nome']; ?></title>
-    <link rel="" href="./images/icons8-pinheiro-162.png" type="image/png">
+    <title>Detalhes do Produto - <?php echo htmlspecialchars($produto['nome']); ?></title>
     <link rel="stylesheet" href="./css/detalhes.css">
 </head>
 
@@ -36,52 +37,29 @@ if (!$produto) {
 
     <section class="detalhes-produto">
         <div class="produto">
-            <img src="<?php echo $produto['imagem']; ?>" alt="<?php echo $produto['nome']; ?>" class="produto-img">
-            
+            <img src="<?php echo htmlspecialchars($produto['imagem']); ?>" alt="<?php echo htmlspecialchars($produto['nome']); ?>" class="produto-img">
             <div class="produto-detalhes">
-                <h1><?php echo $produto['nome']; ?></h1>
-                <p><strong>Preço:</strong><b id="preco-produto"> R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></b></p>
-                <p><strong>Descrição:</strong> <?php echo $produto['descricao']; ?></p>
+                <h1><?php echo htmlspecialchars($produto['nome']); ?></h1>
+                <p><strong>Preço:</strong> R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></p>
+                <p><strong>Descrição:</strong> <?php echo htmlspecialchars($produto['descricao']); ?></p>
                 <?php if (isset($produto['cuidados'])): ?>
-                    <p><strong>Cuidados:</strong> <?php echo $produto['cuidados']; ?></p>
+                    <p><strong>Cuidados:</strong> <?php echo htmlspecialchars($produto['cuidados']); ?></p>
                 <?php endif; ?>
                 <?php if (isset($produto['categoria'])): ?>
-                    <p><strong>Categoria:</strong> <?php echo $produto['categoria']; ?></p>
+                    <p><strong>Categoria:</strong> <?php echo htmlspecialchars($produto['categoria']); ?></p>
                 <?php endif; ?>
 
-                <button class="adicionar-carrinho" id="btn_addCarrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
+                <!-- Botão para adicionar ao carrinho -->
+                <button class="adicionar-carrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
                     Adicionar ao Carrinho
                 </button>
             </div>
-
-            <?php if (isset($produto['video'])): ?>
-            <div class="produto-video">
-                <h2>Conheça mais sobre o <?php echo $produto['nome']; ?></h2>
-                <iframe width="560" height="315" 
-                        src="https://www.youtube.com/embed/<?php echo $produto['video']; ?>" 
-                        title="Vídeo sobre <?php echo $produto['nome']; ?>" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen></iframe>
-            </div>
-            <?php endif; ?>
-
-            <?php if (isset($produto['avaliacoes'])): ?>
-            <div class="produto-avaliacoes">
-                <h3>Avaliações dos Clientes</h3>
-                <?php foreach ($produto['avaliacoes'] as $avaliacao): ?>
-                    <p><strong><?php echo $avaliacao['cliente']; ?>:</strong> "<?php echo $avaliacao['comentario']; ?>"</p>
-                <?php endforeach; ?>
-            </div>
-            <?php endif; ?>
         </div>
     </section>
 
     <footer>
         <?php include "footer.php"; ?>
     </footer>
-
-    <script src="./javascript/carrinhocompras.js"></script>
 </body>
 
 </html>
