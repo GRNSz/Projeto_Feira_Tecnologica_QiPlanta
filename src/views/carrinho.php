@@ -21,7 +21,7 @@ if (isset($_GET['add'])) {
         if (isset($_SESSION['carrinho'][$idProduto])) {
             $_SESSION['carrinho'][$idProduto]++;
         } else {
-            $_SESSION['carrinho'][$idProduto] = 1; // Primeira vez adicionando este produto? Bem-vindo ao carrinho!
+            $_SESSION['carrinho'][$idProduto] = 5; // Primeira vez adicionando este produto? Bem-vindo ao carrinho!
         }
     } else {
         // Alguém tentou adicionar algo suspeito? Não, obrigado!
@@ -62,6 +62,7 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Carrinho</title>
     <link rel="stylesheet" href="./css/carrinho.css"> <!-- Porque estilo é tudo! -->
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
 </head>
 <body>
 <header>
@@ -70,7 +71,7 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
 <main>
     <div class="div-carrinho-compras">
         <center>
-            <h1>Meu carrinho de compras!</h1> <!-- Uhul, olha que lindo seu carrinho! -->
+            <h1>Meu carrinho de compras!</h1>
         </center>
         <div class="lista-produto-carrinho">
             <ul class="lista-carrinho" style="list-style: none;">
@@ -87,13 +88,18 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
                             unset($_SESSION['carrinho'][$idProduto]);
                             ?>
                         <?php else: ?>
-                            <li>
-                                <p>Produto: <?php echo htmlspecialchars($produto['nome']); // Sem SQL Injection, por favor! ?></p>
-                                <p>Quantidade: <?php echo $quantidade; ?></p>
-                                <p>Preço Unitário: R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></p>
-                                <p>Subtotal: R$ <?php echo number_format($produto['preco'] * $quantidade, 2, ',', '.'); ?></p>
-                                <button type="button" onclick="window.location.href='carrinho.php?add=<?php echo $idProduto; ?>'">+</button>
-                                <button type="button" onclick="window.location.href='carrinho.php?remove=<?php echo $idProduto; ?>'">-</button>
+                            <li class="produto">
+                                <center>
+
+                                    <h2>Produto:<strong> <?php echo htmlspecialchars($produto['nome']); // Sem SQL Injection, por favor! ?></strong></h2>
+                                    <img src="<?php echo htmlspecialchars($produto['imagem']); ?>" class="produto-img"> 
+                                    <p>Quantidade: <?php echo $quantidade; ?></p>
+                                    <p>Preço Unitário: R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></p>
+                                    <p>Subtotal: R$ <?php echo number_format($produto['preco'] * $quantidade, 2, ',', '.'); ?></p>
+                                    <button type="button" onclick="window.location.href='carrinho.php?add=<?php echo $idProduto; ?>'" class="btn-incrementar">+</button>
+                                    <button type="button" onclick="window.location.href='carrinho.php?remove=<?php echo $idProduto; ?>'" class="btn-decrementar">-</button>
+                        
+                                </center>
                             </li>
                         <?php endif; ?>
                     <?php endforeach; ?>

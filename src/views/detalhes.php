@@ -28,6 +28,7 @@ if (!$produto) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Produto - <?php echo htmlspecialchars($produto['nome']); ?></title>
     <link rel="stylesheet" href="./css/detalhes.css">
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
 </head>
 
 <body>

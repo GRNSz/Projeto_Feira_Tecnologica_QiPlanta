@@ -57,7 +57,6 @@ ul.lista-carrinho li {
 
 /* Estilo para cada produto dentro do carrinho */
 .produto {
-    display: flex;
     align-items: center;
     background-color: #f9f9f9;
     padding: 15px;
@@ -140,20 +139,15 @@ footer {
 
 .btn-decrementar{
     background-color: red;
+    padding: 4px 15px 4px 15px;
     color: aliceblue;
     border-radius: 24px;
     border: white solid;
 }
 .btn-incrementar{
     background-color: green;
+    padding: 4px 15px 4px 15px;
     color: aliceblue;
-    border-radius: 10px;
+    border-radius: 24px;
     border: white solid;
-}
-.input-quantidadeProduto{
-    border-radius: 10px;
-    padding-left: 2%;
-    padding-right: 2%;
-    border: 3px green solid;
-    
 }
