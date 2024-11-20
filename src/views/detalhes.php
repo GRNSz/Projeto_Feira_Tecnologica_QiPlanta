@@ -53,8 +53,30 @@ if (!$produto) {
                 <button class="adicionar-carrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
                     Adicionar ao Carrinho
                 </button>
+               
+                <?php if (isset($produto['video'])): ?>
+            <div class="produto-video">
+                <h2>Conheça mais sobre o <?php echo $produto['nome']; ?></h2>
+                <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/<?php echo $produto['video']; ?>" 
+                        title="Vídeo sobre <?php echo $produto['nome']; ?>" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+            <?php endif; ?>
+
+                <?php if (isset($produto['avaliacoes'])): ?>
+                    <div class="produto-avaliacoes">
+                        <h3>Avaliações dos Clientes</h3>
+                            <?php foreach ($produto['avaliacoes'] as $avaliacao): ?>
+                                <p><strong><?php echo $avaliacao['cliente']; ?>:</strong> "<?php echo $avaliacao['comentario']; ?>"</p>
+                <?php endforeach; ?>
+                </div>
+            <?php endif; ?>
             </div>
         </div>
+    </div>
     </section>
 
     <footer>
