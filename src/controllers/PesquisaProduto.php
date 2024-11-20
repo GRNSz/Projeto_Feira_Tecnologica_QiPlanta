@@ -32,7 +32,7 @@
             if (!empty($resultados)) {
                 header('Location: ../../src/views/Produtos.php?resultados=' . urlencode(json_encode($resultados)));
             } else {
-                header('Location: ../../src/views/Produtos.php?msg=nenhum-resultado');
+                header('Location: ././views/errors/404.php');
             }
             exit;
         }

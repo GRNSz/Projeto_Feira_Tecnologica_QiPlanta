@@ -84,7 +84,28 @@ class ProdutoController {
                 'imagem' => './images/enxadinha.png',
                 'descricao' => 'A enxadinha de jardim é perfeita para capinar, aerar e preparar o solo. Com lâmina afiada e cabo confortável, é ideal para trabalhos de precisão em canteiros e áreas pequenas. Essencial para manter o jardim bem cuidado.',
                 'categoria' => 'Ferramentas'
-            ]  
+            ],
+            10 => [
+                'nome' => 'Vaso Floreiro Roma Cristal',
+                'preco' => 32.00,
+                'imagem' => './images/vasoTransparente.png',
+                'descricao' => 'Este vaso é uma peça elegante e perfeito para pequenos arranjos. Feito em cristal transparente, traz um toque sofisticado a qualquer ambiente.',
+                'categoria' => 'Vasos'
+            ],
+            11 => [
+                'nome' => 'Vaso de Jardim Verde Menta',
+                'preco' => 19.50,
+                'imagem' => './images/vasoVerde.png',
+                'descricao' => 'Este item é uma peça charmosa e prática, ideal para plantas externas. Com seu tom suave de verde menta, adiciona frescor e beleza ao jardim ou varanda.',
+                'categoria' => 'Vasos'
+            ],
+            12 => [
+                'nome' => 'Vaso Decorativo para Tulipa',
+                'preco' => 24.30,
+                'imagem' => './images/vasoPlantaCarnivora.png',
+                'descricao' => 'O vaso possui um design inspirado nas plantas carnívoras Nepenthes. Com seu formato único e elegante, é perfeito para destacar tulipas e outros arranjos, adicionando um toque moderno e sofisticado ao ambiente.',
+                'categoria' => 'Vasos'
+            ]
         ];
     }
 

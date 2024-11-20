@@ -2,6 +2,7 @@
 
     namespace MeuProjeto\controllers;
     use MeuProjeto\configuration\ConnectionFactory;
+    use \PDOException;
     //require '/../configuration/ConnectionFactory.php'; 
 
     class UsuarioController {
@@ -10,69 +11,52 @@
          //   header ("Location: ./../views/cadastro&login.php");
        // }
 
-        public function store($pegainfo)
-        {
-
-            # Pega os valores para armazenar no banco
-            $nome = $pegainfo['nome'];
-            $senha = $pegainfo['senha'];
-            $senha2 = $pegainfo['senha2'];
-            $endereco = $pegainfo['endereco'];
-            $email = $pegainfo['email'];
-            $numcell = $pegainfo['numcell'];
-
-            if ($senha != $senha2) {
-                print "As senhas não coincidem!";
-                return;
-            }
-
-            # Cria a conexão com o banco
-            $connection = ConnectionFactory::getConnection();
-
+       public function store() {
+        try {
+            $pdo = ConnectionFactory::getConnection();
+            
+            // Recebe os dados do formulário
+            $nome = $_POST['nome'];
+            $senha = $_POST['senha'];
+            $senha2 = $_POST['senha2'];
+            $endereco = $_POST['endereco'];
+            $email = $_POST['email'];
+            $numcell = $_POST['numcell'];
+    
+            // Hash das senhas
             $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
             $senhaHash2 = password_hash($senha2, PASSWORD_DEFAULT);
-
-            # Prepara a query de inserção
-            $stmt = $connection->prepare("INSERT INTO usuarios (nome, senha, senha2, endereco, email, numcell) VALUES (:nome, :senha, :senha2, :endereco, :email, :numcell)");
-
-            # Verifica se a query foi preparada com sucesso
-            if (!$stmt) {
-                die("Falha na preparação da query: " . $connection->errorInfo()[2]);
-            }
-
-            # Verifica se a conexão foi estabelecida com sucesso
-            if (!$connection) {
-                die("Conexão falhou: " . $connection->errorInfo()[2]);
-            }
-
-            # Verifica se o método de requisição é POST
+    
+            // Query SQL modificada
+            $sql = "INSERT INTO usuarios (nome, senha, senha2, endereco, email, numcell) 
+                    VALUES (:nome, :senha, :senha2, :endereco, :email, :numcell)";
+                    
+            $stmt = $pdo->prepare($sql);
+    
+            // Verifica se o método de requisição é POST
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $pegainfo = $_POST;
             }
-
+    
             $stmt->bindParam(':nome', $nome);
             $stmt->bindParam(':senha', $senhaHash);
             $stmt->bindParam(':senha2', $senhaHash2);
             $stmt->bindParam(':endereco', $endereco);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':numcell', $numcell);
-
+    
             $stmt->execute();
-
-            if ($stmt->rowCount()){
-                echo "Cadastro realizado com sucesso!";
+    
+            if ($stmt->rowCount()) {
                 header("Location: ./../views/menu.php");
+                exit();
             } else {
                 echo "Erro ao cadastrar!";
             }
-
-            // Debugging 
-            // var_dump($nome);
-            // var_dump($senha);
-            // var_dump($senha2);
-            // var_dump($endereco);
-            // var_dump($email);
-            // var_dump($numcell);
+        } catch (PDOException $e) {
+            error_log("Erro no cadastro: " . $e->getMessage());
+            echo "Erro ao cadastrar. Por favor, tente novamente.";
+        }
     }
 
         public function login($pegainfo) {
