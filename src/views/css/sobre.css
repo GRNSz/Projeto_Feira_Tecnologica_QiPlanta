@@ -44,7 +44,9 @@ main {
     justify-content: center;
     padding: 2rem 0;
     box-sizing: border-box;
+    animation: fadeIn 0.5s ease-in forwards;
 }
 body{
     background: url('./../../views/images/Teste-Background.png') center/cover no-repeat;
+    animation: fadeIn 0.5s ease-in forwards;
 }
