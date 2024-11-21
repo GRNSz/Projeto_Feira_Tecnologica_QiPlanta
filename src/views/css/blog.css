@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./../../views/images/Teste-Background.png') center/cover no-repeat;
+    min-height: 100vh;
+}
+
+.blog-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.artigo {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.artigo h2 {
+    color: #2d5938;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.artigo p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.artigo img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: #2d5938;
+    font-size: 2.5rem;
+    margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .blog-container {
+        padding: 15px;
+    }
+
+    .artigo {
+        padding: 20px;
+    }
+
+    .titulo-principal {
+        font-size: 2rem;
+    }
+}
+.blog-grid {
+            display: grid;
+            grid-template-columns: 60% 35%;
+            gap: 5%;
+        }
+        .materiais-complementares {
+            background: #fff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            margin: 15px 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }

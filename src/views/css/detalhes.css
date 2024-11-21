@@ -88,6 +88,10 @@ main {
     grid-column: 1 / -1;
     margin-top: 60px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .produto-video h2 {
@@ -109,6 +113,7 @@ main {
     margin-top: 60px;
     display: grid;
     gap: 30px;
+    justify-items: center;
 }
 
 .produto-avaliacoes h3 {

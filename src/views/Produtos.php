@@ -23,7 +23,7 @@ $produtos = $controller->listarTodos();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace - Produtos</title>
     <!-- Ícone do site -->
-    <link rel="icon" shref="./images/icons8-pinheiro-162.png" type="image/png">
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <!-- Arquivo CSS para o menu -->
     <link rel="stylesheet" href="./css/produtos.css">
     <!-- Arquivo JavaScript para detalhes dos produtos -->

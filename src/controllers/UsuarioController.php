@@ -11,7 +11,7 @@
          //   header ("Location: ./../views/cadastro&login.php");
        // }
 
-       public function store() {
+       public function store($pegainfo) {
         try {
             $pdo = ConnectionFactory::getConnection();
             
