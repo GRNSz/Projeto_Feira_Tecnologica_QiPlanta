@@ -8,6 +8,23 @@
     <link rel="stylesheet" href="./css/blog.css">
     <header><?php include './header.php'; ?></header>
     <style>
+        .a {
+            color:green;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-weight: bolder;
+            font-size: larger;
+            }
+        .a:hover{
+            text-decoration: underline
+        }
+
+        nav {
+            align-items: center;
+            justify-content: center;
+            display: inline-flex;
+        }
+
         .blog-grid {
             display: grid;
             grid-template-columns: 60% 35%;
@@ -77,7 +94,7 @@
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/PyG44sfXTqY" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p><a href="https://www.bbc.com/portuguese/articles/ckdnr9rlk08o" target="_blank">BBC falando em matéria sobre plantas purificadoras de ar</a></p>
+                        <p><a class="a" href="https://www.bbc.com/portuguese/articles/ckdnr9rlk08o" target="_blank">BBC falando em matéria sobre plantas purificadoras de ar</a></p>
                     </div>
 
                     <div class="materiais-complementares">
@@ -85,7 +102,7 @@
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/DFsF4wML-VM" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p><a href="https://www.wwf.org.br/nossosconteudos/educacaoambiental/conceitos/biodiversidade/#:~:text=O%20termo%20biodiversidade%20(ou%20diversidade,industrial%20consumida%20pelo%20ser%20humano." target="_blank">A importância da biodiversidade - WWF</a></p>
+                        <p><a class="a" href="https://www.wwf.org.br/nossosconteudos/educacaoambiental/conceitos/biodiversidade/#:~:text=O%20termo%20biodiversidade%20(ou%20diversidade,industrial%20consumida%20pelo%20ser%20humano." target="_blank">A importância da biodiversidade - WWF</a></p>
                     </div>
 
                     <div class="materiais-complementares">
@@ -93,7 +110,7 @@
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/s27F-IRjekg" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p><a href="https://brasilescola.uol.com.br/biologia/mudancas-climaticas.htm" target="_blank">Mudanças Climáticas - Brasil Escola</a></p>
+                        <p><a class="a" href="https://brasilescola.uol.com.br/biologia/mudancas-climaticas.htm" target="_blank">Mudanças Climáticas - Brasil Escola</a></p>
                     </div>
                 </div>
             </div>

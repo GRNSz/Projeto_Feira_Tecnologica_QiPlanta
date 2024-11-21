@@ -19,6 +19,9 @@ header {
     gap: 10px; /* Espaçamento inicial entre itens */
     box-sizing: border-box;
 }
+nav{
+    font-weight: bolder;
+}
 
 /* Logo */
 .logo img {
