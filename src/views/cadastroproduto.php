@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produto</title>
     <link rel="stylesheet" href="css/cadastro_produto.css">
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
 </head>
 
 <body>

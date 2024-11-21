@@ -26,8 +26,10 @@ if (!$produto) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Produto - <?php echo htmlspecialchars($produto['nome']); ?></title>
+    <title>Detalhes do Produto - <?php echo $produto['nome']; ?></title>
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/detalhes.css">
+    <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
 </head>
 
 <body>
@@ -53,11 +55,12 @@ if (!$produto) {
                 <button class="adicionar-carrinho" onclick="window.location.href='carrinho.php?add=<?php echo $id; ?>'">
                     Adicionar ao Carrinho
                 </button>
-               
+            
                 <?php if (isset($produto['video'])): ?>
             <div class="produto-video">
-                <h2>Conheça mais sobre o <?php echo $produto['nome']; ?></h2>
-                <iframe width="560" height="315" 
+
+                    <h2>Conheça mais sobre o <?php echo $produto['nome']; ?></h2>
+                    <iframe width="560" height="315" 
                         src="https://www.youtube.com/embed/<?php echo $produto['video']; ?>" 
                         title="Vídeo sobre <?php echo $produto['nome']; ?>" 
                         frameborder="0" 
