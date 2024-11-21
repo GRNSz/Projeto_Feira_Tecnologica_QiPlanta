@@ -91,9 +91,9 @@
                     <div class="materiais-complementares">
                         <h3>Mudanças Climáticas</h3>
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/G4H1N_yXBiA" frameborder="0" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/s27F-IRjekg" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p><a href="https://www.ipcc.ch/sr15/" target="_blank">Relatório Especial do IPCC sobre Mudanças Climáticas</a></p>
+                        <p><a href="https://brasilescola.uol.com.br/biologia/mudancas-climaticas.htm" target="_blank">Mudanças Climáticas - Brasil Escola</a></p>
                     </div>
                 </div>
             </div>
