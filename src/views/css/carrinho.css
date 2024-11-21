@@ -18,8 +18,8 @@ header, footer {
 }
 
 main {
-    margin: 20px auto;
-    padding: 20px;
+    margin: 5% auto;
+    padding: 5%;
     max-width: 1200px;
     background-color: white;
     border-radius: 10px;
@@ -29,7 +29,7 @@ main {
 
 /* Estilo da div principal do carrinho de compras */
 .div-carrinho-compras {
-    margin-top: 30px;
+    margin-top: 2%;
 }
 
 h1 {
@@ -98,7 +98,7 @@ ul.lista-carrinho li {
     font-weight: bold;
 }
 .btn-decrementar:hover{
-    background-color: rgb(129, 1, 1);
+    background-color: #810101;
     padding: 4px 15px 4px 15px;
     color: aliceblue;
     border-radius: 14px;
@@ -126,7 +126,7 @@ ul.lista-carrinho li {
 
 /* Footer */
 footer {
-    margin-top: 20px;
+    margin-top: 40px;
     background-color: #4CAF50;
     color: white;
     text-align: center;

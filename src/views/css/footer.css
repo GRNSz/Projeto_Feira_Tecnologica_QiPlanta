@@ -11,6 +11,9 @@ footer {
   text-align: center;
   margin-top: auto;
   transition: all 0.3s ease;
+  -webkit-user-select: none; /* para  usuario n selecionar <a>*/
+  -ms-user-select: none; 
+  user-select: none; /*fim*/
 }
 
 footer img{

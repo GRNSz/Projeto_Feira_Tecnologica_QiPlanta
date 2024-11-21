@@ -7,50 +7,7 @@
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/blog.css">
     <header><?php include './header.php'; ?></header>
-    <style>
-        .a {
-            color:green;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;
-            font-weight: bolder;
-            font-size: larger;
-            }
-        .a:hover{
-            text-decoration: underline
-        }
 
-        nav {
-            align-items: center;
-            justify-content: center;
-            display: inline-flex;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: 60% 35%;
-            gap: 5%;
-        }
-        .materiais-complementares {
-            background: #fff;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            margin: 15px 0;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
 </head>
 <body>
     <main>
