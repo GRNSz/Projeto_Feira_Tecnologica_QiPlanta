@@ -86,3 +86,18 @@ footer * {
   will-change: transform, opacity;
   filter: none; /* Garante que não haja desfoque */
 }
+.social-media {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-left: 1px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #666;
+}

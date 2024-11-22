@@ -1,46 +1,25 @@
-<?php 
+<?php
+require_once 'ProdutoController.php';
 
-    namespace MeuProjeto\controllers;
-
-
-    class PesquisaProduto {
-
-    private $produtos;
-
-    public function __construct() {
-        $this->produtos = new ProdutoController();
-    }
-
-    public function buscarID($query) {
-        $todosProdutos = $this->produtos->listarTodos();
-        $resultados = [];
-        
-        foreach ($todosProdutos as $id => $produto) {
-            if (stripos($produto['nome'], $query) !== false) {
-                $resultados[$id] = $produto;
-            }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $termo = isset($_POST['termo']) ? $_POST['termo'] : '';
+    
+    $produtoController = new \MeuProjeto\controllers\ProdutoController();
+    $todosProdutos = $produtoController->listarTodos();
+    
+    $resultados = array();
+    foreach ($todosProdutos as $id => $produto) {
+        if (stripos($produto['nome'], $termo) !== false || 
+            stripos($produto['descricao'], $termo) !== false || 
+            stripos($produto['categoria'], $termo) !== false) {
+            $produto['id'] = $id; // Adiciona o ID ao produto
+            $resultados[] = $produto;
         }
-        
-        return $resultados;
-    }
-
-    public function buscar() {
-        if (isset($_GET['query'])) {
-            $query = trim($_GET['query']);
-            $resultados = $this->buscarID($query);
-            
-            if (!empty($resultados)) {
-                header('Location: ../../src/views/Produtos.php?resultados=' . urlencode(json_encode($resultados)));
-            } else {
-                header('Location: ././views/errors/404.php');
-            }
-            exit;
-        }
-        
-        header('Location: ../../src/views/Produtos.php');
-        exit;
     }
     
+    header('Content-Type: application/json');
+    echo json_encode($resultados);
+    exit;
 }
 
 ?>

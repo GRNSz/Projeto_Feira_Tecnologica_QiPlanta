@@ -3,7 +3,7 @@ console.log("Processando requisição da barra de pesquisa...");
 function barraBuscar(){
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "./../controllers/PesquisaProduto.php", true);
+    xhr.open("GET", "./../controllers/ProdutoController.php", true);
 
     xhr.onreadystatechange = function(){
         if(xhr.readyState == 4 && xhr.status == 200){
