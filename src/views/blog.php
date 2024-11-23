@@ -7,33 +7,7 @@
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
     <link rel="stylesheet" href="./css/blog.css">
     <header><?php include './header.php'; ?></header>
-    <style>
-        .blog-grid {
-            display: grid;
-            grid-template-columns: 60% 35%;
-            gap: 5%;
-        }
-        .materiais-complementares {
-            background: #fff;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            margin: 15px 0;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-    </style>
+
 </head>
 <body>
     <main>
@@ -77,7 +51,7 @@
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/PyG44sfXTqY" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p><a href="https://www.bbc.com/portuguese/articles/ckdnr9rlk08o" target="_blank">BBC falando em matéria sobre plantas purificadoras de ar</a></p>
+                        <p><a class="a" href="https://www.bbc.com/portuguese/articles/ckdnr9rlk08o" target="_blank">BBC falando em matéria sobre plantas purificadoras de ar</a></p>
                     </div>
 
                     <div class="materiais-complementares">
@@ -85,7 +59,7 @@
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/DFsF4wML-VM" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p><a href="https://www.wwf.org.br/nossosconteudos/educacaoambiental/conceitos/biodiversidade/#:~:text=O%20termo%20biodiversidade%20(ou%20diversidade,industrial%20consumida%20pelo%20ser%20humano." target="_blank">A importância da biodiversidade - WWF</a></p>
+                        <p><a class="a" href="https://www.wwf.org.br/nossosconteudos/educacaoambiental/conceitos/biodiversidade/#:~:text=O%20termo%20biodiversidade%20(ou%20diversidade,industrial%20consumida%20pelo%20ser%20humano." target="_blank">A importância da biodiversidade - WWF</a></p>
                     </div>
 
                     <div class="materiais-complementares">
@@ -93,7 +67,7 @@
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/s27F-IRjekg" frameborder="0" allowfullscreen></iframe>
                         </div>
-                        <p><a href="https://brasilescola.uol.com.br/biologia/mudancas-climaticas.htm" target="_blank">Mudanças Climáticas - Brasil Escola</a></p>
+                        <p><a class="a" href="https://brasilescola.uol.com.br/biologia/mudancas-climaticas.htm" target="_blank">Mudanças Climáticas - Brasil Escola</a></p>
                     </div>
                 </div>
             </div>

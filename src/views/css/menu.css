@@ -119,6 +119,9 @@ header {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    -webkit-user-select: none; /* para  usuario n selecionar <a> 21/11/24*/
+    -ms-user-select: none; 
+    user-select: none; /*fim*/
 }
 
 .produto button::after {

@@ -15,6 +15,7 @@ class ComposerStaticInitec8282d23e73d94f0c3e683e576dc922
         array (
             'Monolog\\' => 8,
             'MeuProjeto\\' => 11,
+            'MercadoPago\\' => 12,
         ),
     );
 
@@ -30,6 +31,10 @@ class ComposerStaticInitec8282d23e73d94f0c3e683e576dc922
         'MeuProjeto\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+        ),
+        'MercadoPago\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mercadopago/dx-php/src/MercadoPago',
         ),
     );
 

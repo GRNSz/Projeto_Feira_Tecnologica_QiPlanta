@@ -74,7 +74,7 @@
             <div class="produto">
                 <center>
                     <img src="./images/vasoTransparente.png" alt="vaso-transparente">
-                    <h3>Vaso vasoTransparente</h3>
+                    <h3>Vaso Transparente</h3>
                     <p>O vaso possui um design inspirado nas plantas carnívoras Nepenthes. Com seu formato único e elegante, é perfeito para destacar tulipas e outros arranjos, adicionando um toque moderno e sofisticado ao ambiente.</p>
                     <button onclick="window.location.href='./produtos.php';">Ver Produtos</button>
                 </center>

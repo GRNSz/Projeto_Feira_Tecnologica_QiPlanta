@@ -2,7 +2,8 @@
     "name": "gusta/projeto_feira_tecnologica_qi-planta",
     "type": "project",
     "require": {
-        "monolog/monolog": "^3.8"
+        "monolog/monolog": "^3.8",
+        "mercadopago/dx-php": "3.0.8"
     },
     "autoload": {
         "psr-4": {

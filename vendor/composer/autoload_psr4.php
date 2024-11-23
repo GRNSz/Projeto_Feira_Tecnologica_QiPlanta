@@ -9,4 +9,5 @@ return array(
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
     'MeuProjeto\\' => array($baseDir . '/src'),
+    'MercadoPago\\' => array($vendorDir . '/mercadopago/dx-php/src/MercadoPago'),
 );
