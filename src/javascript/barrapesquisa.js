@@ -13,4 +13,18 @@ function barraBuscar(){
 
         console.log("Requisição finalizada.");
     };
+    var input = document.getElementById("pesquisa");
+    var filtro = input.value.toLowerCase();
+    var produtos = document.getElementsByClassName("produto");
+
+    for (var i = 0; i < produtos.length; i++) {
+        var nomeProduto = produtos[i].getElementsByClassName("nome-produto")[0];
+        var texto = nomeProduto.textContent || nomeProduto.innerText;
+        
+        if (texto.toLowerCase().indexOf(filtro) > -1) {
+            produtos[i].style.display = "";
+        } else {
+            produtos[i].style.display = "none";
+        }
+    }
 }

@@ -13,7 +13,7 @@ class ProdutoController {
                 'imagem' => './images/liriodapaz.png',
                 'descricao' => 'Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.',
                 'cuidados' => 'Rega moderada, preferencialmente quando o solo estiver seco. Manter em locais com sombra ou luz indireta.',
-                'categoria' => 'Plantas de Interior',
+                'categoria' => 'Flores',
                 'video' => 'FR_qHmrIh6E',
                 'avaliacoes' => [
                     ['cliente' => 'João Silva', 'comentario' => 'Uma planta maravilhosa para quem quer decorar o interior da casa sem se preocupar muito com manutenção.'],
@@ -26,7 +26,7 @@ class ProdutoController {
                 'imagem' => './images/jiboia.png',
                 'descricao' => 'Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.',
                 'cuidados' => 'Regar moderadamente, manter em ambiente com luz indireta ou sombra parcial.',
-                'categoria' => 'Plantas Trepadeiras',
+                'categoria' => 'Flores',
                 'video' => 'Qu4b5NXi-PA'
             ],
             3 => [
@@ -43,7 +43,7 @@ class ProdutoController {
                 'preco' => 90.00,
                 'imagem' => './images/buqueRosas.png',
                 'descricao' => 'Lindo Buquê com doze rosas vermelhas nacionais. Ideal para presentear alguém especial.',
-                'categoria' => 'Buquês',
+                'categoria' => 'Flores',
                 'cuidados' => 'Manter em água limpa, trocar a água diariamente e cortar as hastes em ângulo a cada 2 dias.'
             ],
             5 => [
