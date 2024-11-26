@@ -94,10 +94,10 @@ footer * {
 .social-icons a {
   margin-left: 1px;
   font-size: 24px;
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .social-icons a:hover {
-  color: #666;
+  color: #ffffff;
 }
