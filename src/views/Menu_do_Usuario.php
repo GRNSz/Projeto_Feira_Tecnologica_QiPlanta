@@ -16,14 +16,17 @@
     <main>
         <div class="caixa-conteudo">
             <h2>Dados do Usuário</h2>
-            <?php include("user_data.php"); ?>
-            <h2>Cadastrar Endereço</h2>
-            <form action="cadastrar_endereco.php" method="post">
-                <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" required>
-                <input type="submit" value="Cadastrar">
-            </form>
-        </div>
+            <label for="nome">Nome: </label>
+            <p></p>
+            <label for="email">Email: </label>
+            <p></p>
+            <label for="endereco">Endereço: </label>
+            <p></p>
+            <label for="telefone">Telefone: </label>
+            <p></p>
+            <label for="senha">Senha: </label>
+            <p></p> 
+            <button class="alterarSenha-btn">Alterar senha</button>
     </main>
     <footer>
         <?php include("footer.php"); ?>
