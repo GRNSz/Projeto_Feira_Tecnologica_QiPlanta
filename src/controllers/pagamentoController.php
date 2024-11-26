@@ -1,8 +1,8 @@
 <?php
+
 //require_once __DIR__ . '/../configuration/MercadoPago.php';
 namespace MeuProjeto\Controllers;
 use MeuProjeto\configuration\MercadoPago;
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
