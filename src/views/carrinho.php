@@ -70,8 +70,9 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
             <div class="lista-produto-carrinho">
                 <ul class="lista-carrinho" style="list-style: none;">
                     <?php if (!empty($_SESSION['carrinho'])): ?>
-                        <?php foreach ($_SESSION['carrinho'] as $idProduto => $quantidade): ?>
-                            <?php
+                        <?php 
+                        $totalGeral = 0; // Inicializa o total geral
+                        foreach ($_SESSION['carrinho'] as $idProduto => $quantidade): 
                             // Busca os detalhes do produto pelo ID
                             $produto = $controller->getDetalhes($idProduto);
 
@@ -81,7 +82,10 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
                                 // Removendo automaticamente esse intruso!
                                 unset($_SESSION['carrinho'][$idProduto]);
                                 ?>
-                            <?php else: ?>
+                            <?php else: 
+                                $subtotal = $produto['preco'] * $quantidade;
+                                $totalGeral += $subtotal; // Adiciona o subtotal ao total geral
+                                ?>
                                 <li class="produto">
                                     <center>
 
@@ -92,7 +96,7 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
                                         <img src="<?php echo htmlspecialchars($produto['imagem']); ?>">
                                         <p>Quantidade:<br> <b><?php echo $quantidade; ?></b></p>
                                         <p>Preço Unitário: R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?></p>
-                                        <p>Subtotal: <b style="color:#3f9442;">R$ <?php echo number_format($produto['preco'] * $quantidade, 2, ',', '.'); ?></b></p>
+                                        <p>Subtotal: <b style="color:#3f9442;">R$ <?php echo number_format($subtotal, 2, ',', '.'); ?></b></p>
                                         <button type="button" onclick="window.location.href='carrinho.php?add=<?php echo $idProduto; ?>'" class="btn-incrementar">+</button>
                                         <button type="button" onclick="window.location.href='carrinho.php?remove=<?php echo $idProduto; ?>'" class="btn-decrementar">-</button>
                                     </center>
@@ -101,6 +105,7 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
                             <?php endif; ?>
                         <?php endforeach; ?>
                         <center>
+                            <h2>Total Geral: R$ <?php echo number_format($totalGeral, 2, ',', '.'); ?></h2>
                             <button type="button" onclick="window.location.href='finalizar_compra.php'" class="btn-finalizar-compra">Finalizar Compra</button>
                         </center>
                     <?php else: ?>
