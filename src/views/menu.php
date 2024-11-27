@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace - A Natureza ao Seu Alcance</title>
     <link rel="icon" href="./images/icons8-pinheiro-162.png" type="image/png">
-    <link rel="stylesheet" href="./css/menu.css"> <!-- Adicione seu CSS aqui -->
+    <link rel="stylesheet" href="./css/menu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap -->
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="manifest" href="./json/manifest.json">
     <script src="./../../src/javascript/ServWorker.js"></script>
 </head>
@@ -21,6 +23,47 @@
             <h2 style="font-size: 40px;">Bem-vindo à Central da <strong style="color:green">Vida</strong>!</h2>
             <p style="font-size: 20px; color: #555;">Transforme seu ambiente com o poder das plantas. Aqui, cada espécie tem uma história para contar.</p>
         </center>
+
+        <div class="test">
+            <center>
+                <h3>Talvez você goste desses produtos:</h3>
+            </center>
+        </div>
+        <div class="carousel">
+
+            <div id="carouselExampleInterval" style=" background-color: transparent; color: black;" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <center>
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <a class="a_carousel" href="./produtos.php">
+                            
+                            <img src="./images/liriodapaz.png" class="img-carousel" alt="produto-carousel">
+ 
+                            </a>
+                        </div>
+                        
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/espadadesaojorge.png" class="img-carousel" alt="produto-carousel">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img src="./images/jiboia.png" class="img-carousel" id="test" alt="produto-carousel">
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" style="background-color: rgba(76, 175, 80, 0.3);" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" style="background-color: rgba(76, 175, 80, 0.3)" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
         <section class="anuncios">
 
             <div class="produto">
