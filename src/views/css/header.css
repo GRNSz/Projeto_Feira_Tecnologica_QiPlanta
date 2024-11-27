@@ -162,8 +162,8 @@ nav ul li a:hover {
 
 /* Botão de busca */
 .search-bar button {
-    padding-top:11px;
-    padding-bottom:10px;
+    padding-top:8px;
+    padding-bottom:12px;
     padding-left: 5%;
     padding-right: 5%;
     background: #3e9473;
