@@ -1,84 +1,253 @@
-body {
-    font-family: Arial, sans-serif;
+/* Remover scroll lateral e garantir que o conteúdo ocupe 100% da largura */
+body, html {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Remove o scroll horizontal */
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Header */
 header {
-    margin: 0;
     display: flex;
     align-items: center;
-    height: 100%;
-    justify-content: space-between;
-    padding: 10px;
-    background: linear-gradient(8deg, rgba(57,115,72,1) 0%, rgba(45,89,56,1) 30%, rgba(32,64,40,1) 100%);
+    justify-content: center;
+    width: 100vw;
+    background: linear-gradient(8deg, rgba(57, 115, 72, 1) 0%, rgba(45, 89, 56, 1) 30%, rgba(32, 64, 40, 1) 100%);
+    padding: 0 10px;
+    gap: 10px;
+    box-sizing: border-box;
 }
 
+/* Logo */
 .logo img {
     height: 80px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.logo img:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 15px;
-}
-
-nav ul li {
-    display: inline;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
     padding: 5px 10px;
-    transition: background-color 0.3s, font-weight 0.3s;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a span {
+    display: block;
+}
+
+nav ul li a i {
+    font-size: 1.2rem;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 nav ul li a:hover {
-    background-color: #3e9473;
-    font-weight: bold;
+    transform: translateY(-2px);
+}
+
+/* Barra de Pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    height: 40px;
+    padding: 0 10px;
 }
 
 .input-busca {
-    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    width: 200px;
+    height: 100%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
 }
 
-.search-bar {
-    display: flex;
+.input-busca:focus {
+    width: 250px;
+    border-color: #3e9473;
+    box-shadow: 0 0 10px rgba(62, 148, 115, 0.3);
 }
 
-.search-bar input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
+/* Botão de busca */
 .search-bar button {
-    padding: 5px;
-    border: 1px solid #ccc;
-    background-color: #07914c;
+    padding: 8px 12px;
+    background: #3e9473;
+    border: none;
     color: white;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.2s ease;
+    height: 100%;
+    border-radius: 6px;
+    margin-left: -5px;
 }
 
 .search-bar button:hover {
-    background-color: #3e9473;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(62, 148, 115, 0.5);
 }
 
-@media screen and (max-width: 767px) {
-    .logo img {
-        content: url("../images/QiPlantaLogo.png");
+/* Responsivo: ícones em vez de texto para telas pequenas */
+@media (max-width: 768px) {
+    header {
+        padding-top: 10px;
+        height: auto;
     }
 
-    nav ul li {
+    nav ul li a span {
         display: none;
+    }
+
+    nav ul li a i {
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        height: 50px;
     }
 
     .search-bar {
         display: none;
     }
+}
+
+/* Ajustes para telas ainda menores */
+@media (max-width: 480px) {
+    header {
+        gap: 10px;
+        justify-content: center;
+    }
+}
+
+/* Ajustes para telas de até 600px */
+@media (max-width: 600px) {
+    nav ul li a {
+        color: red;
+        font-size: larger;
+    }
+}
+
+/* Botão de abrir menu */
+#openBtn {
+    position: relative;
+    z-index: 15;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+/* Responsividade para Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px;
+    }
+
+    #openBtn {
+        top: 5px;
+        left: 5px;
+    }
+
+    .navbar-brand {
+        margin-left: 40px;
+    }
+}
+
+/* Menu */
+.menu-container {
+    display: none; /* Mantém escondido inicialmente */
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(57, 115, 72, 0.4);
+    margin-top: 80px;
+    color: white;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.menu-container.show {
+    display: block; /* Exibe o menu quando a classe show é adicionada */
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.content {
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+}
+
+.menu-open .content {
+    margin-left: 250px; /* Ajusta o espaço quando o menu está aberto */
+}
+
+/* Efeito nos itens de lista */
+.list-group-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave */
+}
+
+.list-group-item:hover {
+    transform: translateX(10px); /* Move o item para a direita ao passar o mouse */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* Adiciona uma sombra ao passar o mouse */
+}
+
+/* Estilos da barra de pesquisa */
+.input-group {
+    position: relative; /* Necessário para o posicionamento do ícone */
+    flex: 1; /* Para que ocupe o máximo de espaço possível */
+}
+
+.input-group input.form-control {
+    background-color: #ffffff; /* Fundo claro */
+    color: #343a40; /* Texto em um tom escuro */
+    padding-right: 40px; /* Espaço para o ícone da lupa */
+    border-radius: 0.50rem; /* Arredondamento das bordas */
+    border: 1px solid #ced4da; /* Borda padrão */
 }
