@@ -20,12 +20,13 @@
     </header>
 
     <main>
+        <br>
         <center>
             <h2 style="font-size: 40px;">Bem-vindo à Central da <strong style="color:green">Vida</strong>!</h2>
             <p style="font-size: 20px; color: #555;">Transforme seu ambiente com o poder das plantas. Aqui, cada espécie tem uma história para contar.</p>
         </center>
 
-        <div class="carousel">
+        <!-- <div class="carousel">
 
             <div id="carouselExampleInterval" style=" background-color: transparent; color: black;" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -58,7 +59,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div> -->
 
         <section class="anuncios">
 
