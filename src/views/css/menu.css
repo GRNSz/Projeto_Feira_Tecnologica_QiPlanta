@@ -153,7 +153,8 @@ header {
 }
 .img-carousel{
     display: flex;
-    width: 300px;
+    width: 100%;
+    height: auto;
 }
 .divisoria {    /* Divisória de login */
     display: flex;

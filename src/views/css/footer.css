@@ -24,12 +24,6 @@ footer img{
   border: 3px solid transparent;
 }
 
-footer img:hover {
-  transform: rotate(360deg) scale(1.1);
-  border-color: #ffffff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-}
-
 footer hr{
   height:2px;
   border-width:0;
