@@ -24,12 +24,6 @@ footer img{
   border: 3px solid transparent;
 }
 
-footer img:hover {
-  transform: rotate(360deg) scale(1.1);
-  border-color: #ffffff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-}
-
 footer hr{
   height:2px;
   border-width:0;
@@ -94,10 +88,10 @@ footer * {
 .social-icons a {
   margin-left: 1px;
   font-size: 24px;
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .social-icons a:hover {
-  color: #666;
+  color: #ffffff;
 }

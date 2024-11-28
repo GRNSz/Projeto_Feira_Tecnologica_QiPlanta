@@ -73,3 +73,16 @@ th, td {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+.alterarSenha-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}

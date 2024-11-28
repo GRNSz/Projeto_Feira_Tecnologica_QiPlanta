@@ -145,6 +145,50 @@ header {
     width: 100%;
 }
 
+.carousel{
+    margin-top: 2%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-bottom:2%;
+}
+.img-carousel{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.divisoria {    /* Divisória de login */
+    display: flex;
+    overflow: ;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+    animation: slideIn 0.8s ease-out;
+}
+.divisoria h3{
+    color: #07914c;
+}
+.divisoria .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a_carousel{
+    text-decoration: none;
+    color: black;
+}
+
+
+.test{
+    margin-top: 30px;
+    font-size: large;
+}
+
+.test::first-letter{
+    font-size: larger;
+}
+
 /* Modal/Pop-up (adicione o HTML correspondente) */
 .modal {
     display: none;

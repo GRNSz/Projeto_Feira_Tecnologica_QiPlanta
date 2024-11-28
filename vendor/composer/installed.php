@@ -3,7 +3,7 @@
         'name' => 'gusta/projeto_feira_tecnologica_qi-planta',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'dbd54218098693a3d28b72824314fb7c51a6de1b',
+        'reference' => 'e8a827d57042022b7474e7bd1cadbbc904cab668',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'gusta/projeto_feira_tecnologica_qi-planta' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'dbd54218098693a3d28b72824314fb7c51a6de1b',
+            'reference' => 'e8a827d57042022b7474e7bd1cadbbc904cab668',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

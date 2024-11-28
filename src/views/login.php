@@ -14,6 +14,7 @@
         <?php include('./header.php') ?>
     </header>
     <main>
+    <form action="./../controllers/mainController.php?r=UsuarioController&action=login" method="POST">
         <div class="container-login">
 
             <div class="divisoria">
@@ -28,7 +29,7 @@
                 </div>
 
                 <div> <!-- Div do Form -->
-                    <form action="./../controllers/mainController.php?r=UsuarioController&action=login" method="POST">
+                    
                         <div class="titulo-login">
                             <center>
                                 <h2>Login</h2>

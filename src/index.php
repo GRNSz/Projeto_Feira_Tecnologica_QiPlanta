@@ -1,1 +1,1 @@
-<meta http-equiv="refresh" content="0; url=./views/login.php">
+<meta http-equiv="refresh" content="0; url=./views/menu.php">
