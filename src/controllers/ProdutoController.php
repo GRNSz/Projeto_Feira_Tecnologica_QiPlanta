@@ -13,7 +13,7 @@ class ProdutoController {
                 'imagem' => './images/liriodapaz.png',
                 'descricao' => 'Além de purificar o ar, é ótimo para ambientes internos por sua tolerância à sombra e baixa necessidade de água.',
                 'cuidados' => 'Rega moderada, preferencialmente quando o solo estiver seco. Manter em locais com sombra ou luz indireta.',
-                'categoria' => 'Flores',
+                'categoria' => 'Plantas',
                 'video' => 'FR_qHmrIh6E',
                 'avaliacoes' => [
                     ['cliente' => 'João Silva', 'comentario' => 'Uma planta maravilhosa para quem quer decorar o interior da casa sem se preocupar muito com manutenção.'],
@@ -26,7 +26,7 @@ class ProdutoController {
                 'imagem' => './images/jiboia.png',
                 'descricao' => 'Uma trepadeira resistente que se adapta bem a vários tipos de iluminação. Não exige muitos cuidados e é excelente para purificação do ar.',
                 'cuidados' => 'Regar moderadamente, manter em ambiente com luz indireta ou sombra parcial.',
-                'categoria' => 'Flores',
+                'categoria' => 'Plantas',
                 'video' => 'Qu4b5NXi-PA'
             ],
             3 => [
@@ -35,7 +35,7 @@ class ProdutoController {
                 'imagem' => './images/espadadesaojorge.png',
                 'descricao' => 'Perfeita para ambientes internos, resistente e não precisa de muita água. Também ajuda na purificação do ar.',
                 'cuidados' => 'Regar apenas quando o solo estiver seco, tolera luz direta e indireta.',
-                'categoria' => 'Plantas de Interior',
+                'categoria' => 'Plantas',
                 'video' => 'REucVLerVWo'
             ],
             4 => [
@@ -126,5 +126,16 @@ class ProdutoController {
 
     public function listarTodos() {
         return $this->produtos;
+    }
+    public function filtrarPorCategoria($categoria) {
+        $produtosFiltrados = [];
+
+        foreach ($this->produtos as $produto) {
+            if (strtolower($produto['categoria']) === strtolower($categoria)) {
+                $produtosFiltrados[] = $produto;
+            }
+        }
+
+        return $produtosFiltrados;
     }
 }
