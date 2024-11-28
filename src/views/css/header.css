@@ -15,7 +15,6 @@ header {
     width: 100vw; /* Ocupa 100% da largura da viewport */
     max-width: 100%; /* Impede que o header ultrapasse a largura máxima */
     background: linear-gradient(8deg, rgba(57, 115, 72, 1) 0%, rgba(45, 89, 56, 1) 30%, rgba(32, 64, 40, 1) 100%);
-    padding: 0 10px;
     gap: 10px; /* Espaçamento inicial entre itens */
     box-sizing: border-box;
 }
@@ -51,7 +50,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #ffffff;
-    padding: 5px 10px;
+
     transition: all 0.3s ease;
     text-align: flex-end;
     position: relative;
@@ -178,7 +177,7 @@ nav ul li a:hover {
 }
 
 /* Responsivo: ícones em vez de texto para telas pequenas */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     header {
         padding-top: 0px;
         height: auto;
@@ -187,8 +186,9 @@ nav ul li a:hover {
     /* Oculta o texto das opções e mostra apenas os ícones */
     nav ul li a span {
         display: none;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+        margin-left: 10px;
+        gap: 0px;
     }
 
     nav ul li a i {
@@ -199,16 +199,24 @@ nav ul li a:hover {
         height: 50px; /* Reduz o tamanho da logo */
     }
 
+}
+@media (max-width:800px){
     .search-bar {
         display: none; /* Opcional: oculta a barra de pesquisa em telas pequenas */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
     header {
-        gap: 0px; /* Diminui o espaçamento entre itens no header */
+        display: grid;
+        grid-template-rows: min-content;
+        gap: 0px;
         height: auto;
-        justify-content: center;
-        padding-top: 10px;
+        justify-items: center;
+        align-items: center;
     }
+    .logo {
+        justify-content: center;
+    }
+   
 }

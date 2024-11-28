@@ -5,12 +5,7 @@ body {
     background-color: #f0f5f1;
 }
 
-header {
-    margin: 0;
-    padding: 20px;
-    background: linear-gradient(135deg, #2d5938 0%, #07914c 100%);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
+
 
 /* Container principal */
 .anuncios {
