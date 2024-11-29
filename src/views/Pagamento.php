@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://sdk.mercadopago.com/js/v2"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./../views/css/pagamento.css">
     <title>Pagamento</title>
 </head>
 
@@ -25,7 +25,7 @@
         <button type="submit" id="form-checkout__submit">Pagar</button>
         <progress value="0" class="progress-bar">Carregando...</progress>
     </form>
-    <script src="index.js"></script>
+    <script src="./../javascript/formpagamento.js"></script>
 </body>
 
 </html>

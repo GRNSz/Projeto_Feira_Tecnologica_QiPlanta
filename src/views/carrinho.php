@@ -106,7 +106,7 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
                         <?php endforeach; ?>
                         <center>
                             <h2>Total Geral: R$ <?php echo number_format($totalGeral, 2, ',', '.'); ?></h2>
-                            <button type="button" onclick="window.location.href='finalizar_compra.php'" class="btn-finalizar-compra">Finalizar Compra</button>
+                            <button type="button" onclick="window.location.href='Pagamento.php'" class="btn-finalizar-compra">Finalizar Compra</button>
                         </center>
                     <?php else: ?>
                         <div>
