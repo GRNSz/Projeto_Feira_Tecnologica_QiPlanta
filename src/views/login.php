@@ -16,7 +16,6 @@
     <main>
     <form action="./../controllers/mainController.php?r=UsuarioController&action=login" method="POST">
         <div class="container-login">
-
             <div class="divisoria">
                 <div class="div-login-cadastro">
                     <div class="caixa-cadastro-login">

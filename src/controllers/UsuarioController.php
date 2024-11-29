@@ -91,9 +91,6 @@
             } else {
                 echo "Usuário não encontrado.";
             }
-
         }    
-
     }
-
 ?>
