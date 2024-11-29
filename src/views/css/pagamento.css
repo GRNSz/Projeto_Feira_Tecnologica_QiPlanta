@@ -1,14 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Reset de Estilo */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
+/* Estilos para a lista de produtos no carrinho */
+.lista-produto-carrinho {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.lista-carrinho {
+    list-style: none;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.produto img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.produto h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+.produto b {
+    font-weight: bold;
+    color: #333;
+}
+
+.produto .subtotal {
+    color: #3f9442;
+}
+
+/* Estilo para o total geral */
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo do formulário de pagamento */
 form {
     background-color: #fff;
     padding: 20px;
@@ -16,9 +75,10 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    margin-top: 20px;
 }
 
-.container {
+form .container {
     margin-bottom: 15px;
 }
 
@@ -36,10 +96,15 @@ button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #218838;
+}
+
+button:active {
+    background-color: #1e7e34;
 }
 
 .progress-bar {
@@ -48,26 +113,7 @@ button:hover {
     margin-top: 10px;
 }
 
-#form-checkout__submit {
-    margin-top: 20px;
-}
-/* Modern Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background: linear-gradient(135deg, #f4f9f4 0%, #e8f5e9 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
+/* Estilo do formulário de pagamento */
 #form-checkout {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 16px;
@@ -75,41 +121,19 @@ body {
     width: 100%;
     max-width: 480px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
 
-.container {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
-    color: #2c3e50;
-    font-size: 0.95rem;
-}
-
-#form-checkout input,
-#form-checkout select {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    background-color: #f8f9fa;
-}
-
-#form-checkout input:focus,
-#form-checkout select:focus {
+/* Foco em inputs e selects */
+input:focus,
+select:focus {
     border-color: #2ecc71;
     background-color: #fff;
     box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.1);
     outline: none;
 }
 
+/* Estilo para o botão de envio */
 #form-checkout__submit {
     background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
     color: white;
@@ -132,6 +156,7 @@ label {
     transform: translateY(0);
 }
 
+/* Estilo da barra de progresso */
 .progress-bar {
     width: 100%;
     height: 10px;
@@ -162,30 +187,17 @@ progress::-moz-progress-bar {
     border-radius: 5px;
 }
 
-.total-container {
-
-    position: fixed;
-
-    top: 20px;
-
-    right: 20px;
-
-    background-color: white;
-
-    padding: 15px;
-
-    border-radius: 5px;
-
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-
-}
-
+/* Responsividade */
 @media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
     #form-checkout {
         padding: 20px;
         margin: 10px;
     }
-    
+
     #form-checkout input,
     #form-checkout select {
         padding: 10px 14px;

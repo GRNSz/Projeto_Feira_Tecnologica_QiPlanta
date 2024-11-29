@@ -59,8 +59,7 @@ foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
 
 <body>
     <header>
-        <?php include('header.php'); // Não mexa aqui, sério! 
-        ?>
+        <?php include('header.php');?>
     </header>
     <main>
         <div class="div-carrinho-compras">
