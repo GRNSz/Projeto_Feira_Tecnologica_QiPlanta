@@ -5,13 +5,15 @@ require_once __DIR__ . '/../controllers/ProdutoController.php';
 // Usa o namespace do controlador de produtos
 use MeuProjeto\controllers\ProdutoController;
 
-// Cria uma instância do controlador de produtos
-$controller = new ProdutoController();
+$categoria = isset($_GET['categoria']) ? $_GET['categoria'] : null;
+$produtoController = new ProdutoController();
 
-// Chama o método para listar todos os produtos
-$produtos = $controller->listarTodos();
+if ($categoria) {
+    $produtos = $produtoController->filtrarPorCategoria($categoria);
+} else {
+    $produtos = $produtoController->listarTodos();
+}
 
-// Tudo funciona agora!! 
 
 ?>
 

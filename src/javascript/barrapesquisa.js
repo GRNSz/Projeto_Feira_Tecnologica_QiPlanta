@@ -1,30 +1,39 @@
-console.log("Processando requisição da barra de pesquisa...");
+$(document).ready(function () {
+    $('#barra-pesquisa').on('input', function () {
+        let termo = $(this).val();
 
-function barraBuscar(){
+        if (termo.length >= 2) { // Só pesquisar se tiver pelo menos 2 caracteres
+            $.ajax({
+                url: 'buscar_produtoAPI.php',
+                method: 'GET',
+                data: { nome: termo },
+                dataType: 'json',
+                success: function (data) {
+                    let resultados = $('#resultados');
+                    resultados.empty();
 
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "./../controllers/ProdutoController.php", true);
-
-    xhr.onreadystatechange = function(){
-        if(xhr.readyState == 4 && xhr.status == 200){
-            document.getElementById("busca").innerHTML = xhr.responseText;
-        }
-        xhr.send();
-
-        console.log("Requisição finalizada.");
-    };
-    var input = document.getElementById("pesquisa");
-    var filtro = input.value.toLowerCase();
-    var produtos = document.getElementsByClassName("produto");
-
-    for (var i = 0; i < produtos.length; i++) {
-        var nomeProduto = produtos[i].getElementsByClassName("nome-produto")[0];
-        var texto = nomeProduto.textContent || nomeProduto.innerText;
-        
-        if (texto.toLowerCase().indexOf(filtro) > -1) {
-            produtos[i].style.display = "";
+                    if (data.length === 0) {
+                        resultados.append('<p>Nenhum produto encontrado.</p>');
+                    } else {
+                        data.forEach(produto => {
+                            resultados.append(`
+                                <div class="produto">
+                                    <img src="${produto.imagem}" alt="${produto.nome}">
+                                    <h3>${produto.nome}</h3>
+                                    <p>${produto.descricao}</p>
+                                    <p><strong>R$ ${produto.preco.toFixed(2).replace('.', ',')}</strong></p>
+                                    <a href="detalhes.php?id=${produto.id}" class="btn">Detalhes</a>
+                                </div>
+                            `);
+                        });
+                    }
+                },
+                error: function () {
+                    alert('Erro ao buscar produtos. Tente novamente.');
+                }
+            });
         } else {
-            produtos[i].style.display = "none";
+            $('#resultados').empty(); // Limpar resultados se o termo for muito curto
         }
-    }
-}
+    });
+});

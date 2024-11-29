@@ -157,3 +157,7 @@ main {
 .produto button svg {
     margin-right: 5px; /* Espaço entre o ícone e o texto */
 }
+@media (max-width: 768px) {
+    .produtos-container{
+        display: inline-block;
+}

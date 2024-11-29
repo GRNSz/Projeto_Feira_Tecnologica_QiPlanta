@@ -1,3 +1,6 @@
+<?php
+use MeuProjeto\controllers\ProdutoController;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,10 +25,12 @@
         <input type="text" id="form-checkout__identificationNumber" />
         <input type="email" id="form-checkout__cardholderEmail" />
 
-        <button type="submit" id="form-checkout__submit">Pagar</button>
+        <button type="submit" onclick="window.location.href='obrigado_pedido.php'" id="form-checkout__submit">Pagar</button>
         <progress value="0" class="progress-bar">Carregando...</progress>
     </form>
     <script src="./../javascript/formpagamento.js"></script>
 </body>
 
 </html>
+
+
