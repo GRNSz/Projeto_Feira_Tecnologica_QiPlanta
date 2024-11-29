@@ -20,6 +20,17 @@ body {
     animation: fadeIn 1s ease-out;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 main{
     flex: 1;
     display: flex;

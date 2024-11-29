@@ -6,6 +6,18 @@ body {
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f5f1;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 main {
@@ -22,6 +34,18 @@ main {
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .anuncios h2 {
@@ -59,7 +83,21 @@ main {
     justify-content: space-between;
     position: relative;
     overflow: hidden;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
+    animation: fadeInUp 0.2s ease-out forwards;
+    animation-delay: calc(var(--produto-index, 0) * 0.2s);
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .produto::before {
@@ -71,7 +109,7 @@ main {
     height: 100%;
     background: linear-gradient(135deg, rgba(7, 145, 76, 0.1), rgba(45, 89, 56, 0.1));
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.2s ease;
 }
 
 .produto:hover {
@@ -90,7 +128,7 @@ main {
     border-radius: 8px;
     margin: 0 auto;
     display: block;
-    transition: transform 0.4s ease;
+    transition: transform 0.2s ease;
 }
 
 .produto:hover img {
@@ -160,4 +198,5 @@ main {
 @media (max-width: 768px) {
     .produtos-container{
         display: inline-block;
+}
 }

@@ -2,14 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #f0f5f1;
+    animation: fadeIn 0.5s ease-in;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background: linear-gradient(135deg, #2d5938 0%, #07914c 100%);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .titulo {

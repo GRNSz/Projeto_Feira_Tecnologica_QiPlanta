@@ -26,40 +26,29 @@
             <p style="font-size: 20px; color: #555;">Transforme seu ambiente com o poder das plantas. Aqui, cada espécie tem uma história para contar.</p>
         </center>
 
-        <!-- <div class="carousel">
-
-            <div id="carouselExampleInterval" style=" background-color: transparent; color: black;" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <center>
-                        <div class="carousel-item active" data-bs-interval="2000">
-                            <a class="a_carousel" href="./detalhes.php?id=1">
-
-                                <img src="./images/banner1.png" class="img-carousel" alt="produto-carousel">
-
-                            </a>
-                        </div>
-
-                        <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./images/banner2.png" class="img-carousel" alt="produto-carousel">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="./images/banner3.png" class="img-carousel" id="test" alt="produto-carousel">
-                        </div>
-                    </center>
+        <div class="container mt-4 mb-5">
+            <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
+                <div class="carousel-inner rounded-4 shadow-sm">
+                    <div class="carousel-item active">
+                        <img src="./images/banner1.png" class="d-block w-100" alt="Lírio da Paz" style="height: 300px; object-fit: cover; background-color: #f8f9fa;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner2.png" class="d-block w-100" alt="Jibóia" style="height: 300px; object-fit: cover; background-color: #f8f9fa;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/banner3.png" class="d-block w-100" alt="Espada de São Jorge" style="height: 300px; object-fit: cover; background-color: #f8f9fa;">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev" style="width: 40px; background: rgba(0,0,0,0.1); border-radius: 0 8px 8px 0;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next" style="width: 40px; background: rgba(0,0,0,0.1); border-radius: 8px 0 0 8px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
-
-            <button class="carousel-control-prev" style="background-color: rgba(76, 175, 80, 0.3);" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" style="background-color: rgba(76, 175, 80, 0.3)" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
+        </div>
 
         <section class="anuncios">
 

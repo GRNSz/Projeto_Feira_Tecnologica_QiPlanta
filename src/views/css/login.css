@@ -10,6 +10,17 @@
     --shadow-color: rgb(49, 163, 38);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Reset mais moderno */
 *, *::before, *::after {
     margin: 0;
