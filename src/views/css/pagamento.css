@@ -1,0 +1,140 @@
+/* Modern Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #f4f9f4 0%, #e8f5e9 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#form-checkout {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #2c3e50;
+    font-size: 0.95rem;
+}
+
+#form-checkout input,
+#form-checkout select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+#form-checkout input:focus,
+#form-checkout select:focus {
+    border-color: #2ecc71;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.1);
+    outline: none;
+}
+
+#form-checkout__submit {
+    background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#form-checkout__submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+#form-checkout__submit:active {
+    transform: translateY(0);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #f0f0f0;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+    border-radius: 5px;
+}
+
+.total-container {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    background-color: white;
+
+    padding: 15px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+}
+
+@media (max-width: 768px) {
+    #form-checkout {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    #form-checkout input,
+    #form-checkout select {
+        padding: 10px 14px;
+    }
+}

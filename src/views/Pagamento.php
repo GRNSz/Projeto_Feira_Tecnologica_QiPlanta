@@ -1,3 +1,6 @@
+<?php
+use MeuProjeto\controllers\ProdutoController;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://sdk.mercadopago.com/js/v2"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/pagamento.css">
     <title>Pagamento</title>
 </head>
 
@@ -22,10 +25,32 @@
         <input type="text" id="form-checkout__identificationNumber" />
         <input type="email" id="form-checkout__cardholderEmail" />
 
-        <button type="submit" id="form-checkout__submit">Pagar</button>
+        <button type="submit" onclick="window.location.href='obrigado_pedido.php'" id="form-checkout__submit">Pagar</button>
         <progress value="0" class="progress-bar">Carregando...</progress>
     </form>
-    <script src="index.js"></script>
+    <?php
+session_start();
+require_once __DIR__ . '/../controllers/ProdutoController.php';
+
+$controller = new ProdutoController();
+$totalGeral = 0;
+
+if (!empty($_SESSION['carrinho'])) {
+    foreach ($_SESSION['carrinho'] as $idProduto => $quantidade) {
+        $produto = $controller->getDetalhes($idProduto);
+        if ($produto) {
+            $subtotal = $produto['preco'] * $quantidade;
+            $totalGeral += $subtotal;
+        }
+    }
+}
+?>
+    <div class="total-container">
+    <h2>Total da compra: R$ <?php echo number_format($totalGeral, 2, ',', '.'); ?></h2>
+</div>
+    <script src="./../javascript/formpagamento.js"></script>
 </body>
 
 </html>
+
+
