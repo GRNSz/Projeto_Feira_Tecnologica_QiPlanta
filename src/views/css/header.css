@@ -130,15 +130,15 @@ nav ul li a:hover {
 .search-bar {
     display: flex;
     align-items: center;
-    white-space: nowrap;
-    height: 40px; /* Define a altura fixa */
-    padding: 0 10px; /* Ajusta o espaçamento interno para manter o layout adequado */
+    justify-content: center;
+    height: 100%; /* Ajuste conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
 .input-busca {
     padding: 10px 10px;
     border: 2px solid transparent;
-    border-radius: 6px;
+    border-radius: 5px;
     transition: all 0.3s ease;
     width: 200px;
     height: 100%; /* Garantir que a altura seja 100% do contêiner */
