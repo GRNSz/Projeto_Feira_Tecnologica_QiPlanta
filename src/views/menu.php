@@ -52,7 +52,7 @@
 
         <section class="anuncios">
 
-            <div class="produto">
+            <div class="produto" onclick="window.location.href='./detalhes.php?id=1';">
                 <center>
                     <img src="./images/liriodapaz.png" alt="Lírio-da-paz">
                     <h3>Lírio-da-paz <br> A Guardiã do Ar</h3>
@@ -62,7 +62,7 @@
                 </center>
             </div>
 
-            <div class="produto" id="plantas">
+            <div class="produto" onclick="window.location.href='./detalhes.php?id=2';" id="plantas">
                 <center>
                     <img src="./images/jiboia.png" alt="Jibóia">
                     <h3>Jibóia <br> A Trepadeira da Resiliência</h3>
@@ -72,7 +72,7 @@
                 </center>
             </div>
 
-            <div class="produto" id="plantas">
+            <div class="produto" onclick="window.location.href='./detalhes.php?id=3';" id="plantas">
                 <center>
                     <img src="./images/espadadesaojorge.png" alt="Espada-de-São-Jorge">
                     <h3>Espada de São Jorge <br> A Guardiã da Proteção</h3>
@@ -82,7 +82,7 @@
                 </center>
             </div>
 
-            <div class="produto">
+            <div class="produto" onclick="window.location.href='./detalhes.php?id=7';">
                 <center>
                     <img src="./images/vassoura.png" alt="Vassoura-para-grama">
                     <h3>Vassoura para Grama</h3>
@@ -91,7 +91,7 @@
                 </center>
             </div>
 
-            <div class="produto">
+            <div class="produto" onclick="window.location.href='./detalhes.php?id=9';">
                 <center>
                     <img src="./images/enxadinha.png" alt="enxadinha-para-jardim">
                     <h3>Enxadinha para Jardim</h3>
@@ -100,7 +100,7 @@
                 </center>
             </div>
 
-            <div class="produto">
+            <div class="produto" onclick="window.location.href='./detalhes.php?id=10';">
                 <center>
                     <img src="./images/vasoTransparente.png" alt="vaso-transparente">
                     <h3>Vaso Transparente</h3>
