@@ -29,13 +29,13 @@
         <div class="container mt-4 mb-5">
             <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel" style="max-width: 800px; margin: 0 auto;">
                 <div class="carousel-inner rounded-4 shadow-sm">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" onclick="window.location.href='./detalhes.php?id=1';">
                         <img src="./images/banner1.png" class="d-block w-100" alt="Lírio da Paz" style="height: 300px; object-fit: cover; background-color: #f8f9fa;">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" onclick="window.location.href='./blog.php';">
                         <img src="./images/banner2.png" class="d-block w-100" alt="Jibóia" style="height: 300px; object-fit: cover; background-color: #f8f9fa;">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" onclick="window.location.href='./produtos.php?categoria=ferramentas';">
                         <img src="./images/banner3.png" class="d-block w-100" alt="Espada de São Jorge" style="height: 300px; object-fit: cover; background-color: #f8f9fa;">
                     </div>
                 </div>
